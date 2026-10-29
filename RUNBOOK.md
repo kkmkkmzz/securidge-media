@@ -88,10 +88,16 @@ KM's own papers: use only if a published version with a DOI exists AND it is lis
    placed in the right 170 px or below y=1460 on Shorts. Fix the spec and re-render if needed.
 8. **Archive**: `script.txt`, `sources.md`, `meta.json` (title ≤ 90 chars, description with every
    source URL + AI-voice disclosure, tags), then commit and push to `main`.
+   **YouTube rejects `<` and `>` anywhere in the title or description** ("invalid video description").
+   Write menu paths as "Settings, then General, then Software Update", never "Settings > General".
+   Before scheduling, check: `grep -c '[<>]'` on the title and description must be 0.
 9. **Schedule**: Metricool `createScheduledPost`, blogId `7715648`, timezone `Asia/Seoul`,
    media = `https://raw.githubusercontent.com/kkmkkmzz/securidge-media/main/videos/<folder>/video.mp4`,
    publication at the slot time (05:00 or 16:00 the same day). Long-form: add
    `videoCoverMilliseconds: 500` (the hook still); if rejected with VIDEO_THUMBNAIL_NOT_APPLICABLE,
    schedule again without it.
-10. **Report**: send KM a short Korean message: title, topic, sources, style, Metricool planner link.
+10. **Confirm upload**: about 5 minutes after the publication time, call getScheduledPosts for that
+   window. If the YouTube provider status is ERROR, read detailedStatus, fix the cause, update the post
+   with updateScheduledPost (providers youtube only, no twitterData/instagramData) and report it.
+11. **Report**: send KM a short Korean message: title, topic, sources, style, Metricool planner link.
    If any step failed, do not schedule; say which step failed and why.
