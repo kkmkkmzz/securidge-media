@@ -6,7 +6,8 @@
   "voice_id": "mhgBlD8CmCSdwLDOIJpA",
   "name": "Pulse",
   "model": "eleven_v4",
-  "flow": "KSqlWY0rSAqbcIZlOCDX"
+  "flow": "KSqlWY0rSAqbcIZlOCDX",
+  "generation": "bXwwYx4ycUghSGolWdyW"
  },
  "tags": [
   "cybersecurity",
@@ -18,5 +19,13 @@
   "Check Point",
   "security awareness"
  ],
- "description": "Fake meeting invites are being used to steal Microsoft 365 logins. Check Point researchers flagged more than 302,386 unique phishing emails built around calendar invites, sent to more than 40,000 organisations. The surge began on September 25, 2026, and on October 8 almost 200,000 emails went out in a single day.\n\nWhy it works: the invite file is valid calendar data, so there is no software bug to patch. The attack abuses calendar features and your trust, and the invite points you to a fake sign-in page.\n\nDo this: if an invite is unexpected, do not click Join. Open Teams or Outlook yourself, and report the invite to your IT team.\n\nSources\n- Check Point Blog (Oct 15, 2026): https://blog.checkpoint.com/securing-user-and-access/fake-calendar-invites-target-thousands-of-organizations-in-microsoft-credential-phishing-campaign/\n- TechRadar Pro (Oct 16, 2026): https://www.techradar.com/pro/security/fake-calendar-invites-hit-thousands-of-businesses-in-microsoft-credential-phishing-campaign\n- eSecurity Planet: https://www.esecurityplanet.com/cybersecurity-threats/news-microsoft-365-calendar-invite-phishing-campaign/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #phishing #Microsoft365"
+ "description": "Fake meeting invites are being used to steal Microsoft 365 logins. Check Point researchers flagged more than 302,386 unique phishing emails built around calendar invites, sent to more than 40,000 organisations. The surge began on September 25, 2026, and on October 8 almost 200,000 emails went out in a single day.\n\nWhy it works: the invite file is valid calendar data, so there is no software bug to patch. The attack abuses calendar features and your trust, and the invite points you to a fake sign-in page.\n\nDo this: if an invite is unexpected, do not click Join. Open Teams or Outlook yourself, and report the invite to your IT team.\n\nSources\n- Check Point Blog (Oct 15, 2026): https://blog.checkpoint.com/securing-user-and-access/fake-calendar-invites-target-thousands-of-organizations-in-microsoft-credential-phishing-campaign/\n- TechRadar Pro (Oct 16, 2026): https://www.techradar.com/pro/security/fake-calendar-invites-hit-thousands-of-businesses-in-microsoft-credential-phishing-campaign\n- eSecurity Planet: https://www.esecurityplanet.com/cybersecurity-threats/news-microsoft-365-calendar-invite-phishing-campaign/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #phishing #Microsoft365",
+ "style": "comic (palette 2, seed 55353)",
+ "editorial": "Evergreen explainer anchored to Check Point research (Oct 15, 2026); no last-72h story met the EU/US/India relevance + primary-source bar.",
+ "metricool": {
+  "post_id": 410436735,
+  "publication": "2026-10-30T05:00:00 Asia/Seoul",
+  "privacy": "private",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-3947567592816685853"
+ }
 }
