@@ -1,0 +1,15 @@
+Still using an iPhone XS or XR? Update it. Right now.
+
+On October twenty-sixth, Apple patched a CoreGraphics bug on older iPhones. Apple says it may have been exploited in real attacks.
+
+Apple's words: an extremely sophisticated attack, against specific targeted people.
+
+One booby-trapped file, and an attacker can run code on your phone.
+
+Here's the twist. Newer iPhones got this fix in late September. A day later, US agency CISA listed it as a known exploited bug. The older models waited about four more weeks.
+
+Analyst note: old devices get fixes last. If your company lets personal phones on its network, check the OS version at the door.
+
+Tonight: Settings, General, Software Update. And turn on automatic updates.
+
+Sources are in the description. Follow Securidge.

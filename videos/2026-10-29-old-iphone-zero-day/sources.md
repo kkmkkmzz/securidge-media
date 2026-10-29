@@ -1,0 +1,5 @@
+- Apple, "About the security content of iOS 18.7.11 and iPadOS 18.7.11" (Oct 26, 2026): https://support.apple.com/en-us/149225
+- CISA, KEV catalog addition for CVE-2026-86950 (Sep 29, 2026): https://content.govdelivery.com/accounts/USDHSCISA/bulletins/42d19b3
+- MacRumors (Oct 27, 2026): https://www.macrumors.com/2026/10/27/apple-fixes-coregraphics-flaw-older-iphones/
+- SecurityOnline (fix timeline, iOS 26.7.1): https://securityonline.info/coregraphics-zero-day-cve-2026-86950-ios-18/
+- Bitdefender (Oct 28, 2026): https://www.bitdefender.com/en-au/blog/hotforsecurity/apple-patches-older-iphones-exploited-coregraphics-zero-day

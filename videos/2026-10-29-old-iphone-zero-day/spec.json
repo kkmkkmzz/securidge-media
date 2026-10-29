@@ -1,0 +1,26 @@
+{
+ "slug": "2026-10-29-old-iphone-zero-day",
+ "format": "short",
+ "scenes": [
+  {"kind": "hook", "kicker": "Patch alert", "headline": "Still on an iPhone XS or XR?", "body": "Update it. Right now.",
+   "say": "Still using an iPhone XS or XR? Update it. Right now."},
+  {"kind": "point", "kicker": "What happened", "headline": "Apple patched a bug that may have been used in real attacks", "body": "CVE-2026-86950 · CoreGraphics · iOS 18.7.11 (Oct 26)", "source": "Apple security notes, Oct 26 2026",
+   "say": "On October twenty-sixth, Apple patched a CoreGraphics bug on older iPhones. Apple says it may have been exploited in real attacks."},
+  {"kind": "quote", "headline": "may have been exploited in an extremely sophisticated attack against specific targeted individuals", "body": "Apple",
+   "say": "Apple's words: an extremely sophisticated attack, against specific targeted people."},
+  {"kind": "point", "kicker": "How it works", "headline": "One booby-trapped file", "body": "Your phone processes a malicious file → attacker can run code on it.", "source": "Apple",
+   "say": "One booby-trapped file, and an attacker can run code on your phone."},
+  {"kind": "timeline", "kicker": "The twist", "headline": "Old iPhones waited ~4 weeks",
+   "items": [{"date": "SEP 28", "text": "Newer iPhones get the fix (iOS 26.7.1)"},
+             {"date": "SEP 29", "text": "US CISA lists it as a known exploited bug"},
+             {"date": "OCT 26", "text": "iPhone XS, XS Max, XR finally patched", "hot": true}],
+   "source": "CISA KEV · SecurityOnline",
+   "say": "Here's the twist. Newer iPhones got this fix in late September. A day later, US agency CISA listed it as a known exploited bug. The older models waited about four more weeks."},
+  {"kind": "note", "headline": "Old devices get fixes last.", "body": "Letting personal phones on your company network? Check the OS version at the door.",
+   "say": "Analyst note: old devices get fixes last. If your company lets personal phones on its network, check the OS version at the door."},
+  {"kind": "steps", "headline": "Do this tonight", "items": ["Settings → General → Software Update", "Turn on Automatic Updates"],
+   "say": "Tonight: Settings, General, Software Update. And turn on automatic updates."},
+  {"kind": "cta", "headline": "The security story behind the headline.", "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."}
+ ]
+}
