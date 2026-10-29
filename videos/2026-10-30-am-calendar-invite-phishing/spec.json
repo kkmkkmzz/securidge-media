@@ -1,0 +1,78 @@
+{
+ "slug": "2026-10-30-am-calendar-invite-phishing",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Phishing alert",
+   "headline": "A meeting invite you didn't expect?",
+   "body": "It could be a trap.",
+   "say": "Got a meeting invite you didn't expect? It could be a trap."
+  },
+  {
+   "kind": "stat",
+   "kicker": "The numbers",
+   "headline": "fake calendar-invite emails flagged",
+   "body": "sent to 40,000+ organisations",
+   "source": "Check Point, Oct 15 2026",
+   "say": "Check Point researchers flagged over three hundred thousand fake calendar invite emails, sent to more than forty thousand organisations.",
+   "big": "302,386"
+  },
+  {
+   "kind": "point",
+   "kicker": "The goal",
+   "headline": "Steal your Microsoft 365 login",
+   "body": "The invite points you to a fake sign-in page.",
+   "source": "Check Point · TechRadar",
+   "say": "The goal: steal your Microsoft three sixty five login, through a fake sign-in page."
+  },
+  {
+   "kind": "point",
+   "kicker": "Why it works",
+   "headline": "The file is real calendar data",
+   "body": "No software bug. It abuses your trust.",
+   "source": "Check Point",
+   "say": "Why does it work? The invite file is real calendar data. No software bug. It abuses calendar features, and your trust."
+  },
+  {
+   "kind": "timeline",
+   "kicker": "How fast it grew",
+   "headline": "A sudden surge",
+   "items": [
+    {
+     "date": "SEP 25",
+     "text": "Surge begins"
+    },
+    {
+     "date": "OCT 8",
+     "text": "Almost 200,000 emails in one day",
+     "hot": true
+    }
+   ],
+   "source": "Check Point",
+   "say": "The surge began on September twenty-fifth. On October eighth alone, almost two hundred thousand emails went out."
+  },
+  {
+   "kind": "note",
+   "headline": "A Join button is just a link.",
+   "body": "A calendar entry is not proof a meeting is real.",
+   "say": "Analyst note: a Join button is just a link. A calendar entry is not proof a meeting is real."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this today",
+   "items": [
+    "Unexpected invite? Don't click Join",
+    "Open Teams or Outlook yourself",
+    "Report it to your IT team"
+   ],
+   "say": "Today: if an invite is unexpected, don't click Join. Open Teams or Outlook yourself. And report it to your IT team."
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}

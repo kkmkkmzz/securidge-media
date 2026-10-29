@@ -1,0 +1,15 @@
+Got a meeting invite you didn't expect? It could be a trap.
+
+Check Point researchers flagged over three hundred thousand fake calendar invite emails, sent to more than forty thousand organisations.
+
+The goal: steal your Microsoft three sixty five login, through a fake sign-in page.
+
+Why does it work? The invite file is real calendar data. No software bug. It abuses calendar features, and your trust.
+
+The surge began on September twenty-fifth. On October eighth alone, almost two hundred thousand emails went out.
+
+Analyst note: a Join button is just a link. A calendar entry is not proof a meeting is real.
+
+Today: if an invite is unexpected, don't click Join. Open Teams or Outlook yourself. And report it to your IT team.
+
+Sources are in the description. Follow Securidge.

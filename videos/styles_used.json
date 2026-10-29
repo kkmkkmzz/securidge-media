@@ -5,5 +5,12 @@
   "style": "dossier",
   "palette": 1,
   "seed": 573133
+ },
+ {
+  "slug": "2026-10-30-am-calendar-invite-phishing",
+  "format": "short",
+  "style": "comic",
+  "palette": 2,
+  "seed": 55353
  }
 ]
