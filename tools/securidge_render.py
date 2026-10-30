@@ -12,7 +12,11 @@
   (family, palette, seed) combination never repeats. Log: videos/styles_used.json
 """
 import json, math, os, random, re, subprocess, sys, hashlib
+_REC = None   # element anchors recorded while a scene is drawn (for motion)
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+import numpy as np
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import motion_fx as MF
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -392,17 +396,24 @@ class Look:
         return t.upper() if self.st["upper"] else t
 
 
-def text_block(d, L, xy, text, mk, maxw, maxh, start, fill, lh=1.12, anchor_center=False):
+def text_block(d, L, xy, text, mk, maxw, maxh, start, fill, lh=1.12, anchor_center=False, tag=None):
     maxh = max(int(40 * L.s), maxh)
     f, lines, size = fit(d, text, mk, maxw, maxh, start, lh=lh)
     x, y = xy
     sw = max(2, size // 18)          # outline in background colour keeps text legible on busy art
+    boxes = []
     for ln in lines:
         if anchor_center:
             d.text((x + maxw / 2, y), ln, font=f, fill=fill, anchor="ma", stroke_width=sw, stroke_fill=L.bg)
+            bb = d.textbbox((x + maxw / 2, y), ln, font=f, anchor="ma", stroke_width=sw)
         else:
             d.text((x, y), ln, font=f, fill=fill, stroke_width=sw, stroke_fill=L.bg)
+            bb = d.textbbox((x, y), ln, font=f, stroke_width=sw)
+        boxes.append((bb[0] - 4, bb[1] - 4, bb[2] + 4, bb[3] + 4))
         y += int(size * lh)
+    if tag and _REC is not None and boxes:
+        _REC.setdefault(tag, []).append(dict(lines=boxes, texts=lines, font=f, fill=fill, sw=sw,
+                                             xy=xy, center=anchor_center))
     return y
 
 
@@ -431,6 +442,8 @@ def scrim(L):
 
 def draw_scene(L, sc, idx, n):
     W, H, s = L.W, L.H, L.s
+    global _REC
+    _REC = {}
     lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
     x0, x1 = L.mx, L.right
     maxw = x1 - x0
@@ -442,30 +455,30 @@ def draw_scene(L, sc, idx, n):
 
     if kind == "hook":
         y = text_block(d, L, (x0, y), L.U(sc["headline"]), L.head, maxw, avail_bottom - y - int(140 * s),
-                       int(170 * s), L.fg, lh=1.05)
+                       int(170 * s), L.fg, lh=1.05, tag="headline")
         if sc.get("body"):
             y += int(24 * s)
             d.rectangle([x0, y, x0 + int(14 * s), y + int(70 * s)], fill=L.ac)
             text_block(d, L, (x0 + int(40 * s), y + int(4 * s)), sc["body"], lambda z: L.body(z, True),
-                       maxw - int(40 * s), int(240 * s), int(66 * s), L.ac)
+                       maxw - int(40 * s), int(240 * s), int(66 * s), L.ac, tag="body")
     elif kind == "stat":
-        y = text_block(d, L, (x0, y), sc["big"], L.head, maxw, int((avail_bottom - y) * .45), int(300 * s), L.ac, lh=1.0)
+        y = text_block(d, L, (x0, y), sc["big"], L.head, maxw, int((avail_bottom - y) * .45), int(300 * s), L.ac, lh=1.0, tag="big")
         y += int(20 * s)
-        y = text_block(d, L, (x0, y), sc.get("headline", ""), L.head, maxw, int((avail_bottom - y) * .6), int(84 * s), L.fg)
+        y = text_block(d, L, (x0, y), sc.get("headline", ""), L.head, maxw, int((avail_bottom - y) * .6), int(84 * s), L.fg, tag="headline")
         if sc.get("body"):
             y += int(16 * s)
-            text_block(d, L, (x0, y), sc["body"], L.body, maxw, avail_bottom - y, int(48 * s), L.mu)
+            text_block(d, L, (x0, y), sc["body"], L.body, maxw, avail_bottom - y, int(48 * s), L.mu, tag="body")
     elif kind == "quote":
         d.text((x0 - int(10 * s), y - int(40 * s)), "“", font=L.head(int(260 * s)), fill=L.ac)
         y += int(150 * s)
         y = text_block(d, L, (x0, y), sc["headline"], lambda z: L.body(z, True), maxw, int((avail_bottom - y) * .85),
-                       int(84 * s), L.fg, lh=1.2)
+                       int(84 * s), L.fg, lh=1.2, tag="headline")
         if sc.get("body"):
             d.text((x0, y + int(24 * s)), "— " + sc["body"], font=L.mono(int(34 * s)), fill=L.mu)
     elif kind == "timeline":
         items = sc["items"]
         if sc.get("headline"):
-            y = text_block(d, L, (x0, y), L.U(sc["headline"]), L.head, maxw, int(260 * s), int(84 * s), L.fg) + int(30 * s)
+            y = text_block(d, L, (x0, y), L.U(sc["headline"]), L.head, maxw, int(260 * s), int(84 * s), L.fg, tag="headline") + int(30 * s)
         if L.vertical:
             gap = (avail_bottom - y) / max(1, len(items))
             gap = min(gap, int(240 * s))
@@ -478,7 +491,9 @@ def draw_scene(L, sc, idx, n):
                 d.ellipse([lx - rr, yy + int(20 * s) - rr, lx + rr, yy + int(20 * s) + rr], fill=L.ac if hot else L.fg)
                 d.text((lx + int(50 * s), yy), it["date"], font=L.mono(int(38 * s)), fill=L.ac if hot else L.mu)
                 text_block(d, L, (lx + int(50 * s), yy + int(52 * s)), it["text"], lambda z: L.body(z, True),
-                           maxw - int(80 * s), gap - int(60 * s), int(58 * s), L.fg)
+                           maxw - int(80 * s), gap - int(60 * s), int(58 * s), L.fg, tag="item")
+                _REC["item"][-1]["lines"].insert(0, (lx + int(30 * s), yy - 4, lx + int(50 * s) + d.textlength(it["date"], font=L.mono(int(38 * s))) + 4, yy + int(50 * s)))
+                _REC.setdefault("dot", []).append((lx, yy + int(20 * s)))
         else:
             gap = maxw / max(1, len(items))
             ly = y + int(40 * s)
@@ -489,24 +504,28 @@ def draw_scene(L, sc, idx, n):
                 d.ellipse([xx, ly - rr, xx + 2 * rr, ly + rr], fill=L.ac if hot else L.fg)
                 d.text((xx, ly + int(44 * s)), it["date"], font=L.mono(int(34 * s)), fill=L.ac if hot else L.mu)
                 text_block(d, L, (xx, ly + int(94 * s)), it["text"], lambda z: L.body(z, True),
-                           gap - int(40 * s), avail_bottom - ly - int(100 * s), int(44 * s), L.fg)
+                           gap - int(40 * s), avail_bottom - ly - int(100 * s), int(44 * s), L.fg, tag="item")
+                _REC["item"][-1]["lines"].insert(0, (xx - 4, ly + int(40 * s), xx + d.textlength(it["date"], font=L.mono(int(34 * s))) + 4, ly + int(84 * s)))
+                _REC.setdefault("dot", []).append((xx + rr, ly))
     elif kind == "steps":
         if sc.get("headline"):
-            y = text_block(d, L, (x0, y), L.U(sc["headline"]), L.head, maxw, int(300 * s), int(96 * s), L.fg) + int(30 * s)
+            y = text_block(d, L, (x0, y), L.U(sc["headline"]), L.head, maxw, int(300 * s), int(96 * s), L.fg, tag="headline") + int(30 * s)
         for k, it in enumerate(sc["items"]):
             num = f"{k + 1}"
             d.text((x0, y), num, font=L.head(int(84 * s)), fill=L.ac)
+            ny = y
             y = text_block(d, L, (x0 + int(90 * s), y + int(8 * s)), it, lambda z: L.body(z, True),
-                           maxw - int(90 * s), int(220 * s), int(64 * s), L.fg) + int(30 * s)
+                           maxw - int(90 * s), int(220 * s), int(64 * s), L.fg, tag="item") + int(30 * s)
+            _REC["item"][-1]["lines"].insert(0, (x0 - 4, ny, x0 + int(84 * s), ny + int(100 * s)))
     elif kind == "note":
         bw = int(520 * s)
         d.rectangle([x0, y, x0 + bw, y + int(64 * s)], fill=L.fg)
         d.text((x0 + int(20 * s), y + int(12 * s)), "ANALYST NOTE", font=L.mono(int(38 * s)), fill=L.bg)
         y += int(110 * s)
-        y = text_block(d, L, (x0, y), L.U(sc["headline"]), L.head, maxw, int((avail_bottom - y) * .5), int(110 * s), L.ac, lh=1.05)
+        y = text_block(d, L, (x0, y), L.U(sc["headline"]), L.head, maxw, int((avail_bottom - y) * .5), int(110 * s), L.ac, lh=1.05, tag="headline")
         if sc.get("body"):
             y += int(20 * s)
-            text_block(d, L, (x0, y), sc["body"], lambda z: L.body(z, True), maxw, avail_bottom - y, int(62 * s), L.fg, lh=1.22)
+            text_block(d, L, (x0, y), sc["body"], lambda z: L.body(z, True), maxw, avail_bottom - y, int(62 * s), L.fg, lh=1.22, tag="body")
     elif kind == "cta":
         cy = int(H * (.32 if L.vertical else .25))
         d.text((W // 2 if not L.vertical else x0, cy), "SECURIDGE", font=L.head(int(130 * s)), fill=L.ac,
@@ -520,15 +539,16 @@ def draw_scene(L, sc, idx, n):
     else:  # point
         room = avail_bottom - y
         y = text_block(d, L, (x0, y), L.U(sc.get("headline", "")), L.head, maxw,
-                       int(room * (.58 if sc.get("body") else .95)), int(130 * s), L.fg, lh=1.05)
+                       int(room * (.58 if sc.get("body") else .95)), int(130 * s), L.fg, lh=1.05, tag="headline")
         if sc.get("body"):
             y += int(30 * s)
-            text_block(d, L, (x0, y), sc["body"], lambda z: L.body(z, True), maxw, avail_bottom - y, int(64 * s), L.mu, lh=1.22)
+            text_block(d, L, (x0, y), sc["body"], lambda z: L.body(z, True), maxw, avail_bottom - y, int(64 * s), L.mu, lh=1.22, tag="body")
 
     if sc.get("source"):
         sy = L.cap_bottom - int(230 * s)
         chip(d, L, x0, sy, "SOURCE: " + sc["source"], L.pn, L.mu, int(26 * s))
-    return lay
+    anch, _REC = _REC, None
+    return lay, anch
 
 
 def chrome(L, frac):
@@ -614,6 +634,114 @@ def chunks(text, maxw=7):
             out.append(" ".join(cur))
     return out
 
+# ------------------------------------------------------------------ motion plan
+MARK_DUR = {"ring": 0.7, "underline": 0.45, "highlight": 0.5}
+
+def cue_time(word, scene_words, sc, a, b):
+    """Speech time at which `word` is spoken inside this scene (first match), else None."""
+    if not word:
+        return None
+    key = MF.norm(word)
+    if scene_words:
+        for w_ in scene_words:
+            if MF.norm(w_["text"]) == key or (len(key) > 3 and MF.norm(w_["text"]).startswith(key)):
+                return w_["start"]
+    toks = sc["say"].split()
+    for i, tk in enumerate(toks):
+        if MF.norm(tk) == key:
+            return a + (b - a) * i / max(1, len(toks))
+    return None
+
+def arrow_dist(keys, t):
+    if t <= keys[0][0]:
+        return 0.0
+    for (ta, da), (tb, db) in zip(keys, keys[1:]):
+        if t <= tb:
+            return MF.lerp(da, db, MF.ease_io(MF.prog(t, ta, tb)))
+    return keys[-1][1]
+
+def plan_motion(sc, anch, a, b, words, off, idx):
+    """Turn a scene + its element anchors into timed reveals and marks.
+    Spec option per scene:  "motion": {"fx": "ring|underline|highlight|zoom|zoom+ring",
+                                       "target": "headline|body|big|item:N", "word": "<spoken word>"}
+    (a list is allowed but one emphasis per scene is the house rule) and optional
+    "item_words": ["<word>", ...] to time steps/timeline items to the narration."""
+    kind = sc.get("kind", "point")
+    sw = words[off:off + len(sc["say"].split())] if words else None
+    P = dict(reveals=[], marks=[], count=None, arrow=None, zoom=None)
+    head = anch.get("headline", [None])[0]
+    t = a + 0.05
+    ready = {}    # element -> time it is fully visible
+    if idx == 0:   # hook is the silent title card: fully visible from frame 1
+        for kname in anch: ready[kname] = a
+    else:
+        if kind == "stat" and anch.get("big"):
+            big = anch["big"][0]
+            if len(big["texts"]) == 1 and MF.NUM.search(big["texts"][0]):
+                P["count"] = dict(rec=big, box=MF.union(big["lines"]), t0=a, t1=a + 0.9)
+            ready["big"] = a + 0.9; t = a + 0.45
+        if head and kind != "cta":
+            chars = sum(len(x) for x in head["texts"])
+            dur = min(1.2, max(0.5, 0.032 * chars))
+            P["reveals"].append(dict(boxes=head["lines"], t0=t, t1=t + dur, mode="type"))
+            t += dur; ready["headline"] = t
+        for bd in anch.get("body", []):
+            P["reveals"].append(dict(boxes=bd["lines"], t0=t + 0.05, t1=t + 0.45, mode="fade"))
+            ready["body"] = t + 0.45
+        items = anch.get("item", [])
+        if items:
+            iw = sc.get("item_words") or []
+            start = t + 0.1; span = max(0.3, (b - 0.5) - start)
+            times = []
+            for j, it in enumerate(items):
+                tj = cue_time(iw[j], sw, sc, a, b) if j < len(iw) else None
+                tj = max(start, tj) if tj is not None else start + span * j / len(items)
+                if times: tj = max(tj, times[-1] + 0.25)
+                times.append(tj)
+                P["reveals"].append(dict(boxes=it["lines"], t0=tj, t1=tj + 0.35, mode="fade"))
+                ready[f"item:{j}"] = tj + 0.35
+            dots = anch.get("dot")
+            if kind == "timeline" and dots and len(dots) == len(items):
+                cum = [0.0]
+                for p0, p1 in zip(dots, dots[1:]): cum.append(cum[-1] + math.dist(p0, p1))
+                keys = [(times[0] - 0.2, 0.0)] + [(tj, c) for tj, c in zip(times[1:], cum[1:])]
+                P["arrow"] = dict(pts=dots, keys=keys)
+    last_reveal = max([rv["t1"] for rv in P["reveals"]] + [P["count"]["t1"] if P["count"] else a])
+
+    specs = sc.get("motion")
+    if isinstance(specs, dict): specs = [specs]
+    if specs is None:   # house defaults: one emphasis per scene
+        hot = next((j for j, it in enumerate(sc.get("items", [])) if isinstance(it, dict) and it.get("hot")), None)
+        specs = {"hook": [{"fx": "underline", "target": "headline"}],
+                 "stat": [{"fx": "ring", "target": "big"}],
+                 "timeline": [{"fx": "ring", "target": f"item:{hot}"}] if hot is not None else [],
+                 "note": [{"fx": "highlight", "target": "headline"}],
+                 "quote": [{"fx": "highlight", "target": "headline"}],
+                 "point": [{"fx": "underline", "target": "headline"}]}.get(kind, [])
+    for m in specs:
+        box = MF.target_box(anch, m.get("target"))
+        if not box:
+            continue
+        tgt = m.get("target") or ("big" if "big" in anch else "headline")
+        t0 = cue_time(m.get("word"), sw, sc, a, b)
+        if t0 is None:
+            t0 = ready.get(tgt, last_reveal) + 0.15
+        t0 = max(t0, ready.get(tgt, a), a + (0.15 if idx == 0 else 0))
+        for fx in m.get("fx", "ring").split("+"):
+            if fx == "zoom":
+                z0 = max(t0, last_reveal + 0.05)
+                if b - z0 > 1.2:
+                    zmax = min(1.35, max(1.12, 0.62 * min(L_W[0] / max(1, box[2] - box[0]), L_W[1] / max(1, box[3] - box[1]))))
+                    hold = min(b - 0.45, z0 + 0.5 + max(0.8, m.get("hold", 2.0)))
+                    P["zoom"] = (z0, z0 + 0.5, hold, hold + 0.45, box, zmax)
+            elif fx in MARK_DUR:
+                tt = (P["zoom"][0] + 0.4) if ("zoom" in m.get("fx", "") and P["zoom"]) else t0
+                dur = MARK_DUR[fx] * (len(MF.target_lines(anch, m.get("target"))) if fx == "highlight" else 1)
+                P["marks"].append(dict(fx=fx, box=box, lines=MF.target_lines(anch, m.get("target")), t0=tt, t1=tt + min(1.4, dur)))
+    return P
+
+L_W = [1080, 1920]
+
 # ------------------------------------------------------------------ main
 def main(spec_path, audio, outp, wordsp=None):
     spec = json.load(open(spec_path))
@@ -622,6 +750,8 @@ def main(spec_path, audio, outp, wordsp=None):
     name, pal, seed = pick_style(spec["slug"], spec.get("style"))
     st = STYLES[name]
     L = Look(st, pal, W, H)
+    L_W[0], L_W[1] = W, H
+    MF.CANVAS = (W, H)
     r = random.Random(seed)
     print(f"style={name} palette={pal} seed={seed}")
 
@@ -661,7 +791,21 @@ def main(spec_path, audio, outp, wordsp=None):
     else:
         sb = scene_bounds(scenes, speech, silences(audio))
 
-    layers = [draw_scene(L, sc, i, len(scenes)) for i, sc in enumerate(scenes)]
+    drawn = [draw_scene(L, sc, i, len(scenes)) for i, sc in enumerate(scenes)]
+    layers = [x[0] for x in drawn]
+    # word slices per scene (for motion cues)
+    offs, o = [], 0
+    for sc in scenes:
+        offs.append(o); o += len(sc["say"].split())
+    plans = [plan_motion(sc, drawn[i][1], sb[i], sb[i + 1], words, offs[i], i) for i, sc in enumerate(scenes)]
+    ZQ = 1.5   # zoom scenes are re-drawn at 1.5x so zoomed text stays sharp
+    hires = {}
+    for i, pl in enumerate(plans):
+        if pl["zoom"]:
+            Lz = Look(st, pal, int(W * ZQ), int(H * ZQ))
+            hires[i] = draw_scene(Lz, scenes[i], i, len(scenes))[0]
+    arrs = [np.array(l) for l in layers]
+    ov = MF.Overlay(W, H)
     # caption schedule: (start, end, layer) in speech time
     caps = []; wi = 0
     for i, sc in enumerate(scenes):
@@ -697,17 +841,70 @@ def main(spec_path, audio, outp, wordsp=None):
         ts = t - HOLD
         ox = PADX + int(PADX * .8 * math.sin(ts / 9.0)); oy = PADY + int(PADY * .8 * math.cos(ts / 11.0))
         fr = bg.crop((ox, oy, ox + W, oy + H)).convert("RGBA")
-        fr.alpha_composite(chrome(L, min(1.0, ts / speech)))
         k = max(0, min(len(scenes) - 1, sum(1 for x in sb[1:-1] if ts >= x)))
         since = ts - sb[k]
-        lay = layers[k]
-        if k > 0 and since < 0.35:  # slide/fade in
-            e = 1 - (1 - since / 0.35) ** 3
-            tmp = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-            tmp.alpha_composite(lay, (0, int(50 * L.s * (1 - e))))
-            a = tmp.split()[3].point(lambda v: int(v * e))
-            tmp.putalpha(a); lay = tmp
+        pl = plans[k]
+        # --- camera
+        cam = None; z = 1.0
+        if pl["zoom"]:
+            zt0, zt1, zt2, zt3, zbox, zmax = pl["zoom"]
+            e = MF.ease_io(MF.prog(ts, zt0, zt1)) * (1 - MF.ease_io(MF.prog(ts, zt2, zt3)))
+            z = 1 + (zmax - 1) * e
+            if z > 1.001:
+                fx_ = MF.lerp(W / 2, (zbox[0] + zbox[2]) / 2, e); fy_ = MF.lerp(H / 2, (zbox[1] + zbox[3]) / 2, e)
+                ww, hh = W / z, H / z
+                wx = min(max(fx_ - ww / 2, 0), W - ww); wy = min(max(fy_ - hh / 2, 0), H - hh)
+                cam = (z, wx, wy)
+                fr = fr.crop((int(wx), int(wy), int(wx + ww), int(wy + hh))).resize((W, H), Image.BILINEAR)
+        # --- marks under the text (marker highlight)
+        under = [m for m in pl["marks"] if m["fx"] in ("highlight", "ring") and ts >= m["t0"]]
+        if under:   # rings sit behind the text: the text outline cuts them cleanly where they cross
+            ctx = ov.begin(cam)
+            for m in under:
+                if m["fx"] == "ring":
+                    MF.ring(ctx, m["box"], MF.prog(ts, m["t0"], m["t1"]), L.ac, L.s)
+                else:
+                    MF.highlight(ctx, m["lines"], MF.prog(ts, m["t0"], m["t1"]), L.ac, L.s)
+            fr.alpha_composite(ov.image())
+        # --- scene layer with word-synced reveals
+        if cam:
+            zq = hires[k]; wx, wy = cam[1], cam[2]; ww, hh = W / cam[0], H / cam[0]
+            lay = zq.crop((int(wx * ZQ), int(wy * ZQ), int((wx + ww) * ZQ), int((wy + hh) * ZQ))).resize((W, H), Image.BILINEAR)
+        else:
+            active = [rv for rv in pl["reveals"] if ts < rv["t1"]]
+            cnt = pl["count"] if pl["count"] and ts < pl["count"]["t1"] else None
+            if active or cnt:
+                arr = arrs[k].copy()
+                MF.apply_reveals(arr, active, ts)
+                if cnt:
+                    x0_, y0_, x1_, y1_ = [int(v) for v in cnt["box"]]
+                    arr[max(0, y0_):y1_, max(0, x0_):x1_, 3] = 0
+                lay = Image.fromarray(arr, "RGBA")
+                if cnt:
+                    MF.draw_count(lay, cnt["rec"], MF.prog(ts, cnt["t0"], cnt["t1"]), L.bg)
+            else:
+                lay = layers[k]
+            if k > 0 and since < 0.35:  # slide/fade in
+                e = 1 - (1 - since / 0.35) ** 3
+                tmp = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+                tmp.alpha_composite(lay, (0, int(50 * L.s * (1 - e))))
+                a_ = tmp.split()[3].point(lambda v: int(v * e))
+                tmp.putalpha(a_); lay = tmp
         fr.alpha_composite(lay)
+        # --- marks over the text (ring, underline, path arrow, typing cursor)
+        over = [m for m in pl["marks"] if m["fx"] == "underline" and ts >= m["t0"]]
+        cur = None if cam else MF.type_cursor(pl["reveals"], ts)
+        arrow = pl["arrow"] and ts >= pl["arrow"]["keys"][0][0]
+        if over or cur or arrow:
+            ctx = ov.begin(cam)
+            if arrow:
+                MF.path_arrow(ctx, pl["arrow"]["pts"], arrow_dist(pl["arrow"]["keys"], ts), L.ac, L.s)
+            for m in over:
+                MF.underline(ctx, m["box"], MF.prog(ts, m["t0"], m["t1"]), L.ac, L.s)
+            if cur:
+                MF.cursor(ctx, cur, L.ac, L.s)
+            fr.alpha_composite(ov.image())
+        fr.alpha_composite(chrome(L, min(1.0, ts / speech)))
         for (a, b, cl) in caps:
             if a <= ts < b:
                 fr.alpha_composite(cl); break

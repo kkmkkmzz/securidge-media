@@ -73,18 +73,33 @@ KM's own papers: use only if a published version with a DOI exists AND it is lis
    Every scene except hook/cta should carry `"source"` (short label). One `note` scene (Analyst note).
    `say` = exact narration for that scene. On-screen text must not contradict `say`.
    Hook rules: first sentence ≤ 10 words, concrete, names who is affected.
+   **Motion (required quality bar — no static slideshow).** The renderer animates every scene on the
+   narration's word timings: headlines type on with a cursor, `stat` numbers count up, `steps` and
+   `timeline` items appear one by one (timeline gets a progress arrow from dot to dot), bodies fade in.
+   Each scene also gets **one** emphasis mark. Defaults: hook = underline, stat = ring around the number,
+   timeline = ring on the item marked `"hot": true`, note/quote = marker highlight, point = underline.
+   Override per scene with
+   `"motion": {"fx": "ring|underline|highlight|zoom|zoom+ring", "target": "headline|body|big|item:N", "word": "<a word from say>"}`
+   — the mark starts exactly when that word is spoken. Use `zoom+ring` on the single most important
+   scene of the video (zoom needs ≥ 1.2 s of scene left after the text has appeared). For `steps` and
+   `timeline`, add `"item_words": ["<word>", ...]` (one spoken word per item) so each item appears as it
+   is said. One emphasis per scene — more is noise. Never put the mark on text the narration does not say.
 4. **Voice**: ElevenLabs `creative_generate_speech`, model `eleven_v4`,
    voice **Pulse** `mhgBlD8CmCSdwLDOIJpA` (high-energy American male; do not change).
    Prompt = the `say` texts joined by blank lines, `[excited]` at the start, `[serious]` before the
-   analyst note, `[excited]` before the final steps. Poll until complete. Use the first take.
+   analyst note, `[excited]` before the final steps. Pass `generations_count: 1` (one take is enough
+   and halves the credits). Poll until complete.
 5. **Timing**: `creative_add_flow_asset_node` (audio, that generation_id) →
    `creative_transcribe_audio` (`eleven_scribe_v1`, connect_from = that node) → poll →
    download `words_download_url` to `words.json`; download the take to `narration.mp3`.
-6. **Render**: `python3 tools/securidge_render.py spec.json narration.mp3 video.mp4 words.json`.
+6. **Render**: `pip install --break-system-packages -q pycairo numpy` once, then
+   `python3 tools/securidge_render.py spec.json narration.mp3 video.mp4 words.json`
+   (motion lives in `tools/motion_fx.py`; `tools/reference/motion_demo.py` is only the approved look reference).
    It picks a fresh art style and logs it to `videos/styles_used.json`. A "WARN word mismatch"
    means `say` texts differ from what was spoken — fix the spec words (not the audio) and re-render.
 7. **Look at it**: extract ~10 frames into a contact sheet and Read it. Check: nothing overflows,
-   text readable on the background, captions match narration, source chips present, nothing
+   text readable on the background, captions match narration, source chips present, rings fully on
+   screen and around the right element, typing finished before the scene ends, nothing
    placed in the right 170 px or below y=1460 on Shorts. Fix the spec and re-render if needed.
 8. **Archive**: `script.txt`, `sources.md`, `meta.json` (title ≤ 90 chars, description with every
    source URL + AI-voice disclosure, tags), then commit and push to `main`.
