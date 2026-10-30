@@ -64,7 +64,10 @@ KM's own papers: use only if a published version with a DOI exists AND it is lis
 1. **Repo**: `add_repo kkmkkmzz/securidge-media` with push access, then
    `git clone --depth 1 https://github.com/kkmkkmzz/securidge-media`. Read `videos/*/meta.json`
    titles to avoid repeats.
-2. **Research** (WebSearch / WebFetch): find candidates from the last 72 h (BleepingComputer,
+2. **Research** (WebSearch / WebFetch): first read `content/backlog.md` (KM's priority list —
+   famous recent CVEs first). If a bigger, verified story broke in the last 72 h, it wins; otherwise
+   take the highest unused backlog item that fits the slot, re-verify it, and move it to **Done** in
+   the same commit. Then find candidates from the last 72 h (BleepingComputer,
    SecurityWeek, The Record, The Hacker News, Dark Reading, vendor blogs, CISA KEV, NCSC, CERT-In).
    Shortlist 3, pick the one with the best verification + relevance to EU/US/India viewers.
    Fetch the primary source and confirm every number/date you will say.
