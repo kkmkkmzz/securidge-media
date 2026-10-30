@@ -33,7 +33,7 @@ with the task prompt, the task prompt wins.
 
 Long-form must be 16:9: a vertical video under 3 minutes is filed by YouTube as a Short.
 
-Both formats open with a **1.5-second still, silent frame** (the renderer adds it). That frame is
+Shorts open with a **0.7-second** and long-form with a **1.5-second still, silent frame** (the renderer adds it; 1.5 s felt slow on Shorts — KM, 2026-10-30).
 scene 1, so scene 1 must be a hook that works as a silent title card.
 
 Audience: Europe, US, India. Use international English, explain US-only acronyms once
@@ -76,12 +76,21 @@ KM's own papers: use only if a published version with a DOI exists AND it is lis
    **Motion (required quality bar — no static slideshow).** The renderer animates every scene on the
    narration's word timings: headlines type on with a cursor, `stat` numbers count up, `steps` and
    `timeline` items appear one by one (timeline gets a progress arrow from dot to dot), bodies fade in.
-   **No drawn marks** (KM, 2026-10-30): never draw circles/rings, underlines or progress lines — they
-   looked cheap. The renderer ignores `ring`/`underline` if written. Allowed optional emphasis:
-   `"motion": {"fx": "zoom", "target": "headline|body|big|item:N", "word": "<a word from say>"}` for
-   at most one scene per video. For `steps` and `timeline`, add `"item_words": ["<word>", ...]`
-   (one spoken word per item) so each item appears as it is said. A new focus style is being chosen
-   by KM; until this file says otherwise, keep emphasis to the above.
+   **Focus effects — use sparingly (KM, 2026-10-30).** Built-in motion (headline typing, number
+   count-up, items appearing as they are said) runs automatically. On top of that, choose focus
+   effects only where a scene genuinely has one thing the viewer must not miss — most scenes get
+   none. Budget: Shorts **2–3** per video, long-form **3–5**; never two in one scene; never on `cta`;
+   do not use the same effect twice in a row.
+   `"motion": {"fx": "<effect>", "target": "headline|body|big|item:N", "word": "<a word from say>"}`
+   - `spotlight` — everything except the target dims; best for one step/item or the key line among several.
+   - `color` — one spoken `word` inside the target turns accent colour the moment it is said; the
+     word must appear in both `say` and the on-screen target text. Best for the single key term.
+   - `pop` — a quick 0.4 s tap-scale of the target; best for a number or short verdict.
+   - `push` — slow 4% camera push-in across the scene; best for the hook or a sober analyst note.
+   - `zoom` — strong zoom into the target; at most once per video, only when it adds clarity.
+   **Never draw** circles/rings, underlines or progress lines — they looked cheap; the renderer
+   ignores them. For `steps`/`timeline` add `"item_words": ["<word>", ...]` (one spoken word per
+   item) so each item appears as it is said.
 4. **Voice**: ElevenLabs `creative_generate_speech`, model `eleven_v4`,
    voice **Pulse** `mhgBlD8CmCSdwLDOIJpA` (high-energy American male; do not change).
    Prompt = the `say` texts joined by blank lines, `[excited]` at the start, `[serious]` before the

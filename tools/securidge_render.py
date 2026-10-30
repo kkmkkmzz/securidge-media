@@ -24,6 +24,7 @@ FD = os.path.join(HERE, "fonts")
 SYS = "/usr/share/fonts/opentype/inter/"
 REGISTRY = os.path.join(REPO, "videos", "styles_used.json")
 HOLD = 1.5
+HOLD_BY_FORMAT = {"short": 0.7, "long": 1.5}   # KM 2026-10-30: 1.5 s felt slow on Shorts
 FPS = 30
 MAX_LONG = 150.0
 
@@ -401,8 +402,9 @@ def text_block(d, L, xy, text, mk, maxw, maxh, start, fill, lh=1.12, anchor_cent
     f, lines, size = fit(d, text, mk, maxw, maxh, start, lh=lh)
     x, y = xy
     sw = max(2, size // 18)          # outline in background colour keeps text legible on busy art
-    boxes = []
+    boxes, origins = [], []
     for ln in lines:
+        origins.append((x + maxw / 2, y) if anchor_center else (x, y))
         if anchor_center:
             d.text((x + maxw / 2, y), ln, font=f, fill=fill, anchor="ma", stroke_width=sw, stroke_fill=L.bg)
             bb = d.textbbox((x + maxw / 2, y), ln, font=f, anchor="ma", stroke_width=sw)
@@ -413,7 +415,7 @@ def text_block(d, L, xy, text, mk, maxw, maxh, start, fill, lh=1.12, anchor_cent
         y += int(size * lh)
     if tag and _REC is not None and boxes:
         _REC.setdefault(tag, []).append(dict(lines=boxes, texts=lines, font=f, fill=fill, sw=sw,
-                                             xy=xy, center=anchor_center))
+                                             xy=xy, center=anchor_center, origins=origins))
     return y
 
 
@@ -653,6 +655,18 @@ def cue_time(word, scene_words, sc, a, b):
             return a + (b - a) * i / max(1, len(toks))
     return None
 
+def recolor_word(lay, rec, word, col, bg):
+    """Redraw one spoken word of a text record in the accent colour, exactly over the original."""
+    d = ImageDraw.Draw(lay); key = word.lower()
+    for ln, (ox, oy) in zip(rec["texts"], rec["origins"]):
+        m = re.search(r"(?<![\w])" + re.escape(key) + r"[\w'%-]*", ln.lower())
+        if not m:
+            continue
+        x = ox - d.textlength(ln, font=rec["font"]) / 2 if rec["center"] else ox
+        x += d.textlength(ln[:m.start()], font=rec["font"])
+        d.text((x, oy), ln[m.start():m.end()], font=rec["font"], fill=col, stroke_width=rec["sw"], stroke_fill=bg)
+        return
+
 def arrow_dist(keys, t):
     if t <= keys[0][0]:
         return 0.0
@@ -669,7 +683,7 @@ def plan_motion(sc, anch, a, b, words, off, idx):
     "item_words": ["<word>", ...] to time steps/timeline items to the narration."""
     kind = sc.get("kind", "point")
     sw = words[off:off + len(sc["say"].split())] if words else None
-    P = dict(reveals=[], marks=[], count=None, arrow=None, zoom=None)
+    P = dict(reveals=[], marks=[], count=None, arrow=None, zoom=None, spot=None, color=None, pop=None, push=None)
     head = anch.get("headline", [None])[0]
     t = a + 0.05
     ready = {}    # element -> time it is fully visible
@@ -732,6 +746,23 @@ def plan_motion(sc, anch, a, b, words, off, idx):
                     zmax = min(1.35, max(1.12, 0.62 * min(L_W[0] / max(1, box[2] - box[0]), L_W[1] / max(1, box[3] - box[1]))))
                     hold = min(b - 0.45, z0 + 0.5 + max(0.8, m.get("hold", 2.0)))
                     P["zoom"] = (z0, z0 + 0.5, hold, hold + 0.45, box, zmax)
+            elif fx == "spotlight":
+                tname = tgt
+                rec_t = MF.target_lines(anch, tgt)
+                others = [MF.union(r_["lines"]) for nm, recs in anch.items() if nm != "dot"
+                          for r_ in recs if r_["lines"] is not rec_t]
+                P["spot"] = dict(others=others, t0=max(t0, last_reveal))
+            elif fx == "color":
+                nm, _, ix = tgt.partition(":")
+                recs = anch.get(nm) or []
+                rec = recs[int(ix)] if ix.isdigit() and int(ix) < len(recs) else (recs[0] if recs else None)
+                if rec and m.get("word"):
+                    P["color"] = dict(rec=rec, word=m["word"], t0=max(t0, ready.get(tgt, a)))
+            elif fx == "pop":
+                P["pop"] = dict(box=box, t0=max(t0, ready.get(tgt, a)))
+            elif fx == "push":
+                bx = box
+                P["push"] = dict(c=((bx[0] + bx[2]) / 2, (bx[1] + bx[3]) / 2), t0=a, t1=b)
             elif fx in MARK_DUR:
                 tt = (P["zoom"][0] + 0.4) if ("zoom" in m.get("fx", "") and P["zoom"]) else t0
                 dur = MARK_DUR[fx] * (len(MF.target_lines(anch, m.get("target"))) if fx == "highlight" else 1)
@@ -742,8 +773,10 @@ L_W = [1080, 1920]
 
 # ------------------------------------------------------------------ main
 def main(spec_path, audio, outp, wordsp=None):
+    global HOLD
     spec = json.load(open(spec_path))
     fmt = spec["format"]
+    HOLD = HOLD_BY_FORMAT.get(fmt, 1.5)
     W, H = (1080, 1920) if fmt == "short" else (1920, 1080)
     name, pal, seed = pick_style(spec["slug"], spec.get("style"))
     st = STYLES[name]
@@ -871,15 +904,34 @@ def main(spec_path, audio, outp, wordsp=None):
         else:
             active = [rv for rv in pl["reveals"] if ts < rv["t1"]]
             cnt = pl["count"] if pl["count"] and ts < pl["count"]["t1"] else None
-            if active or cnt:
+            spot = pl["spot"] if pl["spot"] and ts >= pl["spot"]["t0"] else None
+            col_ = pl["color"] if pl["color"] and ts >= pl["color"]["t0"] else None
+            pop = pl["pop"] if pl["pop"] and pl["pop"]["t0"] <= ts < pl["pop"]["t0"] + 0.4 else None
+            if active or cnt or spot or col_ or pop:
                 arr = arrs[k].copy()
                 MF.apply_reveals(arr, active, ts)
                 if cnt:
                     x0_, y0_, x1_, y1_ = [int(v) for v in cnt["box"]]
                     arr[max(0, y0_):y1_, max(0, x0_):x1_, 3] = 0
+                if spot:   # dim everything except the target
+                    f_ = 1 - 0.68 * MF.ease_out(MF.prog(ts, spot["t0"], spot["t0"] + 0.35))
+                    for bx in spot["others"]:
+                        x0_, y0_, x1_, y1_ = [int(v) for v in bx]
+                        sl = arr[max(0, y0_):y1_, max(0, x0_):x1_, 3]; sl[:] = (sl * f_).astype(np.uint8)
                 lay = Image.fromarray(arr, "RGBA")
                 if cnt:
                     MF.draw_count(lay, cnt["rec"], MF.prog(ts, cnt["t0"], cnt["t1"]), L.bg)
+                if col_:
+                    recolor_word(lay, col_["rec"], col_["word"], L.ac, L.bg)
+                if pop:    # quick 'tap' scale on the target, back to rest
+                    sc_ = 1 + 0.06 * math.sin(math.pi * MF.prog(ts, pop["t0"], pop["t0"] + 0.4))
+                    x0_, y0_, x1_, y1_ = [int(v) for v in pop["box"]]
+                    x0_, y0_ = max(0, x0_), max(0, y0_); x1_, y1_ = min(W, x1_), min(H, y1_)
+                    piece = lay.crop((x0_, y0_, x1_, y1_))
+                    nw, nh = int(piece.width * sc_), int(piece.height * sc_)
+                    big_ = piece.resize((nw, nh), Image.BICUBIC)
+                    clear = Image.new("RGBA", piece.size, (0, 0, 0, 0)); lay.paste(clear, (x0_, y0_))
+                    lay.alpha_composite(big_, (max(0, x0_ - (nw - piece.width) // 2), max(0, y0_ - (nh - piece.height) // 2)))
             else:
                 lay = layers[k]
             if k > 0 and since < 0.35:  # slide/fade in
@@ -889,6 +941,12 @@ def main(spec_path, audio, outp, wordsp=None):
                 a_ = tmp.split()[3].point(lambda v: int(v * e))
                 tmp.putalpha(a_); lay = tmp
         fr.alpha_composite(lay)
+        if pl["push"] and not cam:   # slow camera push-in across the scene
+            pz = 1 + 0.04 * MF.ease_io(MF.prog(ts, pl["push"]["t0"], pl["push"]["t1"]))
+            if pz > 1.001:
+                cx_, cy_ = pl["push"]["c"]; ww, hh = W / pz, H / pz
+                wx = min(max(MF.lerp(W / 2, cx_, .35) - ww / 2, 0), W - ww); wy = min(max(MF.lerp(H / 2, cy_, .35) - hh / 2, 0), H - hh)
+                fr = fr.crop((int(wx), int(wy), int(wx + ww), int(wy + hh))).resize((W, H), Image.BICUBIC)
         # --- marks over the text (ring, underline, path arrow, typing cursor)
         over = [m for m in pl["marks"] if m["fx"] == "underline" and ts >= m["t0"]]
         cur = None if cam else MF.type_cursor(pl["reveals"], ts)
