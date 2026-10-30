@@ -12,5 +12,12 @@
   "style": "comic",
   "palette": 2,
   "seed": 55353
+ },
+ {
+  "slug": "2026-10-30-pm-week-authenticator-sonet-virtualine",
+  "format": "long",
+  "style": "aurora",
+  "palette": 0,
+  "seed": 594592
  }
 ]

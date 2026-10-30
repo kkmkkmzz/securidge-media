@@ -1,0 +1,183 @@
+{
+ "slug": "2026-10-30-pm-week-authenticator-sonet-virtualine",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Week in Security · October 30",
+   "headline": "Android work phones. 2.58M ISP records. A criminal web host.",
+   "body": "Three stories that mattered this week",
+   "say": "Android work phones, So-net customers, and a criminal web host. Here is your Week in Security for October thirtieth."
+  },
+  {
+   "kind": "point",
+   "kicker": "Story 1 · Microsoft Authenticator",
+   "headline": "A rogue Android app could pose as Teams",
+   "body": "and collect access tokens for your work account",
+   "source": "Microsoft CVE-2026-80097 · Enclave",
+   "say": "Story one. A flaw in Microsoft Authenticator for Android let a malicious app pretend to be Microsoft Teams, and collect access tokens for your work account.",
+   "motion": {
+    "fx": "underline",
+    "target": "headline",
+    "word": "Teams"
+   }
+  },
+  {
+   "kind": "stat",
+   "kicker": "CVE-2026-80097",
+   "big": "8.6",
+   "headline": "CVSS score, rated Important by Microsoft",
+   "body": "Fixed in Authenticator for Android 6.2606.4246",
+   "source": "Microsoft CVE record · The Hacker News",
+   "say": "Microsoft scored it eight point six, rated Important, and shipped the fix in September. Microsoft says it has not been exploited.",
+   "motion": {
+    "fx": "ring",
+    "target": "big",
+    "word": "Important"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "What the tokens opened",
+   "headline": "Mail, files and calendars",
+   "body": "In Enclave's tests. Microsoft says the user must complete a sign-in step.",
+   "source": "Enclave · The Hacker News",
+   "say": "In Enclave's tests, those tokens opened mail, files and calendars. Microsoft says an attack needs the user to complete a sign-in step in Authenticator.",
+   "motion": {
+    "fx": "underline",
+    "target": "headline",
+    "word": "mail"
+   }
+  },
+  {
+   "kind": "stat",
+   "kicker": "Story 2 · Sony's So-net (Japan)",
+   "big": "2.58M",
+   "headline": "records exposed",
+   "body": "So-net and docomo plala members",
+   "source": "Sony Network Communications · NTT Docomo",
+   "say": "Story two. Sony Network Communications says attackers broke into the member database of its internet provider So-net, exposing more than two point five eight million customer records.",
+   "motion": {
+    "fx": "zoom+ring",
+    "target": "big",
+    "word": "exposing"
+   }
+  },
+  {
+   "kind": "timeline",
+   "kicker": "So-net timeline",
+   "headline": "Eight days to go public",
+   "items": [
+    {
+     "date": "OCT 19",
+     "text": "Unauthorized access"
+    },
+    {
+     "date": "OCT 23",
+     "text": "Server shut down"
+    },
+    {
+     "date": "OCT 24",
+     "text": "Leak confirmed"
+    },
+    {
+     "date": "OCT 27",
+     "text": "Public notice, email passwords reset",
+     "hot": true
+    }
+   ],
+   "item_words": [
+    "happened",
+    "shut",
+    "confirmed",
+    "public"
+   ],
+   "source": "Sony Network Communications · INTERNET Watch",
+   "say": "The break-in happened on October nineteenth. The company shut the server on the twenty-third, confirmed the leak on the twenty-fourth, and went public on the twenty-seventh.",
+   "motion": {
+    "fx": "ring",
+    "target": "item:3",
+    "word": "public"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "What was taken",
+   "headline": "54,401 email passwords exposed",
+   "body": "Plus names, phone numbers and dates of birth. The passwords were reset.",
+   "source": "Sony Network Communications · Help Net Security",
+   "say": "Names, phone numbers and dates of birth were exposed, plus fifty-four thousand four hundred and one email passwords. The company has reset those passwords.",
+   "motion": {
+    "fx": "underline",
+    "target": "headline",
+    "word": "passwords"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Story 3 · FBI operation",
+   "headline": "Bulletproof host Virtualine seized",
+   "body": "With police in Germany, the Netherlands and the UK",
+   "source": "US Justice Department · The Record",
+   "say": "Story three. On October twenty-seventh, the FBI seized the domain of Virtualine, a so-called bulletproof hosting provider, working with police in Germany, the Netherlands and the UK.",
+   "motion": {
+    "fx": "underline",
+    "target": "headline",
+    "word": "seized"
+   }
+  },
+  {
+   "kind": "quote",
+   "kicker": "Story 3 · Its own forum ad",
+   "headline": "“Ignored more abuse than your last three therapists”",
+   "body": "Virtualine on HackForums, June 2025",
+   "source": "US Justice Department · CyberScoop",
+   "say": "Prosecutors say it kept a criminal forum online after police complaints, and laundered money. It even boasted that it ignored more abuse than your last three therapists.",
+   "motion": {
+    "fx": "highlight",
+    "target": "headline",
+    "word": "ignored"
+   }
+  },
+  {
+   "kind": "note",
+   "headline": "Attackers want what already lets you in.",
+   "body": "Tokens, passwords and trusted hosting. MFA helps most on an updated device.",
+   "say": "Analyst note: the common thread this week is that attackers want what already lets you in. Tokens, passwords, and hosting that looks trusted. Multi-factor authentication helps most on an updated device.",
+   "motion": {
+    "fx": "highlight",
+    "target": "headline",
+    "word": "attackers"
+   }
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this today",
+   "items": [
+    "Update Microsoft Authenticator on Android",
+    "Install apps only from trusted stores",
+    "So-net customer? Set a new email password",
+    "Treat breach-themed messages as suspicious"
+   ],
+   "item_words": [
+    "Authenticator",
+    "stores",
+    "customer",
+    "suspicious"
+   ],
+   "say": "Do this today. Update Microsoft Authenticator on Android. Install apps only from trusted stores. If you are a So-net customer, set a new email password. And treat any message about the breach as suspicious.",
+   "motion": {
+    "fx": "ring",
+    "target": "item:0",
+    "word": "Update"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ],
+ "style": "aurora"
+}

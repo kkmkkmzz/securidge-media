@@ -1,0 +1,23 @@
+Android work phones, So-net customers, and a criminal web host. Here is your Week in Security for October thirtieth.
+
+Story one. A flaw in Microsoft Authenticator for Android let a malicious app pretend to be Microsoft Teams, and collect access tokens for your work account.
+
+Microsoft scored it eight point six, rated Important, and shipped the fix in September. Microsoft says it has not been exploited.
+
+In Enclave's tests, those tokens opened mail, files and calendars. Microsoft says an attack needs the user to complete a sign-in step in Authenticator.
+
+Story two. Sony Network Communications says attackers broke into the member database of its internet provider So-net, exposing more than two point five eight million customer records.
+
+The break-in happened on October nineteenth. The company shut the server on the twenty-third, confirmed the leak on the twenty-fourth, and went public on the twenty-seventh.
+
+Names, phone numbers and dates of birth were exposed, plus fifty-four thousand four hundred and one email passwords. The company has reset those passwords.
+
+Story three. On October twenty-seventh, the FBI seized the domain of Virtualine, a so-called bulletproof hosting provider, working with police in Germany, the Netherlands and the UK.
+
+Prosecutors say it kept a criminal forum online after police complaints, and laundered money. It even boasted that it ignored more abuse than your last three therapists.
+
+Analyst note: the common thread this week is that attackers want what already lets you in. Tokens, passwords, and hosting that looks trusted. Multi-factor authentication helps most on an updated device.
+
+Do this today. Update Microsoft Authenticator on Android. Install apps only from trusted stores. If you are a So-net customer, set a new email password. And treat any message about the breach as suspicious.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.
