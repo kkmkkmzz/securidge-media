@@ -22,5 +22,11 @@
  "description": "A Windows zero-day let booby-trapped files skip the warnings you rely on. When you download a file, Windows tags it as coming from the internet (Mark of the Web), and that tag is what triggers security warnings and Protected View. CVE-2026-96951, a flaw in Windows Shell, lets a specially crafted file slip past that tag.\n\nMicrosoft rates it 8.8 out of 10 and confirmed it is being exploited. It was fixed in the October 13, 2026 Patch Tuesday updates, and the US agency CISA added it to its Known Exploited Vulnerabilities catalog the same day, giving federal agencies until October 16 to patch. The attack still needs you to open the file.\n\nDo this tonight: open Settings, then Windows Update. Install everything and restart. If a file arrives unexpectedly, don't open it.\n\nSources\n- CISA KEV alert (Oct 13, 2026): https://content.govdelivery.com/accounts/USDHSCISA/bulletins/42f0923\n- IPA Japan, Microsoft October 2026 updates: https://www.ipa.go.jp/security/security-alert/2026/1014-ms.html\n- Help Net Security (Oct 14, 2026): https://www.helpnetsecurity.com/?p=387855\n- Security Affairs (Oct 14, 2026): https://securityaffairs.com/?p=200965\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #Windows #zeroday",
  "style": "terminal (palette 0, seed 449287)",
  "editorial": "Backlog P1 #1. No bigger verified last-72h story found. Re-verified with CISA KEV alert + IPA Japan (primary) and Help Net Security + Security Affairs.",
- "motion": "push on hook headline; color on 'tag' (scene 2 headline); pop on 8.8 (stat)"
+ "motion": "push on hook headline; color on 'tag' (scene 2 headline); pop on 8.8 (stat)",
+ "metricool": {
+  "post_id": 411565531,
+  "publication": "2026-10-31T05:00:00 Asia/Seoul",
+  "privacy": "private",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=1066259066611712209"
+ }
 }
