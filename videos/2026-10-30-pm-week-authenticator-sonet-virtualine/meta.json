@@ -2,9 +2,35 @@
  "title": "Week in Security: Authenticator token flaw, 2.58M So-net records, Virtualine seized",
  "type": "video",
  "series": "Week in Security",
- "voice": {"provider": "ElevenLabs", "voice_id": "mhgBlD8CmCSdwLDOIJpA", "name": "Pulse", "model": "eleven_v4", "flow": "cR3NdADhex6AhuRTWOAF", "generation": "iF6VRCKXTzFOxPQQiluS"},
- "tags": ["cybersecurity", "week in security", "Microsoft Authenticator", "CVE-2026-80097", "Android", "Sony", "So-net", "data breach", "Virtualine", "bulletproof hosting", "FBI", "security news"],
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "cR3NdADhex6AhuRTWOAF",
+  "generation": "iF6VRCKXTzFOxPQQiluS"
+ },
+ "tags": [
+  "cybersecurity",
+  "week in security",
+  "Microsoft Authenticator",
+  "CVE-2026-80097",
+  "Android",
+  "Sony",
+  "So-net",
+  "data breach",
+  "Virtualine",
+  "bulletproof hosting",
+  "FBI",
+  "security news"
+ ],
  "description": "Three security stories from the week of October 30, 2026.\n\n1. Microsoft Authenticator for Android (CVE-2026-80097, CVSS 8.6, rated Important): a malicious app could pose as Microsoft Teams and collect access tokens for a work account. In Enclave's tests the tokens opened mail, files and calendars. Microsoft fixed it in version 6.2606.4246 in September, says it has not been exploited, and says an attack needs the user to complete a sign-in step.\n\n2. Sony Network Communications says attackers accessed the member database of its internet provider So-net on October 19, exposing more than 2.58 million So-net and docomo plala customer records, plus 54,401 email passwords, which were reset on October 27.\n\n3. On October 27 the FBI seized the domain of Virtualine, a so-called bulletproof hosting provider, with police in Germany, the Netherlands and the UK. Prosecutors allege it kept a criminal forum online after complaints and laundered money.\n\nDo this: update Microsoft Authenticator on Android, install apps only from trusted stores, set a new email password if you are a So-net customer, and treat breach-themed messages as suspicious.\n\nSources\n- Microsoft CVE-2026-80097: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80097\n- The Hacker News: https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html\n- Help Net Security (Authenticator): https://www.helpnetsecurity.com/2026/10/27/microsoft-authenticator-vulnerability-patchedcve-2026-80097/\n- Sony Network Communications notice: https://www.so-net.ne.jp/info/2026/20261027_0001.html\n- NTT Docomo notice: https://www.docomo.ne.jp/info/notice/page/261027_05_m.html\n- INTERNET Watch: https://internet.watch.impress.co.jp/docs/news/2151585.html\n- Help Net Security (So-net): https://www.helpnetsecurity.com/2026/10/28/sony-network-communications-data-breach-so-net/\n- US Department of Justice: https://www.justice.gov/usao-edva/pr/bulletproof-website-domain-seized-international-law-enforcement-operation\n- The Record: https://therecord.media/fbi-seizure-csam-virtualine\n- CyberScoop: https://cyberscoop.com/virtualine-bulletproof-hosting-provider-seized/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #databreach #infosec",
  "style": "aurora (palette 0, seed 594592)",
- "motion": "underline/ring/highlight per scene; zoom+ring on 2.58M (So-net stat); ring on OCT 27 timeline item; ring on step 1"
+ "motion": "underline/ring/highlight per scene; zoom+ring on 2.58M (So-net stat); ring on OCT 27 timeline item; ring on step 1",
+ "metricool": {
+  "post_id": 410852837,
+  "publication": "2026-10-30T16:00:00 Asia/Seoul",
+  "privacy": "private",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=6548870416302885624"
+ }
 }
