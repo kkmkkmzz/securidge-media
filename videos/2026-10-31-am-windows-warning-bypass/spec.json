@@ -1,0 +1,100 @@
+{
+ "slug": "2026-10-31-am-windows-warning-bypass",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Windows zero-day",
+   "headline": "The warning that never appeared",
+   "body": "Patched, but only if you update.",
+   "say": "Windows users: that download warning may never appear. Here's why.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "How Windows protects you",
+   "headline": "Downloads get a hidden internet tag",
+   "body": "It's called Mark of the Web. It triggers the warnings.",
+   "source": "Microsoft \u00b7 Help Net Security",
+   "say": "When you download a file, Windows quietly marks it as coming from the internet. That tag, called Mark of the Web, is what triggers the warnings.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "tag"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "The flaw",
+   "headline": "A crafted file slips past the tag",
+   "body": "CVE-2026-96951 in Windows Shell. No warning, no Protected View.",
+   "source": "Microsoft \u00b7 Help Net Security",
+   "say": "A flaw in Windows Shell lets a specially crafted file slip past that tag. No warning. No Protected View."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Severity",
+   "big": "8.8",
+   "headline": "out of 10",
+   "body": "Microsoft confirmed it is being exploited",
+   "source": "Microsoft \u00b7 Security Affairs",
+   "say": "Microsoft rates it eight point eight out of ten, and confirmed attackers are already exploiting it.",
+   "motion": {
+    "fx": "pop",
+    "target": "big"
+   }
+  },
+  {
+   "kind": "timeline",
+   "kicker": "Timeline",
+   "headline": "Fixed, then flagged",
+   "items": [
+    {
+     "date": "OCT 13",
+     "text": "Microsoft fix ships; CISA lists it as exploited"
+    },
+    {
+     "date": "OCT 16",
+     "text": "Patch deadline for US federal agencies",
+     "hot": true
+    }
+   ],
+   "item_words": [
+    "October",
+    "sixteenth"
+   ],
+   "source": "CISA \u00b7 Microsoft",
+   "say": "Microsoft fixed it on October thirteenth, and the US agency CISA listed it as exploited the same day. Federal agencies had until October sixteenth to patch."
+  },
+  {
+   "kind": "note",
+   "headline": "No warning doesn't mean safe.",
+   "body": "This attack still needs you to open the file.",
+   "say": "Analyst note: no warning doesn't mean a file is safe. This attack still needs you to open it."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Settings, then Windows Update",
+    "Install updates and restart",
+    "Unexpected file? Don't open it"
+   ],
+   "item_words": [
+    "Settings",
+    "Install",
+    "unexpectedly"
+   ],
+   "say": "Tonight: open Settings, then Windows Update. Install everything and restart. And if a file arrives unexpectedly, don't open it."
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}

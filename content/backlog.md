@@ -14,7 +14,6 @@ Rules:
 
 | # | CVE | What it is (plain words) | Why viewers care | Best format | Status as of 2026-10-30 | Lead sources |
 |---|---|---|---|---|---|---|
-| 1 | CVE-2026-96951 (Windows Shell) | Malicious downloads lose the "this came from the internet" tag, so Windows skips its usual warnings | Every Windows user; the warning you trust silently disappears | Short (hook: "the warning that never appeared") + long Patch & Exploit Watch | Exploited in attacks; fixed Oct 13, 2026 Patch Tuesday | [PDQ](https://www.pdq.com/blog/patch-tuesday-october-2026/), [Gadget Hacks](https://windows.gadgethacks.com/news/microsoft-patch-tuesday-october-2026-exploited-windows-flaw/), Microsoft MSRC (confirm) |
 | 2 | CVE-2026-86950 (Apple CoreGraphics) | Opening a booby-trapped image/file can run code on iPhone/Mac | Hundreds of millions of Apple devices; "just an image" | Short | Exploited in targeted attacks; fixed iOS/iPadOS 26.7.1, macOS Tahoe 26.7.1, Sequoia 15.8.1 (Sep 28, 2026) | [BleepingComputer](https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/amp/), Apple security release notes (confirm) |
 | 3 | CVE-2026-85046 (Chrome V8) | Chrome's 6th exploited zero-day of 2026; a web page alone can trigger it | Billions of Chrome users; "why Chrome keeps asking you to restart" | Short | Fixed Chrome 152.0.7977.82/.83 (Sep 2026) | [eSecurity Planet](https://www.esecurityplanet.com/threats/news-google-chrome-cve-2026-85046-zero-day/), Chrome Releases blog (confirm) |
 | 4 | CVE-2026-102764 (BeyondTrust Remote Support / PRA) | Auth bypass in an IT remote-support tool; spies used it as a front door | Business audience; the tool IT uses to help you was the way in | Long (Breach Breakdown / Company Case Study) | Exploited since late Aug 2026 by a suspected China-nexus group; patched Oct 2026 | [BleepingComputer](https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/), BeyondTrust advisory, Mandiant (confirm) |
@@ -44,3 +43,4 @@ first hour of ransomware at work.
 | Phishing red flags | videos/2026-10-29-phishing-red-flags |
 | Calendar-invite phishing | videos/2026-10-30-am-calendar-invite-phishing |
 | Authenticator CVE-2026-80097, So-net breach, Virtualine seizure | videos/2026-10-30-pm-week-authenticator-sonet-virtualine |
+| Windows Shell MOTW bypass CVE-2026-96951 (P1 #1) | videos/2026-10-31-am-windows-warning-bypass |

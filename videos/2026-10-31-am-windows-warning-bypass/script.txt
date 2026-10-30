@@ -1,0 +1,15 @@
+Windows users: that download warning may never appear. Here's why.
+
+When you download a file, Windows quietly marks it as coming from the internet. That tag, called Mark of the Web, is what triggers the warnings.
+
+A flaw in Windows Shell lets a specially crafted file slip past that tag. No warning. No Protected View.
+
+Microsoft rates it eight point eight out of ten, and confirmed attackers are already exploiting it.
+
+Microsoft fixed it on October thirteenth, and the US agency CISA listed it as exploited the same day. Federal agencies had until October sixteenth to patch.
+
+Analyst note: no warning doesn't mean a file is safe. This attack still needs you to open it.
+
+Tonight: open Settings, then Windows Update. Install everything and restart. And if a file arrives unexpectedly, don't open it.
+
+Sources are in the description. Follow Securidge.
