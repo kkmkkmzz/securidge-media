@@ -76,14 +76,12 @@ KM's own papers: use only if a published version with a DOI exists AND it is lis
    **Motion (required quality bar — no static slideshow).** The renderer animates every scene on the
    narration's word timings: headlines type on with a cursor, `stat` numbers count up, `steps` and
    `timeline` items appear one by one (timeline gets a progress arrow from dot to dot), bodies fade in.
-   Each scene also gets **one** emphasis mark. Defaults: hook = underline, stat = ring around the number,
-   timeline = ring on the item marked `"hot": true`, note/quote = marker highlight, point = underline.
-   Override per scene with
-   `"motion": {"fx": "ring|underline|highlight|zoom|zoom+ring", "target": "headline|body|big|item:N", "word": "<a word from say>"}`
-   — the mark starts exactly when that word is spoken. Use `zoom+ring` on the single most important
-   scene of the video (zoom needs ≥ 1.2 s of scene left after the text has appeared). For `steps` and
-   `timeline`, add `"item_words": ["<word>", ...]` (one spoken word per item) so each item appears as it
-   is said. One emphasis per scene — more is noise. Never put the mark on text the narration does not say.
+   **No drawn marks** (KM, 2026-10-30): never draw circles/rings, underlines or progress lines — they
+   looked cheap. The renderer ignores `ring`/`underline` if written. Allowed optional emphasis:
+   `"motion": {"fx": "zoom", "target": "headline|body|big|item:N", "word": "<a word from say>"}` for
+   at most one scene per video. For `steps` and `timeline`, add `"item_words": ["<word>", ...]`
+   (one spoken word per item) so each item appears as it is said. A new focus style is being chosen
+   by KM; until this file says otherwise, keep emphasis to the above.
 4. **Voice**: ElevenLabs `creative_generate_speech`, model `eleven_v4`,
    voice **Pulse** `mhgBlD8CmCSdwLDOIJpA` (high-energy American male; do not change).
    Prompt = the `say` texts joined by blank lines, `[excited]` at the start, `[serious]` before the
@@ -98,8 +96,7 @@ KM's own papers: use only if a published version with a DOI exists AND it is lis
    It picks a fresh art style and logs it to `videos/styles_used.json`. A "WARN word mismatch"
    means `say` texts differ from what was spoken — fix the spec words (not the audio) and re-render.
 7. **Look at it**: extract ~10 frames into a contact sheet and Read it. Check: nothing overflows,
-   text readable on the background, captions match narration, source chips present, rings fully on
-   screen and around the right element, typing finished before the scene ends, nothing
+   text readable on the background, captions match narration, source chips present, typing finished before the scene ends, nothing
    placed in the right 170 px or below y=1460 on Shorts. Fix the spec and re-render if needed.
 8. **Archive**: `script.txt`, `sources.md`, `meta.json` (title ≤ 90 chars, description with every
    source URL + AI-voice disclosure, tags), then commit and push to `main`.

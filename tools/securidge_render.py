@@ -635,6 +635,7 @@ def chunks(text, maxw=7):
     return out
 
 # ------------------------------------------------------------------ motion plan
+BANNED_FX = {"ring", "underline"}
 MARK_DUR = {"ring": 0.7, "underline": 0.45, "highlight": 0.5}
 
 def cue_time(word, scene_words, sc, a, b):
@@ -705,19 +706,14 @@ def plan_motion(sc, anch, a, b, words, off, idx):
                 cum = [0.0]
                 for p0, p1 in zip(dots, dots[1:]): cum.append(cum[-1] + math.dist(p0, p1))
                 keys = [(times[0] - 0.2, 0.0)] + [(tj, c) for tj, c in zip(times[1:], cum[1:])]
-                P["arrow"] = dict(pts=dots, keys=keys)
+                P["arrow"] = None   # progress line disabled (KM 2026-10-30): items still appear in order
     last_reveal = max([rv["t1"] for rv in P["reveals"]] + [P["count"]["t1"] if P["count"] else a])
 
     specs = sc.get("motion")
     if isinstance(specs, dict): specs = [specs]
     if specs is None:   # house defaults: one emphasis per scene
         hot = next((j for j, it in enumerate(sc.get("items", [])) if isinstance(it, dict) and it.get("hot")), None)
-        specs = {"hook": [{"fx": "underline", "target": "headline"}],
-                 "stat": [{"fx": "ring", "target": "big"}],
-                 "timeline": [{"fx": "ring", "target": f"item:{hot}"}] if hot is not None else [],
-                 "note": [{"fx": "highlight", "target": "headline"}],
-                 "quote": [{"fx": "highlight", "target": "headline"}],
-                 "point": [{"fx": "underline", "target": "headline"}]}.get(kind, [])
+        specs = []   # KM 2026-10-30 evening: no drawn emphasis marks by default
     for m in specs:
         box = MF.target_box(anch, m.get("target"))
         if not box:
@@ -727,7 +723,9 @@ def plan_motion(sc, anch, a, b, words, off, idx):
         if t0 is None:
             t0 = ready.get(tgt, last_reveal) + 0.15
         t0 = max(t0, ready.get(tgt, a), a + (0.15 if idx == 0 else 0))
-        for fx in m.get("fx", "ring").split("+"):
+        for fx in m.get("fx", "zoom").split("+"):
+            if fx in BANNED_FX:   # KM: drawn lines and circles look cheap; never render them
+                continue
             if fx == "zoom":
                 z0 = max(t0, last_reveal + 0.05)
                 if b - z0 > 1.2:
