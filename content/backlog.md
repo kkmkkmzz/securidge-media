@@ -14,8 +14,6 @@ Rules:
 
 | # | CVE | What it is (plain words) | Why viewers care | Best format | Status as of 2026-10-30 | Lead sources |
 |---|---|---|---|---|---|---|
-| 2 | CVE-2026-86950 (Apple CoreGraphics) | Opening a booby-trapped image/file can run code on iPhone/Mac | Hundreds of millions of Apple devices; "just an image" | Short | Exploited in targeted attacks; fixed iOS/iPadOS 26.7.1, macOS Tahoe 26.7.1, Sequoia 15.8.1 (Sep 28, 2026) | [BleepingComputer](https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/amp/), Apple security release notes (confirm) |
-| 3 | CVE-2026-85046 (Chrome V8) | Chrome's 6th exploited zero-day of 2026; a web page alone can trigger it | Billions of Chrome users; "why Chrome keeps asking you to restart" | Short | Fixed Chrome 152.0.7977.82/.83 (Sep 2026) | [eSecurity Planet](https://www.esecurityplanet.com/threats/news-google-chrome-cve-2026-85046-zero-day/), Chrome Releases blog (confirm) |
 | 5 | CVE-2026-86218 (N-able N-Central, CVSS 9.8) | Unauthenticated remote code execution in software IT providers use to manage many companies at once | One hacked provider = many hacked customers (supply-chain idea, easy to visualise) | Long | Reported exploited; fixed in 2026.3.1.14; Singapore CSA alert Sep 9, 2026 | [CSA Singapore](https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-118/), N-able advisory (confirm) |
 | 6 | October 2026 Patch Tuesday size | Microsoft fixed a record 1,411 flaws in one month (70 critical) | Number hook for "why updates are so big" | Short | Oct 13, 2026 | [BleepingComputer on X](https://x.com/BleepinComputer/status/2110098145262899231), [Gadget Hacks](https://windows.gadgethacks.com/news/microsoft-patch-tuesday-october-2026-exploited-windows-flaw/) |
 | 7 | CVE-2026-14266 (7-Zip XZ decoder) | Opening a crafted .xz archive could run code | Very popular free tool that never auto-updates | Short (evergreen: "update the apps that don't update themselves") | **Not** known exploited (as of Jul 20, 2026 report) — must say so; fixed in 7-Zip 26.02 | [Rescana](https://rescana.com/post/cve-2026-14266-critical-7-zip-xz-archive-decoder-vulnerability-enables-remote-code-execution-patch-in-26-02), 7-Zip changelog (confirm) |
@@ -44,3 +42,5 @@ first hour of ransomware at work.
 | Authenticator CVE-2026-80097, So-net breach, Virtualine seizure | videos/2026-10-30-pm-week-authenticator-sonet-virtualine |
 | Windows Shell MOTW bypass CVE-2026-96951 (P1 #1) | videos/2026-10-31-am-windows-warning-bypass |
 | BeyondTrust Remote Support zero-day CVE-2026-102764 (P1 #4), Myth vs Fact | videos/2026-10-31-pm-beyondtrust-patch-myths |
+| Apple CoreGraphics CVE-2026-86950 (P1 #2) — already covered by the Oct 26 older-iPhone backport video | videos/2026-10-29-old-iphone-zero-day |
+| Chrome V8 zero-days CVE-2026-85046 (P1 #3) + newer CVE-2026-87491, "why Relaunch matters" | videos/2026-11-01-am-chrome-relaunch-zero-days |

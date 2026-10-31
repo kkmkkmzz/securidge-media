@@ -465,7 +465,7 @@ def draw_scene(L, sc, idx, n):
                        maxw - int(40 * s), int(240 * s), int(66 * s), L.ac, tag="body")
     elif kind == "stat":
         y = text_block(d, L, (x0, y), sc["big"], L.head, maxw, int((avail_bottom - y) * .45), int(300 * s), L.ac, lh=1.0, tag="big")
-        y += int(20 * s)
+        y += int(60 * s)  # serif numerals overhang the line box
         y = text_block(d, L, (x0, y), sc.get("headline", ""), L.head, maxw, int((avail_bottom - y) * .6), int(84 * s), L.fg, tag="headline")
         if sc.get("body"):
             y += int(16 * s)

@@ -1,0 +1,70 @@
+{
+ "slug": "2026-11-01-am-chrome-relaunch-zero-days",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Chrome zero-days",
+   "headline": "That Relaunch button matters",
+   "body": "Your browser isn't patched until you click it.",
+   "say": "Chrome users: that Relaunch button is not optional. Here's why.",
+   "motion": {"fx": "push", "target": "headline"}
+  },
+  {
+   "kind": "stat",
+   "kicker": "Chrome in 2026",
+   "big": "7",
+   "headline": "exploited zero-days fixed",
+   "body": "At least seven, attacked before a fix existed",
+   "source": "The Hacker News · Security Affairs",
+   "say": "This year Google has fixed at least seven Chrome zero-days that attackers were already exploiting.",
+   "motion": {"fx": "pop", "target": "big"}
+  },
+  {
+   "kind": "point",
+   "kicker": "The latest one",
+   "headline": "One booby-trapped web page",
+   "body": "CVE-2026-87491 in Chrome's V8 engine could run attacker code inside Chrome's sandbox.",
+   "source": "Canadian Cyber Centre · NVD",
+   "say": "The latest, in Chrome's V8 engine, could let an attacker run code inside Chrome's sandbox, just by getting you to load a booby-trapped web page.",
+   "motion": {"fx": "color", "target": "headline", "word": "page"}
+  },
+  {
+   "kind": "timeline",
+   "kicker": "Timeline",
+   "headline": "Reported, exploited, listed",
+   "items": [
+    {"date": "AUG 6", "text": "Researcher reports the bug to Google"},
+    {"date": "SEP 9", "text": "CISA lists it as exploited"},
+    {"date": "SEP 12", "text": "US federal patch deadline", "hot": true}
+   ],
+   "item_words": ["August", "ninth", "twelfth"],
+   "source": "Security Affairs · Canadian Cyber Centre",
+   "say": "A researcher reported it on August sixth. On September ninth, the US agency CISA listed it as exploited, and gave federal agencies until September twelfth to patch."
+  },
+  {
+   "kind": "note",
+   "headline": "Downloaded isn't installed.",
+   "body": "Edge, Brave, Opera and Vivaldi share this engine. Update them too.",
+   "source": "The Hacker News",
+   "say": "Analyst note: Chrome downloads fixes quietly, but they only take effect after a relaunch. And Edge, Brave, Opera and Vivaldi share this engine, so update those too."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Menu, then Help, then About Google Chrome",
+    "Let it update, click Relaunch",
+    "Repeat in your other browsers"
+   ],
+   "item_words": ["Help", "click", "other"],
+   "say": "Tonight: open the menu, then Help, then About Google Chrome. Let it update and click Relaunch. Then do the same in your other browsers."
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}

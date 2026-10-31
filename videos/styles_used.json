@@ -33,5 +33,12 @@
   "style": "blueprint",
   "palette": 2,
   "seed": 618096
+ },
+ {
+  "slug": "2026-11-01-am-chrome-relaunch-zero-days",
+  "format": "short",
+  "style": "newsprint",
+  "palette": 1,
+  "seed": 788
  }
 ]
