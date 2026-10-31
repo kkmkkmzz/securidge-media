@@ -1,0 +1,25 @@
+IT teams: patching this bug was not enough. Here are three myths about the BeyondTrust zero-day, and the facts that bust them.
+
+BeyondTrust Remote Support is the software help desks use to take control of a computer and fix it. A flaw in it let remote attackers skip the login entirely.
+
+BeyondTrust rates it nine point three out of ten, critical. It affects Remote Support version twenty-six point two point three and earlier.
+
+Myth one: if a bug is not public yet, nobody is using it.
+
+Fact: the first known compromises date to August twenty-ninth. BeyondTrust contained one on September twenty-eighth, patched its cloud customers by October ninth, went public on the fifteenth, and the US agency CISA flagged it as exploited on the sixteenth.
+
+Myth two: once you patch, you are safe.
+
+Fact: as Rapid7 puts it, patching does not remove persistence. Anything the attackers left behind is still there.
+
+Mandiant, part of Google, says the attackers planted a web shell, took root control, tried to pull credentials from the vault, and set up ways to stay in. It links them to a suspected China-nexus espionage group it calls Armory Castle.
+
+Myth three: no alerts means no intruders.
+
+Fact: the attackers deleted logs. BeyondTrust itself warns: an absence of known indicators does not establish that an appliance is uncompromised.
+
+Analyst note: the tools that hold the keys are the best front door. Limit who can reach them, and keep their logs somewhere attackers cannot erase.
+
+If your company runs it, do this today. Patch self-hosted servers. Hunt for signs of compromise, even after patching. Rotate the passwords it stores. And send its logs to an outside system.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.

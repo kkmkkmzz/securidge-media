@@ -1,0 +1,159 @@
+{
+ "slug": "2026-10-31-pm-beyondtrust-patch-myths",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Myth vs Fact · BeyondTrust zero-day",
+   "headline": "“We patched it, so we're safe.” Not quite.",
+   "body": "3 myths about CVE-2026-102764",
+   "say": "IT teams: patching this bug was not enough. Here are three myths about the BeyondTrust zero-day, and the facts that bust them.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "BeyondTrust Remote Support",
+   "headline": "The tool help desks use to take over your PC",
+   "body": "A flaw let remote attackers skip the login entirely",
+   "source": "BeyondTrust BT26-05 · Canadian Cyber Centre",
+   "say": "BeyondTrust Remote Support is the software help desks use to take control of a computer and fix it. A flaw in it let remote attackers skip the login entirely."
+  },
+  {
+   "kind": "stat",
+   "kicker": "CVE-2026-102764",
+   "big": "9.3",
+   "headline": "Critical severity (CVSS 4.0)",
+   "body": "Remote Support 26.2.3 and earlier",
+   "source": "BeyondTrust via Rapid7 · Canadian Cyber Centre",
+   "say": "BeyondTrust rates it nine point three out of ten, critical. It affects Remote Support version twenty-six point two point three and earlier.",
+   "motion": {
+    "fx": "pop",
+    "target": "big",
+    "word": "critical"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Myth 1",
+   "headline": "“If it's not public, no one is using it.”",
+   "say": "Myth one: if a bug is not public yet, nobody is using it."
+  },
+  {
+   "kind": "timeline",
+   "kicker": "Fact",
+   "headline": "Exploited for weeks before disclosure",
+   "items": [
+    {
+     "date": "AUG 29",
+     "text": "First known compromises"
+    },
+    {
+     "date": "SEP 28",
+     "text": "Hosted case contained"
+    },
+    {
+     "date": "OCT 9",
+     "text": "Cloud customers patched"
+    },
+    {
+     "date": "OCT 15",
+     "text": "Public disclosure",
+     "hot": true
+    },
+    {
+     "date": "OCT 16",
+     "text": "CISA: exploited"
+    }
+   ],
+   "item_words": [
+    "August",
+    "contained",
+    "cloud",
+    "public",
+    "flagged"
+   ],
+   "source": "BeyondTrust via Rapid7 · Canadian Cyber Centre · CISA KEV",
+   "say": "Fact: the first known compromises date to August twenty-ninth. BeyondTrust contained one on September twenty-eighth, patched its cloud customers by October ninth, went public on the fifteenth, and the US agency CISA flagged it as exploited on the sixteenth."
+  },
+  {
+   "kind": "point",
+   "kicker": "Myth 2",
+   "headline": "“Once you patch, you're safe.”",
+   "say": "Myth two: once you patch, you are safe."
+  },
+  {
+   "kind": "quote",
+   "kicker": "Fact",
+   "headline": "Patching does not remove persistence.",
+   "body": "Rapid7, October 19, 2026",
+   "source": "Rapid7",
+   "say": "Fact: as Rapid7 puts it, patching does not remove persistence. Anything the attackers left behind is still there.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "persistence"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Fact · What the attackers did",
+   "headline": "Web shell. Root access. The credential vault.",
+   "body": "Mandiant links it to a suspected China-nexus espionage group it calls Armory Castle",
+   "source": "Mandiant via Rapid7 · BleepingComputer",
+   "say": "Mandiant, part of Google, says the attackers planted a web shell, took root control, tried to pull credentials from the vault, and set up ways to stay in. It links them to a suspected China-nexus espionage group it calls Armory Castle."
+  },
+  {
+   "kind": "point",
+   "kicker": "Myth 3",
+   "headline": "“No alerts means no intruders.”",
+   "say": "Myth three: no alerts means no intruders."
+  },
+  {
+   "kind": "quote",
+   "kicker": "Fact · The attackers deleted logs",
+   "headline": "An absence of known indicators does not establish that an appliance is uncompromised.",
+   "body": "BeyondTrust",
+   "source": "BeyondTrust via Rapid7 · BleepingComputer",
+   "say": "Fact: the attackers deleted logs. BeyondTrust itself warns: an absence of known indicators does not establish that an appliance is uncompromised."
+  },
+  {
+   "kind": "note",
+   "headline": "The tools that hold the keys are the best front door.",
+   "body": "Limit who can reach them, and keep their logs somewhere attackers can't erase.",
+   "say": "Analyst note: the tools that hold the keys are the best front door. Limit who can reach them, and keep their logs somewhere attackers cannot erase."
+  },
+  {
+   "kind": "steps",
+   "headline": "If your company runs it",
+   "items": [
+    "Patch self-hosted servers (BT26-05-RS)",
+    "Hunt for compromise, even after patching",
+    "Rotate the passwords it stores",
+    "Send its logs to an outside system"
+   ],
+   "item_words": [
+    "Patch",
+    "Hunt",
+    "Rotate",
+    "logs"
+   ],
+   "source": "BeyondTrust · Rapid7 · Canadian Cyber Centre",
+   "say": "If your company runs it, do this today. Patch self-hosted servers. Hunt for signs of compromise, even after patching. Rotate the passwords it stores. And send its logs to an outside system.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:1",
+    "word": "Hunt"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ],
+ "style": "blueprint"
+}

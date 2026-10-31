@@ -1,0 +1,12 @@
+# Sources — Myth vs Fact: BeyondTrust Remote Support zero-day (CVE-2026-102764), October 31, 2026
+
+- Canadian Centre for Cyber Security, Alert AL26-025 (Oct 16, 2026) [primary, government CERT]: https://cyber.gc.ca/en/alerts-advisories/al26-025-critical-vulnerability-impacting-beyondtrust-remote-support-cve-2026-102764 — Remote Support 26.2.3 and earlier; auth bypass by spoofing (CWE-290); remote unauthenticated attacker, no user interaction; SaaS patched as of Oct 9; "being exploited in the wild"; patch BT26-05-RS for 24.3.1–26.2.3, older must upgrade first.
+- BeyondTrust advisory BT26-05 [primary]: https://www.beyondtrust.com/trust-center/security-advisories/bt26-05 — site refused automated fetch; its statements taken via Rapid7 / BleepingComputer / Rescana.
+- Rapid7 ETR (Oct 19, 2026): https://www.rapid7.com/blog/post/etr-cve-2026-102764-critical-beyondtrust-remote-support-authentication-bypass-exploited-in-the-wild — disclosed Oct 15; CVSSv4 9.3; two compromises dated to Aug 29; hosted case discovered/contained Sep 28; Mandiant corroboration Sep 30; SaaS patched by Oct 9; KEV Oct 16 (due Oct 19); Mandiant: web shell SAWFLY, BARECLAW, root, attempted credential-vault extraction, persistence, log deletion; ARMORY CASTLE "a suspected PRC-nexus espionage actor"; quote "Patching does not remove persistence."; BeyondTrust quote "an absence of known indicators does not establish that an appliance is uncompromised."
+- BleepingComputer (Oct 16, 2026): https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/ — exploited since late August; Mandiant/GTIG attribution to Armory Castle (formerly UNC5221); attackers wiped logs, escalated to root, deployed web shell; Shadowserver 1,400+ exposed instances (not used).
+- Rescana: https://www.rescana.com/post/beyondtrust-remote-support-cve-2026-102764-kev — CVSS 4.0 9.3 (BeyondTrust as CNA), NVD 9.8; KEV added Oct 16, due Oct 19.
+
+Quotes used (under 15 words): "Patching does not remove persistence." (Rapid7); "an absence of known indicators does not establish that an appliance is uncompromised" (BeyondTrust, via Rapid7).
+Numbers said: 9.3; 26.2.3; Aug 29; Sep 28; Oct 9; Oct 15; Oct 16. Headline "Exploited for weeks before disclosure" = Aug 29 → Oct 15 (47 days).
+Note: BleepingComputer gives Oct 8 for the SaaS patch; Canadian Cyber Centre and Rapid7 say "as of/by Oct 9" — video says "by October ninth".
+Backlog: P1 #4.

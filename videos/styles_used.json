@@ -26,5 +26,12 @@
   "style": "terminal",
   "palette": 0,
   "seed": 449287
+ },
+ {
+  "slug": "2026-10-31-pm-beyondtrust-patch-myths",
+  "format": "long",
+  "style": "blueprint",
+  "palette": 2,
+  "seed": 618096
  }
 ]
