@@ -1,0 +1,26 @@
+{
+ "title": "Why your Windows update is so big: 1,400+ flaws fixed in one month",
+ "type": "short",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "MbZIAOseTzHLkiEw60GA",
+  "generation": "ArnFXnMRNZaJnDKVUr4o"
+ },
+ "tags": [
+  "cybersecurity",
+  "Windows update",
+  "Patch Tuesday",
+  "Microsoft",
+  "October 2026",
+  "CVE-2026-96951",
+  "AI vulnerability discovery",
+  "security updates"
+ ],
+ "description": "In October 2026, Microsoft's Patch Tuesday fixed more than 1,400 security flaws in a single month - a record. Depending on who counted, the total is between 1,411 and 1,417. A year earlier, October 2025 had 180. That one month beat Microsoft's total for the whole of 2025.\n\nWhy so many? Microsoft's security team (MSRC) says AI-assisted research now contributes to vulnerability discovery, and update packages are addressing more and more CVEs. At least one of October's flaws, CVE-2026-96951 in Windows Shell, was already being exploited: it lets a crafted file skip the warning Windows normally shows for downloaded files.\n\nAnalyst note: a bigger update does not mean Windows got worse. It means more holes are being found and closed. Microsoft's own guidance: for many customers, the priority is to install security updates as soon as possible.\n\nDo this tonight: open Settings, then Windows Update. Click Check for updates. Restart when asked.\n\nSources\n- Microsoft MSRC, \"Using risk cohorts to prioritize security updates\" (Oct 13, 2026): https://www.microsoft.com/en-us/msrc/blog/2026/10/using-risk-cohorts-to-prioritize-security-updates\n- BleepingComputer, October 2026 Patch Tuesday fixes 1,411 flaws: https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/\n- Infosecurity Magazine (Oct 14, 2026): https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record-1/\n- iTnews, Microsoft floats risk cohorts as patch load hits record size: https://www.itnews.com.au/news/microsoft-floats-risk-cohorts-as-patch-load-hits-record-size-629624\n- Cybernews, October exceeds 2025's annual total: https://cybernews.com/security/microsoft-massive-security-update-1400-vulnerabilities/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #Windows #PatchTuesday",
+ "style": "pixel (palette 1, seed 211520)",
+ "editorial": "Backlog P1 #6 (October 2026 Patch Tuesday size). Re-verified: counts differ by outlet (BleepingComputer/Infosecurity 1,411; Cybernews 1,413; iTnews 1,417), so the video says 'over 1,400' and shows the range. Oct 2025 = 180 (iTnews, Cybernews); beats all of 2025 (Cybernews, Infosecurity). Primary: Microsoft MSRC blog Oct 13, 2026 (AI-assisted research line; 'install as soon as possible' line). Last-72h candidates checked (Binance theft, Ivanti/Cisco/GitLab KEV adds) - enterprise-only or unverified root cause, so backlog item used. CVE-2026-96951 mentioned briefly; it had its own video on Oct 31.",
+ "motion": "push on hook headline; pop on 1,400+ (stat); color on 'AI' (scene 4 headline)"
+}

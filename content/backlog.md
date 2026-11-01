@@ -14,7 +14,6 @@ Rules:
 
 | # | CVE | What it is (plain words) | Why viewers care | Best format | Status as of 2026-10-30 | Lead sources |
 |---|---|---|---|---|---|---|
-| 6 | October 2026 Patch Tuesday size | Microsoft fixed a record 1,411 flaws in one month (70 critical) | Number hook for "why updates are so big" | Short | Oct 13, 2026 | [BleepingComputer on X](https://x.com/BleepinComputer/status/2110098145262899231), [Gadget Hacks](https://windows.gadgethacks.com/news/microsoft-patch-tuesday-october-2026-exploited-windows-flaw/) |
 | 7 | CVE-2026-14266 (7-Zip XZ decoder) | Opening a crafted .xz archive could run code | Very popular free tool that never auto-updates | Short (evergreen: "update the apps that don't update themselves") | **Not** known exploited (as of Jul 20, 2026 report) — must say so; fixed in 7-Zip 26.02 | [Rescana](https://rescana.com/post/cve-2026-14266-critical-7-zip-xz-archive-decoder-vulnerability-enables-remote-code-execution-patch-in-26-02), 7-Zip changelog (confirm) |
 
 ## Priority 2 — real scam cases that work as Shorts
@@ -44,3 +43,4 @@ first hour of ransomware at work.
 | Apple CoreGraphics CVE-2026-86950 (P1 #2) — already covered by the Oct 26 older-iPhone backport video | videos/2026-10-29-old-iphone-zero-day |
 | Chrome V8 zero-days CVE-2026-85046 (P1 #3) + newer CVE-2026-87491, "why Relaunch matters" | videos/2026-11-01-am-chrome-relaunch-zero-days |
 | N-able N-central CVE-2026-86218 (P1 #5), Evergreen "one hacked IT tool, many hacked companies" | videos/2026-11-01-pm-it-provider-rmm-supply-chain |
+| October 2026 Patch Tuesday size, 1,400+ flaws (P1 #6) — "why your Windows update is so big" | videos/2026-11-02-am-record-windows-update |

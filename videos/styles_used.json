@@ -47,5 +47,12 @@
   "style": "topo",
   "palette": 0,
   "seed": 769613
+ },
+ {
+  "slug": "2026-11-02-am-record-windows-update",
+  "format": "short",
+  "style": "pixel",
+  "palette": 1,
+  "seed": 211520
  }
 ]

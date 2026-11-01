@@ -1,0 +1,87 @@
+{
+ "slug": "2026-11-02-am-record-windows-update",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Windows users",
+   "headline": "1,400+ flaws in one month",
+   "body": "Why updates got so big",
+   "say": "Windows users: in October, Microsoft fixed over fourteen hundred security flaws. In one month.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "stat",
+   "kicker": "October 2026",
+   "big": "1,400+",
+   "headline": "CVEs in one Patch Tuesday",
+   "body": "Counts range from 1,411 to 1,417. October 2025 had 180.",
+   "source": "BleepingComputer · iTnews",
+   "say": "Depending on who counted, it's between fourteen eleven and fourteen seventeen. A year earlier, October had one hundred eighty.",
+   "motion": {
+    "fx": "pop",
+    "target": "big"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "A record",
+   "headline": "More than all of 2025",
+   "body": "One month beat Microsoft's total for the whole of last year.",
+   "source": "Cybernews · Infosecurity",
+   "say": "That single month beat Microsoft's total for the whole of last year."
+  },
+  {
+   "kind": "point",
+   "kicker": "Why so many?",
+   "headline": "AI is finding more bugs",
+   "body": "Microsoft says AI-assisted research now contributes to vulnerability discovery.",
+   "source": "Microsoft MSRC",
+   "say": "Why? Microsoft says AI-assisted research now contributes to finding these bugs. More bugs found means more fixes.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "AI"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Already attacked",
+   "headline": "One was exploited",
+   "body": "CVE-2026-96951: a Windows Shell bug that skips the download warning.",
+   "source": "Infosecurity · Cybernews",
+   "say": "And at least one was already being exploited: a Windows Shell bug that skips the warning on downloaded files."
+  },
+  {
+   "kind": "note",
+   "headline": "Big updates aren't bad news.",
+   "body": "More holes found means more holes closed. Install, don't postpone.",
+   "source": "Microsoft MSRC",
+   "say": "Analyst note: a bigger update doesn't mean Windows got worse. It means more holes are being found and closed. Microsoft's advice is to install updates as soon as possible."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Settings, then Windows Update",
+    "Check for updates",
+    "Restart when asked"
+   ],
+   "item_words": [
+    "Settings",
+    "Check",
+    "Restart"
+   ],
+   "say": "Tonight: open Settings, then Windows Update. Check for updates. Restart when asked."
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}

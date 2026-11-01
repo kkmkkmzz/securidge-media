@@ -1,0 +1,15 @@
+Windows users: in October, Microsoft fixed over fourteen hundred security flaws. In one month.
+
+Depending on who counted, it's between fourteen eleven and fourteen seventeen. A year earlier, October had one hundred eighty.
+
+That single month beat Microsoft's total for the whole of last year.
+
+Why? Microsoft says AI-assisted research now contributes to finding these bugs. More bugs found means more fixes.
+
+And at least one was already being exploited: a Windows Shell bug that skips the warning on downloaded files.
+
+Analyst note: a bigger update doesn't mean Windows got worse. It means more holes are being found and closed. Microsoft's advice is to install updates as soon as possible.
+
+Tonight: open Settings, then Windows Update. Check for updates. Restart when asked.
+
+Sources are in the description. Follow Securidge.

@@ -530,7 +530,10 @@ def draw_scene(L, sc, idx, n):
             text_block(d, L, (x0, y), sc["body"], lambda z: L.body(z, True), maxw, avail_bottom - y, int(62 * s), L.fg, lh=1.22, tag="body")
     elif kind == "cta":
         cy = int(H * (.32 if L.vertical else .25))
-        d.text((W // 2 if not L.vertical else x0, cy), "SECURIDGE", font=L.head(int(130 * s)), fill=L.ac,
+        wsz = int(130 * s)
+        while wsz > 40 and d.textlength("SECURIDGE", font=L.head(wsz)) > maxw:
+            wsz -= 4  # some art-style fonts (e.g. pixel) are wider; keep the wordmark inside the safe area
+        d.text((W // 2 if not L.vertical else x0, cy), "SECURIDGE", font=L.head(wsz), fill=L.ac,
                anchor="ma" if not L.vertical else "la")
         cy += int(190 * s)
         text_block(d, L, (x0, cy), sc.get("headline", ""), lambda z: L.body(z, True), maxw, int(300 * s),
