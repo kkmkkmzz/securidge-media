@@ -40,5 +40,12 @@
   "style": "newsprint",
   "palette": 1,
   "seed": 788
+ },
+ {
+  "slug": "2026-11-01-pm-it-provider-rmm-supply-chain",
+  "format": "long",
+  "style": "topo",
+  "palette": 0,
+  "seed": 769613
  }
 ]

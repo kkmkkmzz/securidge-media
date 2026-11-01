@@ -1,0 +1,105 @@
+{
+ "slug": "2026-11-01-pm-it-provider-rmm-supply-chain",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Evergreen · Supply-chain risk",
+   "headline": "One hacked IT tool. Many hacked companies.",
+   "body": "The N-central flaw CVE-2026-86218",
+   "say": "Small businesses: your IT provider could be the way in. Here is how one hacked management tool can reach every computer it looks after.",
+   "motion": {"fx": "push", "target": "headline"}
+  },
+  {
+   "kind": "point",
+   "kicker": "What is RMM?",
+   "headline": "One console to run many companies' computers",
+   "body": "Remote monitoring and management: deploy software, run scripts, open remote sessions",
+   "source": "Field Effect · The Hacker News",
+   "say": "Many IT providers use remote monitoring and management tools, called RMM. From one console they deploy software, run scripts and open remote sessions on computers across many companies."
+  },
+  {
+   "kind": "point",
+   "kicker": "Real example · N-able N-central",
+   "headline": "Run code on the server without logging in",
+   "body": "CVE-2026-86218 · rated critical · versions before 2026.3.1.14",
+   "source": "N-able · Canadian Cyber Centre",
+   "say": "A real example is N-able N-central. In September, N-able fixed CVE-2026-86218, a critical flaw that let attackers run code on the N-central server without logging in."
+  },
+  {
+   "kind": "timeline",
+   "kicker": "September 2026",
+   "headline": "From break-in to emergency deadline",
+   "items": [
+    {"date": "SEP 4", "text": "Huntress probes a customer break-in"},
+    {"date": "SEP 5", "text": "N-able ships Hotfix 4"},
+    {"date": "SEP 8", "text": "CISA lists it as exploited", "hot": true},
+    {"date": "SEP 11", "text": "US agencies' patch deadline"}
+   ],
+   "item_words": ["Huntress", "Hotfix", "CISA", "eleventh"],
+   "source": "The Hacker News · Field Effect · Canadian Cyber Centre",
+   "say": "On September fourth, the security firm Huntress investigated a break-in at one customer's N-central server. On the fifth, N-able shipped Hotfix 4. On the eighth, the US agency CISA listed the flaw as exploited, and gave federal agencies until the eleventh to patch."
+  },
+  {
+   "kind": "point",
+   "kicker": "Keep the hedge",
+   "headline": "Which flaw was used? Unconfirmed.",
+   "body": "Huntress says limited logging means it cannot confirm the exploit. N-able later said the flaw was exploited in the wild.",
+   "source": "The Hacker News · Canadian Cyber Centre",
+   "say": "Huntress says limited logging means it cannot confirm which flaw was used in that break-in. N-able later told customers the flaw has been exploited in the wild."
+  },
+  {
+   "kind": "quote",
+   "kicker": "Why it matters",
+   "headline": "Compromise N-central, and you gain access to all connected computers and downstream systems.",
+   "body": "Yordan Ganchev, watchTowr",
+   "source": "watchTowr via The Hacker News",
+   "say": "Researchers at watchTowr, who reproduced the flaw, put it simply: compromise N-central, and you gain access to all connected computers and downstream systems.",
+   "motion": {"fx": "color", "target": "headline", "word": "downstream"}
+  },
+  {
+   "kind": "stat",
+   "kicker": "Not a one-off",
+   "big": "5",
+   "headline": "N-central security flaws patched in five weeks",
+   "body": "Hotfixes 1 to 4, August 2 to September 5, 2026",
+   "source": "Infosecurity Magazine · N-able release notes",
+   "say": "And it was not a one-off. Between August second and September fifth, N-able patched five N-central security flaws across four hotfixes.",
+   "motion": {"fx": "pop", "target": "big", "word": "five"}
+  },
+  {
+   "kind": "point",
+   "kicker": "If you run N-central yourself",
+   "headline": "Update to 2026.3 Hotfix 4 or later",
+   "body": "Self-hosted servers need the update; N-able says its hosted customers were already patched",
+   "source": "N-able",
+   "say": "If your company runs N-central on its own servers, update to 2026.3 Hotfix 4 or later. N-able says its hosted customers were already patched."
+  },
+  {
+   "kind": "note",
+   "headline": "Your security is partly your provider's security.",
+   "body": "The tool that can touch every computer deserves the strongest locks.",
+   "say": "Analyst note: your security is partly your provider's security. The tool that can touch every computer deserves the strongest locks, and you are allowed to ask about them."
+  },
+  {
+   "kind": "steps",
+   "headline": "Four questions for your IT provider",
+   "items": [
+    "Is your management tool patched, and how fast?",
+    "Is its login hidden from the open internet?",
+    "Would you notice a new admin account?",
+    "Do you review its logs and remote sessions?"
+   ],
+   "item_words": ["patched", "hidden", "notice", "review"],
+   "source": "N-able · Field Effect",
+   "say": "Four questions for your IT provider. Is your management tool patched, and how fast? Is its login hidden from the open internet? Would you notice a new admin account? And do you review its logs and remote sessions?",
+   "motion": {"fx": "spotlight", "target": "item:2", "word": "notice"}
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}
