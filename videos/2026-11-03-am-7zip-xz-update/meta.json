@@ -22,5 +22,11 @@
  "description": "7-Zip never updates itself, and older copies have a high-severity bug: CVE-2026-14266, a heap-based buffer overflow in how 7-Zip opens XZ archives. A booby-trapped file could let an attacker run code on your computer when you open it.\n\nThe US National Vulnerability Database (NVD) scores it 7.8 out of 10 (High); Trend Micro's Zero Day Initiative (ZDI), which published the advisory, rates it 7.0. The fix is 7-Zip 26.02, released June 25, 2026. As of the July reports, there was no public proof-of-concept and no reported exploitation in the wild, and it is not on the US agency CISA's Known Exploited Vulnerabilities list.\n\nAnalyst note: the bigger risk is apps that never update, sitting on a PC for years. Programs that bundle 7-Zip's code need their own fix from their vendor; updating standalone 7-Zip does not cover them.\n\nDo this tonight: open 7-Zip, then Help, then About. If it is older than 26.02, download the new version from 7-zip.org and run the installer.\n\nSources\n- ZDI-26-444 advisory via oss-security (Jul 17, 2026): https://www.openwall.com/lists/oss-security/2026/07/17/12\n- CVE-2026-14266 record (NVD/MITRE via OpenCVE): https://app.opencve.io/cve/CVE-2026-14266\n- The Hacker News (Jul 20, 2026): https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html\n- TechSpot: https://techspot.com/news/113175-7-zip-patches-flaw-could-run-malware-opening.html\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #7Zip #CVE",
  "style": "swiss (palette 2, seed 502)",
  "editorial": "Backlog P1 #7. Last-72h candidates (GitLab CVE-2026-97229 RCE, Ivanti Connect Secure zero-days) are enterprise-only, so backlog item used. Re-verified with ZDI-26-444 (primary, oss-security) and the CVE/NVD record, plus The Hacker News and TechSpot. No exploitation reports found beyond July; worded as 'as of the July reports'. Run delayed: narration download was blocked by egress policy until KM allowed elevenlabsusercontent.com, so slot moved from 05:00 to ~07:10 KST.",
- "motion": "push on hook headline; pop on 7.8 (stat); spotlight on step 2 'Download' (steps)"
+ "motion": "push on hook headline; pop on 7.8 (stat); spotlight on step 2 'Download' (steps)",
+ "metricool": {
+  "post_id": 414571208,
+  "publication": "2026-11-03T07:05:00 Asia/Seoul",
+  "privacy": "private",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=5456956638526850154"
+ }
 }
