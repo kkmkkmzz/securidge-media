@@ -1,0 +1,23 @@
+Boston Scientific's factories and shipping stalled after one cyberattack. Here is what it cost, and what every business can learn from it.
+
+Boston Scientific makes medical devices such as pacemakers and cardiac ablation systems. It reported twenty point one billion dollars in revenue last year.
+
+On August twenty-fifth, the company found unauthorized activity on its systems, and a network outage followed. The next day, it disclosed the incident to the US regulator, the SEC. On September eighth, it warned investors it would likely miss its forecasts. And on October twenty-eighth, third-quarter results showed the cost.
+
+The outage cut access to some operating systems and business applications. For a while, the company could not manufacture, process or ship some customer orders.
+
+According to reports of the earnings call, manufacturing and shipments were disrupted for eight business days.
+
+Third-quarter sales grew just one point five percent, to five point one three eight billion dollars, below an outlook of three to five percent. Management estimated the attack cut about three points of growth.
+
+The damage runs past the quarter. Boston Scientific now expects fourth-quarter sales to fall one to three percent, and full-year growth of about four and a quarter percent, down from five and a half to six and a half percent in July.
+
+What we still do not know matters too. So far, the company has not disclosed how the attackers got in. No group has publicly claimed the attack, and ransomware or data theft have not been confirmed.
+
+Chief executive Mike Mahoney praised his teams for working with urgency and resilience to restore operations.
+
+Analyst note: in attacks like this, downtime is the real price tag. The break-in is one moment. The lost days of making and shipping products are what show up in the results.
+
+Four lessons for any business. List what must keep running if IT goes dark. Rehearse a manual way to take and ship orders. Keep offline backups, and test restoring them. And separate factory systems from office IT.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.

@@ -1,0 +1,153 @@
+{
+ "slug": "2026-11-02-pm-boston-scientific-cyberattack",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Breach Breakdown · Boston Scientific",
+   "headline": "One cyberattack. Factories and shipping stalled.",
+   "body": "What it cost, and what every business can learn",
+   "say": "Boston Scientific's factories and shipping stalled after one cyberattack. Here is what it cost, and what every business can learn from it.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Who got hit",
+   "headline": "A global maker of heart and medical devices",
+   "body": "Pacemakers, cardiac ablation systems · 2025 revenue: $20.1 billion",
+   "source": "HIPAA Journal · BankInfoSecurity",
+   "say": "Boston Scientific makes medical devices such as pacemakers and cardiac ablation systems. It reported twenty point one billion dollars in revenue last year."
+  },
+  {
+   "kind": "timeline",
+   "kicker": "2026",
+   "headline": "From outage to the bill",
+   "items": [
+    {
+     "date": "AUG 25",
+     "text": "Unauthorized activity found; network outage"
+    },
+    {
+     "date": "AUG 26",
+     "text": "Incident disclosed to the SEC"
+    },
+    {
+     "date": "SEP 8",
+     "text": "Investors warned: forecasts likely missed",
+     "hot": true
+    },
+    {
+     "date": "OCT 28",
+     "text": "Third-quarter results show the cost"
+    }
+   ],
+   "item_words": [
+    "unauthorized",
+    "disclosed",
+    "warned",
+    "results"
+   ],
+   "source": "Boston Scientific SEC filings · Reuters",
+   "say": "On August twenty-fifth, the company found unauthorized activity on its systems, and a network outage followed. The next day, it disclosed the incident to the US regulator, the SEC. On September eighth, it warned investors it would likely miss its forecasts. And on October twenty-eighth, third-quarter results showed the cost."
+  },
+  {
+   "kind": "point",
+   "kicker": "What broke",
+   "headline": "Systems went dark, so orders could not ship",
+   "body": "The outage cut access to some operating systems and business applications",
+   "source": "Boston Scientific 8-K, September 8",
+   "say": "The outage cut access to some operating systems and business applications. For a while, the company could not manufacture, process or ship some customer orders."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Downtime",
+   "big": "8",
+   "headline": "business days of disrupted manufacturing and shipping",
+   "body": "As reported from the October 28 earnings call",
+   "source": "MarketBeat · Trefis",
+   "say": "According to reports of the earnings call, manufacturing and shipments were disrupted for eight business days."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Third quarter 2026",
+   "big": "1.5%",
+   "headline": "sales growth, below a 3 to 5% outlook",
+   "body": "Net sales: $5.138 billion · management: attack cut about 3 points of growth",
+   "source": "Boston Scientific Q3 release · MarketBeat",
+   "say": "Third-quarter sales grew just one point five percent, to five point one three eight billion dollars, below an outlook of three to five percent. Management estimated the attack cut about three points of growth.",
+   "motion": {
+    "fx": "pop",
+    "target": "big",
+    "word": "five"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "The outlook",
+   "headline": "Fourth-quarter sales now expected to fall",
+   "body": "Q4: down 1% to 3% · Full-year growth about 4.25%, down from 5.5% to 6.5% in July",
+   "source": "Boston Scientific Q3 release · Reuters",
+   "say": "The damage runs past the quarter. Boston Scientific now expects fourth-quarter sales to fall one to three percent, and full-year growth of about four and a quarter percent, down from five and a half to six and a half percent in July."
+  },
+  {
+   "kind": "point",
+   "kicker": "Still unknown",
+   "headline": "How the attackers got in: not disclosed",
+   "body": "No group has publicly claimed it. Ransomware and data theft are not confirmed.",
+   "source": "HIPAA Journal · BankInfoSecurity",
+   "say": "What we still do not know matters too. So far, the company has not disclosed how the attackers got in. No group has publicly claimed the attack, and ransomware or data theft have not been confirmed.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "disclosed"
+   }
+  },
+  {
+   "kind": "quote",
+   "kicker": "The company's view",
+   "headline": "working with urgency and resilience to restore operations",
+   "body": "Mike Mahoney, CEO, Q3 2026 results",
+   "source": "Boston Scientific",
+   "say": "Chief executive Mike Mahoney praised his teams for working with urgency and resilience to restore operations."
+  },
+  {
+   "kind": "note",
+   "headline": "Downtime is the real price tag.",
+   "body": "The break-in is one moment. Lost days of making and shipping show up in the results.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: in attacks like this, downtime is the real price tag. The break-in is one moment. The lost days of making and shipping products are what show up in the results."
+  },
+  {
+   "kind": "steps",
+   "headline": "Four lessons",
+   "items": [
+    "List what must keep running if IT goes dark",
+    "Rehearse a manual way to take and ship orders",
+    "Keep offline backups, and test restoring them",
+    "Separate factory systems from office IT"
+   ],
+   "item_words": [
+    "list",
+    "rehearse",
+    "offline",
+    "separate"
+   ],
+   "source": "Securidge analysis",
+   "say": "Four lessons for any business. List what must keep running if IT goes dark. Rehearse a manual way to take and ship orders. Keep offline backups, and test restoring them. And separate factory systems from office IT.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:3",
+    "word": "separate"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}
