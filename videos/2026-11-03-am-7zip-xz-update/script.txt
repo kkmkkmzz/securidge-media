@@ -1,0 +1,13 @@
+7-Zip users: this free app never updates itself, and older copies have a serious bug.
+
+The flaw is in how 7-Zip opens XZ archives. A booby-trapped file could let an attacker run code on your computer.
+
+The US vulnerability database rates it seven point eight out of ten. That's high.
+
+The fix is version twenty-six point zero two, out since June twenty-fifth. As of the July reports, no attacks had been seen.
+
+Analyst note: the bigger risk is apps that never update, sitting on your PC for years. And programs that bundle 7-Zip's code need their own fix.
+
+Tonight: open 7-Zip, then Help, then About. If it's older than twenty-six point zero two, download the new one from seven zip dot org. Run the installer.
+
+Sources are in the description. Follow Securidge.

@@ -1,0 +1,24 @@
+{
+ "slug": "2026-11-03-am-7zip-xz-update",
+ "format": "short",
+ "scenes": [
+  {"kind": "hook", "kicker": "7-Zip users", "headline": "7-Zip won't update itself", "body": "CVE-2026-14266",
+   "say": "7-Zip users: this free app never updates itself, and older copies have a serious bug.",
+   "motion": {"fx": "push", "target": "headline"}},
+  {"kind": "point", "kicker": "The bug", "headline": "A booby-trapped .xz file", "body": "Opening it could let an attacker run code on your PC.", "source": "ZDI-26-444",
+   "say": "The flaw is in how 7-Zip opens XZ archives. A booby-trapped file could let an attacker run code on your computer."},
+  {"kind": "stat", "kicker": "Severity", "big": "7.8", "headline": "High, out of 10", "body": "NVD score. ZDI rates it 7.0.", "source": "NVD · ZDI",
+   "say": "The US vulnerability database rates it seven point eight out of ten. That's high.",
+   "motion": {"fx": "pop", "target": "big"}},
+  {"kind": "point", "kicker": "Good news", "headline": "Fixed in 7-Zip 26.02", "body": "Out since June 25. No attacks reported as of July.", "source": "The Hacker News · ZDI",
+   "say": "The fix is version twenty-six point zero two, out since June twenty-fifth. As of the July reports, no attacks had been seen."},
+  {"kind": "note", "headline": "The risk: apps that never update.", "body": "Old copies sit for years. Apps that bundle 7-Zip code need their own fix.", "source": "The Hacker News",
+   "say": "Analyst note: the bigger risk is apps that never update, sitting on your PC for years. And programs that bundle 7-Zip's code need their own fix."},
+  {"kind": "steps", "headline": "Do this tonight", "items": ["7-Zip: Help, then About", "Older than 26.02? Download from 7-zip.org", "Run the installer"],
+   "item_words": ["Help", "Download", "Run"],
+   "say": "Tonight: open 7-Zip, then Help, then About. If it's older than twenty-six point zero two, download the new one from seven zip dot org. Run the installer.",
+   "motion": {"fx": "spotlight", "target": "item:1"}},
+  {"kind": "cta", "headline": "The security story behind the headline.", "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."}
+ ]
+}

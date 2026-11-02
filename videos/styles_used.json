@@ -61,5 +61,12 @@
   "style": "cutout",
   "palette": 1,
   "seed": 663035
+ },
+ {
+  "slug": "2026-11-03-am-7zip-xz-update",
+  "format": "short",
+  "style": "swiss",
+  "palette": 2,
+  "seed": 502
  }
 ]
