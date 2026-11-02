@@ -68,5 +68,12 @@
   "style": "swiss",
   "palette": 2,
   "seed": 502
+ },
+ {
+  "slug": "2026-11-03-am-gitlab-cvss10-exploited",
+  "format": "short",
+  "style": "hazard",
+  "palette": 1,
+  "seed": 606304
  }
 ]
