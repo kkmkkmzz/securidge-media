@@ -82,5 +82,12 @@
   "style": "circuit",
   "palette": 2,
   "seed": 64070
+ },
+ {
+  "slug": "2026-11-04-am-synology-nas-ransomware",
+  "format": "short",
+  "style": "risograph",
+  "palette": 2,
+  "seed": 46131
  }
 ]

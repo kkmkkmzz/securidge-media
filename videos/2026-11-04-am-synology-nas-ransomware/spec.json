@@ -1,0 +1,79 @@
+{
+ "slug": "2026-11-04-am-synology-nas-ransomware",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Synology NAS owners",
+   "headline": "Ransomware is hitting old NAS boxes",
+   "body": "Outdated DSM = target",
+   "say": "Got a Synology NAS at home or work? Ransomware is hitting the outdated ones.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "The warning",
+   "headline": "Patched in 2024. Still hit.",
+   "body": "Synology, Oct 29: devices that never updated are being attacked.",
+   "source": "Synology",
+   "say": "On October twenty-ninth, Synology warned that attackers are exploiting a bug it patched back in December 2024, on devices that never updated."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Exposed online",
+   "big": "380,000+",
+   "headline": "Synology NAS devices on the internet",
+   "body": "Shadowserver count. Not all are vulnerable.",
+   "source": "Shadowserver via BleepingComputer",
+   "say": "Shadowserver tracks over three hundred eighty thousand Synology devices exposed to the internet. Not all are vulnerable, but the outdated ones are targets.",
+   "motion": {
+    "fx": "pop",
+    "target": "big"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "What victims see",
+   "headline": "Files locked, ransom demanded",
+   "body": "Files renamed .L0CK3D and a note asking for payment.",
+   "source": "BleepingComputer",
+   "say": "Victims find their files renamed with a locked extension, and a note demanding payment, reportedly thousands of dollars."
+  },
+  {
+   "kind": "note",
+   "headline": "RAID is not a backup.",
+   "body": "If the NAS holds your only copy, ransomware takes it all. Keep one copy offline.",
+   "source": "IT-Connect",
+   "say": "Analyst note: RAID is not a backup. If your NAS holds the only copy, ransomware takes it all. Keep one copy offline."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Update DSM now",
+    "Turn on automatic updates",
+    "Block the admin page from the internet"
+   ],
+   "item_words": [
+    "update",
+    "Turn",
+    "Block"
+   ],
+   "source": "Synology \u00b7 BleepingComputer",
+   "say": "Tonight: update DSM. Turn on automatic updates. And block the admin page from the internet.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:2"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}

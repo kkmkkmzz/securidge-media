@@ -1,0 +1,13 @@
+Got a Synology NAS at home or work? Ransomware is hitting the outdated ones.
+
+On October twenty-ninth, Synology warned that attackers are exploiting a bug it patched back in December 2024, on devices that never updated.
+
+Shadowserver tracks over three hundred eighty thousand Synology devices exposed to the internet. Not all are vulnerable, but the outdated ones are targets.
+
+Victims find their files renamed with a locked extension, and a note demanding payment, reportedly thousands of dollars.
+
+Analyst note: RAID is not a backup. If your NAS holds the only copy, ransomware takes it all. Keep one copy offline.
+
+Tonight: update DSM. Turn on automatic updates. And block the admin page from the internet.
+
+Sources are in the description. Follow Securidge.
