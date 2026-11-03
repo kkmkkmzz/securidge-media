@@ -28,6 +28,11 @@
   "publication": "2026-11-04T07:15:00 Asia/Seoul",
   "privacy": "private",
   "note": "Run reached scheduling at 07:04 KST (past 04:55), so scheduled 10 min out per task rule instead of 05:00.",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-1822332171467733015"
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-1822332171467733015",
+  "youtube": {
+   "id": "qOfqOTKG4J0",
+   "url": "https://www.youtube.com/shorts/qOfqOTKG4J0",
+   "status": "PUBLISHED (private)"
+  }
  }
 }
