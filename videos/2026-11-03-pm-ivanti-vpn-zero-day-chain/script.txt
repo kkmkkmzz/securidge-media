@@ -1,0 +1,21 @@
+Companies on Ivanti VPNs: attackers chained three zero-days. Here is how the attack worked, and why one patch was not enough.
+
+Ivanti Connect Secure is an SSL VPN. It is the box that lets employees reach the company network from home, so it sits right on the internet.
+
+Researchers at Volexity say the attacks began on October third, against an appliance that was fully patched. On October thirteenth, Ivanti disclosed and fixed the first flaw. On October twenty-ninth, it patched two more. And on October thirtieth, the US cyber agency CISA added them to its list of known exploited bugs.
+
+The chain had three steps. First, bypass the login check. Then, run code through a file upload race. Finally, escalate to root, full control of the device, without ever logging in.
+
+Once inside, the attackers took stored credentials, then searched Active Directory for local admin passwords and BitLocker recovery keys, the keys that unlock encrypted laptops.
+
+And it was hard to spot. No web shell was left behind, logs were edited, and code was changed only in memory. Ivanti's own Integrity Checker Tool missed it.
+
+Here is the catch. If you patched on October thirteenth, you are not done. Those versions are still open to the two newer flaws. The fixed versions are on screen.
+
+CISA gave US federal agencies until November second to fix the root flaw and check for compromise, and until November thirteenth for the third one.
+
+Analyst note: your VPN is the front door, and attackers keep testing it. Patch it like an emergency, and watch it with your own network monitoring, because a clean scan is not proof.
+
+What to do this week. Upgrade every Connect Secure appliance to a fixed release. Don't trust a clean Integrity Checker scan on its own. Preserve memory and logs before you reboot or reset. And if you suspect compromise, rotate the exposed credentials.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.

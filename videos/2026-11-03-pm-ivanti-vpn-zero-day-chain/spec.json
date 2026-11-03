@@ -1,0 +1,111 @@
+{
+ "slug": "2026-11-03-pm-ivanti-vpn-zero-day-chain",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Patch & Exploit Watch · Ivanti",
+   "headline": "Three zero-days. One VPN. Root access.",
+   "body": "Ivanti Connect Secure · CVE-2026-104935, -111357, -118527",
+   "say": "Companies on Ivanti VPNs: attackers chained three zero-days. Here is how the attack worked, and why one patch was not enough.",
+   "motion": {"fx": "push", "target": "headline"}
+  },
+  {
+   "kind": "point",
+   "kicker": "What is it",
+   "headline": "The box that lets staff work from home",
+   "body": "Ivanti Connect Secure: an SSL VPN appliance at the edge of company networks",
+   "source": "Help Net Security · Volexity",
+   "say": "Ivanti Connect Secure is an SSL VPN. It is the box that lets employees reach the company network from home, so it sits right on the internet."
+  },
+  {
+   "kind": "timeline",
+   "kicker": "2026",
+   "headline": "Three weeks, three flaws",
+   "items": [
+    {"date": "OCT 3", "text": "Attacks begin on a fully patched appliance", "hot": true},
+    {"date": "OCT 13", "text": "Ivanti discloses and fixes the first flaw"},
+    {"date": "OCT 29", "text": "Two more flaws patched"},
+    {"date": "OCT 30", "text": "CISA adds them to its exploited list"}
+   ],
+   "item_words": ["began", "disclosed", "patched", "added"],
+   "source": "Volexity · Canadian Cyber Centre",
+   "say": "Researchers at Volexity say the attacks began on October third, against an appliance that was fully patched. On October thirteenth, Ivanti disclosed and fixed the first flaw. On October twenty-ninth, it patched two more. And on October thirtieth, the US cyber agency CISA added them to its list of known exploited bugs."
+  },
+  {
+   "kind": "steps",
+   "kicker": "How the chain worked",
+   "headline": "From no login to full control",
+   "items": [
+    "Bypass the login · CVE-2026-104935",
+    "Run code through an upload race · same CVE",
+    "Escalate to root · CVE-2026-111357"
+   ],
+   "item_words": ["bypass", "run", "escalate"],
+   "source": "Volexity",
+   "say": "The chain had three steps. First, bypass the login check. Then, run code through a file upload race. Finally, escalate to root, full control of the device, without ever logging in."
+  },
+  {
+   "kind": "point",
+   "kicker": "What they went after",
+   "headline": "Passwords, and the keys to locked laptops",
+   "body": "Stored LDAP credentials taken · Active Directory searched for LAPS admin passwords and BitLocker recovery keys",
+   "source": "Volexity · Help Net Security",
+   "say": "Once inside, the attackers took stored credentials, then searched Active Directory for local admin passwords and BitLocker recovery keys, the keys that unlock encrypted laptops."
+  },
+  {
+   "kind": "point",
+   "kicker": "Hard to see",
+   "headline": "Ivanti's Integrity Checker missed it",
+   "body": "No web shell · logs edited · code changed only in memory",
+   "source": "Volexity",
+   "say": "And it was hard to spot. No web shell was left behind, logs were edited, and code was changed only in memory. Ivanti's own Integrity Checker Tool missed it.",
+   "motion": {"fx": "color", "target": "headline", "word": "missed"}
+  },
+  {
+   "kind": "point",
+   "kicker": "The catch",
+   "headline": "Patched in October? Patch again.",
+   "body": "Versions fixed on Oct 13, such as 22.8R2.5, are still open to the two newer flaws. Fixed: 25.1.1.3 · 22.8R2.6",
+   "source": "Canadian Cyber Centre · Security Affairs",
+   "say": "Here is the catch. If you patched on October thirteenth, you are not done. Those versions are still open to the two newer flaws. The fixed versions are on screen."
+  },
+  {
+   "kind": "stat",
+   "kicker": "CISA deadline · US federal agencies",
+   "big": "Nov 2",
+   "headline": "to patch the root flaw and check for compromise",
+   "body": "CVE-2026-118527: by Nov 13",
+   "source": "CISA via Help Net Security · Security Affairs",
+   "say": "CISA gave US federal agencies until November second to fix the root flaw and check for compromise, and until November thirteenth for the third one.",
+   "motion": {"fx": "pop", "target": "big", "word": "second"}
+  },
+  {
+   "kind": "note",
+   "headline": "Your VPN is the front door.",
+   "body": "Patch it like an emergency, and watch it with your own monitoring. A clean scan is not proof.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: your VPN is the front door, and attackers keep testing it. Patch it like an emergency, and watch it with your own network monitoring, because a clean scan is not proof."
+  },
+  {
+   "kind": "steps",
+   "headline": "What to do this week",
+   "items": [
+    "Upgrade every appliance to a fixed release",
+    "Don't trust a clean Integrity Checker scan alone",
+    "Preserve memory and logs before rebooting",
+    "If compromise is suspected, rotate credentials"
+   ],
+   "item_words": ["upgrade", "trust", "preserve", "rotate"],
+   "source": "Volexity · Help Net Security",
+   "say": "What to do this week. Upgrade every Connect Secure appliance to a fixed release. Don't trust a clean Integrity Checker scan on its own. Preserve memory and logs before you reboot or reset. And if you suspect compromise, rotate the exposed credentials.",
+   "motion": {"fx": "spotlight", "target": "item:1", "word": "trust"}
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}

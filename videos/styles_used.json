@@ -75,5 +75,12 @@
   "style": "hazard",
   "palette": 1,
   "seed": 606304
+ },
+ {
+  "slug": "2026-11-03-pm-ivanti-vpn-zero-day-chain",
+  "format": "long",
+  "style": "circuit",
+  "palette": 2,
+  "seed": 64070
  }
 ]
