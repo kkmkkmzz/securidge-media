@@ -22,5 +22,12 @@
  "description": "Got a Synology NAS at home or work? Ransomware is hitting the outdated ones.\n\nOn October 29, 2026, Synology warned that attackers are exploiting a vulnerability it patched in December 2024, targeting devices still running outdated versions of its DSM operating system, to encrypt data and demand a ransom. Synology has not publicly named the exact flaw.\n\nThe Shadowserver Foundation tracks more than 380,000 Synology NAS devices exposed to the internet (not all of them are vulnerable). Victims report files renamed with a .L0CK3D extension and a ransom note, reportedly demanding thousands of dollars.\n\nAnalyst note: RAID is not a backup. If your NAS holds the only copy of your files, ransomware takes it all. Keep one copy offline.\n\nDo this tonight:\n1. Update DSM now.\n2. Turn on automatic updates.\n3. Block the DSM admin page from the internet; use a VPN for remote access.\n\nSources\n- Synology (Oct 29, 2026): https://synology.com/en-global/company/news/article/C3RB3R\n- Synology advisory SA-24:20: https://www.synology.com/zh-tw/security/advisory/Synology_SA_24_20\n- BleepingComputer (Nov 2, 2026): https://bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks\n- IT-Connect (Oct 29, 2026): https://www.it-connect.tech/c3rb3r-ransomware-is-hitting-synology-nas-devices-how-to-protect-yours/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #Synology #ransomware",
  "style": "risograph (palette 2, seed 46131)",
  "editorial": "Not from backlog (P1 empty; top unused P2 #8 IC3 recovery scam is from August). Chosen as the most actionable recent story for ordinary users: Synology advisory Oct 29, broad coverage Nov 2-3 (BleepingComputer, Shadowserver count). Verified with Synology's own release (primary) + BleepingComputer + IT-Connect. Spoken length 47 s. First render (synthwave) had a 4-line scene-2 headline over the sun graphic; shortened headline and re-rendered.",
- "motion": "push on hook headline; pop on 380,000+ (stat); spotlight on steps item 3 'Block the admin page from the internet'"
+ "motion": "push on hook headline; pop on 380,000+ (stat); spotlight on steps item 3 'Block the admin page from the internet'",
+ "metricool": {
+  "post_id": 415847227,
+  "publication": "2026-11-04T07:15:00 Asia/Seoul",
+  "privacy": "private",
+  "note": "Run reached scheduling at 07:04 KST (past 04:55), so scheduled 10 min out per task rule instead of 05:00.",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-1822332171467733015"
+ }
 }
