@@ -1,0 +1,109 @@
+{
+ "slug": "2026-11-04-pm-enisa-threat-landscape-2026",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Research Explained · ENISA",
+   "headline": "8,257 attacks on Europe, explained",
+   "body": "ENISA Threat Landscape 2026 · covering all of 2025",
+   "say": "European organisations: the EU's cyber agency studied 8,257 incidents. Here is what it found, where the data is thin, and what to do.",
+   "motion": {"fx": "push", "target": "headline"}
+  },
+  {
+   "kind": "point",
+   "kicker": "What is it",
+   "headline": "Europe's yearly threat report",
+   "body": "Published September 22, 2026 · incidents from January 1 to December 31, 2025 · mostly open sources, plus data shared by EU member states",
+   "source": "ENISA · ComplexDiscovery",
+   "say": "ENISA, the EU Agency for Cybersecurity, published its Threat Landscape report on September 22. It covers incidents from all of 2025, mostly from public reporting, plus data shared by EU member states."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Most common",
+   "big": "51.3%",
+   "headline": "of incidents were DDoS attacks",
+   "body": "Mostly hacktivist campaigns with little large-scale impact",
+   "source": "ENISA",
+   "say": "The most common incident was DDoS, flooding a website until it goes offline. That was 51.3 percent of incidents, mostly hacktivist campaigns with little large-scale impact.",
+   "motion": {"fx": "pop", "target": "big"}
+  },
+  {
+   "kind": "stat",
+   "kicker": "Most damaging",
+   "big": "47.3%",
+   "headline": "of money-driven attacks were ransomware",
+   "body": "Financially motivated activity: 29.3% of incidents, and the most impactful threat in the short term",
+   "source": "ENISA · ComplexDiscovery",
+   "say": "But the damage comes from criminals chasing money. Ransomware made up 47.3 percent of financially motivated activity, which ENISA calls the most impactful threat in the short term."
+  },
+  {
+   "kind": "point",
+   "kicker": "How attackers got in",
+   "headline": "Mostly through unpatched holes",
+   "body": "Where the entry route was known: 60.4% exploited a vulnerability · 20.7% misconfiguration or accidental exposure",
+   "source": "ENISA",
+   "say": "How did attackers get in? Where the entry route was known, 60.4 percent exploited a vulnerability, and 20.7 percent came from misconfiguration or accidental exposure."
+  },
+  {
+   "kind": "point",
+   "kicker": "The limit",
+   "headline": "That rests on a thin slice",
+   "body": "Only 5.2% of unauthorised-access incidents had an identifiable entry route",
+   "source": "ENISA · ComplexDiscovery",
+   "say": "Here is the limit. Only 5.2 percent of those break-ins had a known entry route, so that figure rests on a thin slice of the data.",
+   "motion": {"fx": "color", "target": "headline", "word": "thin"}
+  },
+  {
+   "kind": "point",
+   "kicker": "Who was hit",
+   "headline": "Public administration topped the list",
+   "body": "31.8% of incidents · most of them DDoS",
+   "source": "ENISA · ComplexDiscovery",
+   "say": "Public administration was the most targeted sector, with 31.8 percent of incidents, most of them DDoS."
+  },
+  {
+   "kind": "point",
+   "kicker": "What about AI",
+   "headline": "AI boosts skills, no breakthrough yet",
+   "body": "Attackers mostly used off-the-shelf AI tools · ENISA expects more attack stages to be AI-enabled in 2026",
+   "source": "ENISA",
+   "say": "What about AI? Attackers mostly used off-the-shelf AI tools to boost the skills they already had, not for breakthroughs. But ENISA expects more stages of an attack to be AI-enabled in 2026."
+  },
+  {
+   "kind": "point",
+   "kicker": "Read with care",
+   "headline": "What the numbers can't show",
+   "body": "Based largely on public reporting · espionage often surfaces months or years later · many attacker claims could not be verified",
+   "source": "ENISA",
+   "say": "Read it with care. The data leans on public reporting, spying often comes to light months or years later, and many attacker claims could not be verified."
+  },
+  {
+   "kind": "note",
+   "headline": "Loud attacks get counted. Quiet ones do damage.",
+   "body": "DDoS fills the charts, but unpatched systems and ransomware are where the losses are.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: loud attacks get counted, quiet ones do the damage. DDoS fills the charts, but unpatched systems and ransomware are where the real losses are."
+  },
+  {
+   "kind": "steps",
+   "headline": "What to do this month",
+   "items": [
+    "Patch internet-facing systems first",
+    "Check for misconfigured or exposed services",
+    "Have a DDoS plan for public websites",
+    "Keep offline backups and test a restore"
+   ],
+   "item_words": ["patch", "check", "plan", "backups"],
+   "source": "Securidge analysis · ENISA",
+   "say": "What to do this month. Patch your internet-facing systems first. Check for misconfigured or exposed services. Have a plan for DDoS on your public websites. And keep offline backups, then test a restore.",
+   "motion": {"fx": "spotlight", "target": "item:3", "word": "backups"}
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}

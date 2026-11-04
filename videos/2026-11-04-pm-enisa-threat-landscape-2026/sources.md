@@ -1,0 +1,12 @@
+# Sources - ENISA Threat Landscape 2026 (Research Explained)
+
+Primary
+- ENISA, "ENISA Threat Landscape 2026" (PDF, September 2026, TLP:CLEAR): https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf - opened this run. Reporting period Jan 1 - Dec 31, 2025; 8,257 incidents, mainly open sources plus anonymised data from EU Member States and Cyber Partnership Programme members; DDoS 51.3% of incidents, unauthorised access 39.5%; ideology-driven 57.3% (mostly DDoS, little large-scale impact); financially motivated 29.3% (exec summary), ransomware 47.3% of it, most impactful threat in the short term; where the vector of unauthorised access was identifiable (5.2% of such incidents) 60.4% exploited a vulnerability, 20.7% misconfiguration or accidental exposure; public administration 31.8% of incidents; attackers mainly used consumer-grade/closed AI tools to augment existing skills rather than for breakthroughs; in 2026 more kill-chain phases likely directly enabled by AI; limitations: open-source reporting, espionage disclosed months or years later, unverified claims and breach listings.
+
+Secondary
+- ComplexDiscovery (Oct 2, 2026): https://complexdiscovery.com/enisa-threat-landscape-2026-finds-ddos-leads-incident-counts-while-ransomware-stays-most-impactful-in-the-short-term/ - release date September 22, 2026; same period and 8,257 incidents; DDoS 51.3%, ideology 57.3%, financially motivated 29.3%, ransomware 47.3% of financially motivated claims; public administration 31.8% (81.8% of it ideology-driven DDoS); 60.4% rests on the 5.2% with an identifiable vector; AI off-the-shelf tools; notes the press release conflicts with the report on several figures and the report is the version to cite.
+- IEU Monitoring (Athens, Sept 22, 2026): https://ieu-monitoring.com/editorial/enisa-warns-cyber-dependencies-widen-risks-to-eu-digital-infrastructure/1250546/ - publication date (search result dateline only, not opened).
+
+Not used: press-release figures that differ from the report (cybercrime 36%, ransomware 40% of all events); 8,257 vs 4,875 comparison (different period, not like-for-like); NoName057(16) verification rate and CVE counts (single secondary source only); phishing share of social engineering (not needed).
+
+Analysis (not ENISA's words): the analyst note and the "what to do this month" list are Securidge analysis drawn from the findings above.

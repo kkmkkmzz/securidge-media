@@ -1,0 +1,23 @@
+European organisations: the EU's cyber agency studied 8,257 incidents. Here is what it found, where the data is thin, and what to do.
+
+ENISA, the EU Agency for Cybersecurity, published its Threat Landscape report on September 22. It covers incidents from all of 2025, mostly from public reporting, plus data shared by EU member states.
+
+The most common incident was DDoS, flooding a website until it goes offline. That was 51.3 percent of incidents, mostly hacktivist campaigns with little large-scale impact.
+
+But the damage comes from criminals chasing money. Ransomware made up 47.3 percent of financially motivated activity, which ENISA calls the most impactful threat in the short term.
+
+How did attackers get in? Where the entry route was known, 60.4 percent exploited a vulnerability, and 20.7 percent came from misconfiguration or accidental exposure.
+
+Here is the limit. Only 5.2 percent of those break-ins had a known entry route, so that figure rests on a thin slice of the data.
+
+Public administration was the most targeted sector, with 31.8 percent of incidents, most of them DDoS.
+
+What about AI? Attackers mostly used off-the-shelf AI tools to boost the skills they already had, not for breakthroughs. But ENISA expects more stages of an attack to be AI-enabled in 2026.
+
+Read it with care. The data leans on public reporting, spying often comes to light months or years later, and many attacker claims could not be verified.
+
+Analyst note: loud attacks get counted, quiet ones do the damage. DDoS fills the charts, but unpatched systems and ransomware are where the real losses are.
+
+What to do this month. Patch your internet-facing systems first. Check for misconfigured or exposed services. Have a plan for DDoS on your public websites. And keep offline backups, then test a restore.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.
