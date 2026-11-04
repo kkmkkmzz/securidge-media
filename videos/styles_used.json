@@ -96,5 +96,12 @@
   "style": "synthwave",
   "palette": 2,
   "seed": 850795
+ },
+ {
+  "slug": "2026-11-05-am-wordpress-upgrade-rce",
+  "format": "short",
+  "style": "dossier",
+  "palette": 2,
+  "seed": 787512
  }
 ]

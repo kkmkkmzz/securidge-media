@@ -1,0 +1,13 @@
+Run a WordPress site? Hackers are attacking a bug in WordPress itself.
+
+On November third, the US agency CISA confirmed that attackers are exploiting this flaw in the wild.
+
+The weak spot is the upgrade process. During a full core upgrade, an attacker with no account can run code on your server.
+
+Security firm Wordfence says it blocked thirteen thousand and ninety-five attacks in twenty-four hours.
+
+Analyst note: updating is still the fix. WordPress 7.1.4, out October twenty-eighth, closes this hole.
+
+Tonight: check Dashboard, then Updates. Install the latest release. And keep automatic updates on.
+
+Sources are in the description. Follow Securidge.

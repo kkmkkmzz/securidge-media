@@ -1,0 +1,80 @@
+{
+ "slug": "2026-11-05-am-wordpress-upgrade-rce",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "WordPress site owners",
+   "headline": "A WordPress core bug is under attack",
+   "body": "CVE-2026-119977",
+   "say": "Run a WordPress site? Hackers are attacking a bug in WordPress itself."
+  },
+  {
+   "kind": "point",
+   "kicker": "The warning",
+   "headline": "CISA: exploited in the wild",
+   "body": "Added to its known exploited list on November 3.",
+   "source": "CISA via BleepingComputer",
+   "say": "On November third, the US agency CISA confirmed that attackers are exploiting this flaw in the wild."
+  },
+  {
+   "kind": "point",
+   "kicker": "How it works",
+   "headline": "The upgrade window is the weak spot",
+   "body": "During a full core upgrade, an attacker with no account can run code.",
+   "source": "WordPress.org · CISA",
+   "say": "The weak spot is the upgrade process. During a full core upgrade, an attacker with no account can run code on your server.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "upgrade"
+   }
+  },
+  {
+   "kind": "stat",
+   "kicker": "Attacks blocked",
+   "big": "13,095",
+   "headline": "attacks blocked in 24 hours",
+   "body": "Wordfence figure, one security vendor.",
+   "source": "Wordfence via BleepingComputer",
+   "say": "Security firm Wordfence says it blocked thirteen thousand and ninety-five attacks in twenty-four hours.",
+   "motion": {
+    "fx": "pop",
+    "target": "big"
+   }
+  },
+  {
+   "kind": "note",
+   "headline": "Updating is still the fix.",
+   "body": "WordPress 7.1.4, out October 28, closes this hole.",
+   "source": "WordPress.org",
+   "say": "Analyst note: updating is still the fix. WordPress 7.1.4, out October twenty-eighth, closes this hole."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Check Dashboard, then Updates",
+    "Install the latest release",
+    "Keep automatic updates on"
+   ],
+   "item_words": [
+    "check",
+    "Install",
+    "keep"
+   ],
+   "source": "WordPress.org · BleepingComputer",
+   "say": "Tonight: check Dashboard, then Updates. Install the latest release. And keep automatic updates on.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:1"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}
