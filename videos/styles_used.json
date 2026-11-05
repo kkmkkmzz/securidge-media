@@ -103,5 +103,12 @@
   "style": "dossier",
   "palette": 2,
   "seed": 787512
+ },
+ {
+  "slug": "2026-11-05-pm-binance-hack-response",
+  "format": "long",
+  "style": "comic",
+  "palette": 1,
+  "seed": 206821
  }
 ]

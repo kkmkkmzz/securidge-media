@@ -1,0 +1,160 @@
+{
+ "slug": "2026-11-05-pm-binance-hack-response",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Company Case Study · Binance",
+   "headline": "A fake job interview. A $6.34 billion hack.",
+   "body": "How Binance responded, what it admitted, what it fixed",
+   "say": "A fake job interview helped hackers into Binance. Engineers and crypto users, here is how the biggest crypto exchange handled a 6.34 billion dollar hack.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "What happened",
+   "headline": "Hot wallets drained on October 29",
+   "body": "About $6.34 billion in digital assets impacted · hot wallets are the online wallets an exchange uses to pay out withdrawals",
+   "source": "Binance · Help Net Security",
+   "say": "On October 29, attackers drained Binance's hot wallets, the online wallets an exchange uses to pay out withdrawals."
+  },
+  {
+   "kind": "stat",
+   "kicker": "How fast",
+   "big": "233.46M XRP",
+   "headline": "left five hot wallets in about four minutes",
+   "body": "The last unauthorized transfer came nearly four hours later",
+   "source": "Binance · SOFX",
+   "say": "It was fast. 233.46 million XRP left five hot wallets in about four minutes. The last unauthorized transfer came nearly four hours later.",
+   "motion": {
+    "fx": "pop",
+    "target": "big"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Decision 1",
+   "headline": "Stop the bleeding",
+   "body": "Withdrawals paused · attacker's hold on a hot wallet cleared · law enforcement and blockchain tracing firms called in · phased reopening from November 1",
+   "source": "Binance · Help Net Security",
+   "say": "First decision: stop the bleeding. Binance paused withdrawals, cleared the attacker's hold on a hot wallet, and called in law enforcement and tracing firms."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Decision 2",
+   "big": "$2.85B",
+   "headline": "frozen or intercepted, Binance says",
+   "body": "Binance says it will absorb the losses · 98% of affected token assets replenished by October 31",
+   "source": "Binance · Help Net Security",
+   "say": "Second decision: users don't carry the loss. Binance says 2.85 billion dollars is frozen or intercepted, it will absorb the losses, and 98 percent of affected token assets were replenished by October 31."
+  },
+  {
+   "kind": "point",
+   "kicker": "Decision 3",
+   "headline": "Explain it within five days",
+   "body": "Initial findings published November 3 · investigation ongoing · full technical report still to come",
+   "source": "Binance · The Register",
+   "say": "Third decision: explain it within five days. On November 3, Binance published its initial findings.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "five"
+   }
+  },
+  {
+   "kind": "timeline",
+   "kicker": "How they got in · 2026",
+   "headline": "A five-month campaign",
+   "items": [
+    {
+     "date": "JUN",
+     "text": "Tampered Homebrew installed by a wallet engineer"
+    },
+    {
+     "date": "SEP",
+     "text": "Fake job interview plants malware",
+     "hot": true
+    },
+    {
+     "date": "OCT 20",
+     "text": "Internal AI tool abused to reach two more engineers"
+    },
+    {
+     "date": "OCT 29",
+     "text": "Stolen token deploys a container; theft begins"
+    }
+   ],
+   "item_words": [
+    "June",
+    "September",
+    "twentieth",
+    "twenty-ninth"
+   ],
+   "source": "Binance · The Register · The Hacker News",
+   "say": "How did they get in? In June, a wallet engineer installed a tampered copy of Homebrew, a developer tool. In September, a second engineer sat fake job interviews and downloaded a coding assignment that hid malware. On October twentieth, an internal AI tool was abused to take over two more engineers. On October twenty-ninth, a stolen token let them deploy a container and start the theft."
+  },
+  {
+   "kind": "quote",
+   "kicker": "What Binance admitted",
+   "headline": "Not a single isolated breach or a simple phishing incident.",
+   "body": "Binance incident report, November 3 · its endpoint tools missed the malware",
+   "source": "Binance · Help Net Security",
+   "say": "Binance called it not a single isolated breach or a simple phishing incident, and admitted its endpoint security tools missed the malware at the time."
+  },
+  {
+   "kind": "point",
+   "kicker": "The fixes",
+   "headline": "Rebuilt, replaced, revoked",
+   "body": "Wallet system rebuilt in a new environment · AI tool and access controls rebuilt · devices replaced · affected credentials and tokens shut down · independent review planned",
+   "source": "Binance · The Register",
+   "say": "The fixes: Binance says it rebuilt the wallet system and the AI tool's access controls, replaced devices, shut down the affected credentials and tokens, and plans an independent review."
+  },
+  {
+   "kind": "point",
+   "kicker": "Who did it",
+   "headline": "FBI: North Korea's TraderTraitor",
+   "body": "The same group the FBI tied to the $1.5 billion Bybit theft in February 2025 · North Korea denies it",
+   "source": "FBI via AP · SOFX",
+   "say": "The FBI attributes the attack to TraderTraitor, a North Korean group it also tied to the 1.5 billion dollar Bybit theft in 2025. North Korea denies it."
+  },
+  {
+   "kind": "note",
+   "headline": "The weak point was a laptop, not the blockchain.",
+   "body": "An interview task, a developer tool and a deployment token all sat on work machines that could reach the money.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: the weak point was a laptop, not the blockchain. An interview task, a developer tool and a deployment token all sat on work machines that could reach the money."
+  },
+  {
+   "kind": "steps",
+   "headline": "What to do this week",
+   "items": [
+    "Never run job interview tasks on a work laptop",
+    "Install developer tools only from official sources",
+    "Keep deployment tokens off everyday laptops",
+    "Alert on unusual wallet or payment actions"
+   ],
+   "item_words": [
+    "never",
+    "install",
+    "keep",
+    "alert"
+   ],
+   "source": "Securidge analysis · Binance",
+   "say": "What to do this week. Never run a job interview task on a work laptop. Install developer tools only from official sources. Keep deployment tokens off everyday laptops. And alert on any unusual wallet or payment action.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:0",
+    "word": "never"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}

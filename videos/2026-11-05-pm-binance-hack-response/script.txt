@@ -1,0 +1,25 @@
+A fake job interview helped hackers into Binance. Engineers and crypto users, here is how the biggest crypto exchange handled a 6.34 billion dollar hack.
+
+On October 29, attackers drained Binance's hot wallets, the online wallets an exchange uses to pay out withdrawals.
+
+It was fast. 233.46 million XRP left five hot wallets in about four minutes. The last unauthorized transfer came nearly four hours later.
+
+First decision: stop the bleeding. Binance paused withdrawals, cleared the attacker's hold on a hot wallet, and called in law enforcement and tracing firms.
+
+Second decision: users don't carry the loss. Binance says 2.85 billion dollars is frozen or intercepted, it will absorb the losses, and 98 percent of affected token assets were replenished by October 31.
+
+Third decision: explain it within five days. On November 3, Binance published its initial findings.
+
+How did they get in? In June, a wallet engineer installed a tampered copy of Homebrew, a developer tool. In September, a second engineer sat fake job interviews and downloaded a coding assignment that hid malware. On October twentieth, an internal AI tool was abused to take over two more engineers. On October twenty-ninth, a stolen token let them deploy a container and start the theft.
+
+Binance called it not a single isolated breach or a simple phishing incident, and admitted its endpoint security tools missed the malware at the time.
+
+The fixes: Binance says it rebuilt the wallet system and the AI tool's access controls, replaced devices, shut down the affected credentials and tokens, and plans an independent review.
+
+The FBI attributes the attack to TraderTraitor, a North Korean group it also tied to the 1.5 billion dollar Bybit theft in 2025. North Korea denies it.
+
+Analyst note: the weak point was a laptop, not the blockchain. An interview task, a developer tool and a deployment token all sat on work machines that could reach the money.
+
+What to do this week. Never run a job interview task on a work laptop. Install developer tools only from official sources. Keep deployment tokens off everyday laptops. And alert on any unusual wallet or payment action.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.

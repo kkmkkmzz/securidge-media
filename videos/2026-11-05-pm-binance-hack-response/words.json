@@ -1,0 +1,2230 @@
+{
+"words": [
+{
+"text": "[excited]",
+"type": "word",
+"start": 0.0,
+"end": 0.114
+},
+{
+"text": "A",
+"type": "word",
+"start": 0.137,
+"end": 0.16
+},
+{
+"text": "fake",
+"type": "word",
+"start": 0.24,
+"end": 0.4
+},
+{
+"text": "job",
+"type": "word",
+"start": 0.56,
+"end": 0.8
+},
+{
+"text": "interview",
+"type": "word",
+"start": 0.88,
+"end": 1.2
+},
+{
+"text": "helped",
+"type": "word",
+"start": 1.28,
+"end": 1.52
+},
+{
+"text": "hackers",
+"type": "word",
+"start": 1.64,
+"end": 1.92
+},
+{
+"text": "into",
+"type": "word",
+"start": 2.04,
+"end": 2.16
+},
+{
+"text": "Binance.",
+"type": "word",
+"start": 2.24,
+"end": 3.28
+},
+{
+"text": "Engineers",
+"type": "word",
+"start": 3.44,
+"end": 3.76
+},
+{
+"text": "and",
+"type": "word",
+"start": 3.84,
+"end": 3.92
+},
+{
+"text": "crypto",
+"type": "word",
+"start": 4.08,
+"end": 4.24
+},
+{
+"text": "users,",
+"type": "word",
+"start": 4.32,
+"end": 4.88
+},
+{
+"text": "here",
+"type": "word",
+"start": 5.0,
+"end": 5.12
+},
+{
+"text": "is",
+"type": "word",
+"start": 5.2,
+"end": 5.28
+},
+{
+"text": "how",
+"type": "word",
+"start": 5.36,
+"end": 5.44
+},
+{
+"text": "the",
+"type": "word",
+"start": 5.56,
+"end": 5.68
+},
+{
+"text": "biggest",
+"type": "word",
+"start": 5.76,
+"end": 6.0
+},
+{
+"text": "crypto",
+"type": "word",
+"start": 6.08,
+"end": 6.32
+},
+{
+"text": "exchange",
+"type": "word",
+"start": 6.4,
+"end": 6.88
+},
+{
+"text": "handled",
+"type": "word",
+"start": 6.96,
+"end": 7.2
+},
+{
+"text": "a",
+"type": "word",
+"start": 7.32,
+"end": 7.44
+},
+{
+"text": "6.34",
+"type": "word",
+"start": 7.52,
+"end": 8.0
+},
+{
+"text": "billion",
+"type": "word",
+"start": 8.08,
+"end": 9.12
+},
+{
+"text": "dollar",
+"type": "word",
+"start": 9.2,
+"end": 9.44
+},
+{
+"text": "hack.",
+"type": "word",
+"start": 9.52,
+"end": 10.32
+},
+{
+"text": "On",
+"type": "word",
+"start": 10.36,
+"end": 10.4
+},
+{
+"text": "October",
+"type": "word",
+"start": 10.6,
+"end": 10.8
+},
+{
+"text": "29,",
+"type": "word",
+"start": 10.88,
+"end": 11.52
+},
+{
+"text": "attackers",
+"type": "word",
+"start": 11.68,
+"end": 12.08
+},
+{
+"text": "drained",
+"type": "word",
+"start": 12.12,
+"end": 12.4
+},
+{
+"text": "Binance's",
+"type": "word",
+"start": 12.44,
+"end": 12.96
+},
+{
+"text": "hot",
+"type": "word",
+"start": 13.08,
+"end": 13.2
+},
+{
+"text": "wallets,",
+"type": "word",
+"start": 13.36,
+"end": 13.84
+},
+{
+"text": "the",
+"type": "word",
+"start": 13.88,
+"end": 13.92
+},
+{
+"text": "online",
+"type": "word",
+"start": 14.0,
+"end": 14.32
+},
+{
+"text": "wallets",
+"type": "word",
+"start": 14.44,
+"end": 14.6
+},
+{
+"text": "an",
+"type": "word",
+"start": 14.64,
+"end": 14.72
+},
+{
+"text": "exchange",
+"type": "word",
+"start": 14.92,
+"end": 15.12
+},
+{
+"text": "uses",
+"type": "word",
+"start": 15.2,
+"end": 15.44
+},
+{
+"text": "to",
+"type": "word",
+"start": 15.52,
+"end": 15.6
+},
+{
+"text": "pay",
+"type": "word",
+"start": 15.68,
+"end": 15.76
+},
+{
+"text": "out",
+"type": "word",
+"start": 15.8,
+"end": 15.84
+},
+{
+"text": "withdrawals.",
+"type": "word",
+"start": 16.04,
+"end": 16.88
+},
+{
+"text": "It",
+"type": "word",
+"start": 16.94,
+"end": 16.98
+},
+{
+"text": "was",
+"type": "word",
+"start": 17.06,
+"end": 17.14
+},
+{
+"text": "fast.",
+"type": "word",
+"start": 17.22,
+"end": 18.02
+},
+{
+"text": "233.46",
+"type": "word",
+"start": 18.1,
+"end": 18.42
+},
+{
+"text": "million",
+"type": "word",
+"start": 18.58,
+"end": 20.42
+},
+{
+"text": "XRP",
+"type": "word",
+"start": 20.5,
+"end": 21.06
+},
+{
+"text": "left",
+"type": "word",
+"start": 21.14,
+"end": 21.38
+},
+{
+"text": "five",
+"type": "word",
+"start": 21.46,
+"end": 21.7
+},
+{
+"text": "hot",
+"type": "word",
+"start": 21.82,
+"end": 21.94
+},
+{
+"text": "wallets",
+"type": "word",
+"start": 22.1,
+"end": 22.34
+},
+{
+"text": "in",
+"type": "word",
+"start": 22.38,
+"end": 22.42
+},
+{
+"text": "about",
+"type": "word",
+"start": 22.5,
+"end": 22.82
+},
+{
+"text": "four",
+"type": "word",
+"start": 22.9,
+"end": 22.98
+},
+{
+"text": "minutes.",
+"type": "word",
+"start": 23.14,
+"end": 23.86
+},
+{
+"text": "The",
+"type": "word",
+"start": 23.94,
+"end": 24.02
+},
+{
+"text": "last",
+"type": "word",
+"start": 24.14,
+"end": 24.26
+},
+{
+"text": "unauthorized",
+"type": "word",
+"start": 24.34,
+"end": 24.82
+},
+{
+"text": "transfer",
+"type": "word",
+"start": 25.06,
+"end": 25.3
+},
+{
+"text": "came",
+"type": "word",
+"start": 25.38,
+"end": 25.54
+},
+{
+"text": "nearly",
+"type": "word",
+"start": 25.647,
+"end": 25.86
+},
+{
+"text": "four",
+"type": "word",
+"start": 25.94,
+"end": 26.1
+},
+{
+"text": "hours",
+"type": "word",
+"start": 26.26,
+"end": 26.42
+},
+{
+"text": "later.",
+"type": "word",
+"start": 26.5,
+"end": 27.3
+},
+{
+"text": "First",
+"type": "word",
+"start": 27.42,
+"end": 27.54
+},
+{
+"text": "decision:",
+"type": "word",
+"start": 27.78,
+"end": 28.42
+},
+{
+"text": "stop",
+"type": "word",
+"start": 28.58,
+"end": 28.74
+},
+{
+"text": "the",
+"type": "word",
+"start": 28.82,
+"end": 28.9
+},
+{
+"text": "bleeding.",
+"type": "word",
+"start": 28.98,
+"end": 29.78
+},
+{
+"text": "Binance",
+"type": "word",
+"start": 29.86,
+"end": 30.26
+},
+{
+"text": "paused",
+"type": "word",
+"start": 30.34,
+"end": 30.58
+},
+{
+"text": "withdrawals,",
+"type": "word",
+"start": 30.78,
+"end": 31.38
+},
+{
+"text": "cleared",
+"type": "word",
+"start": 31.46,
+"end": 31.62
+},
+{
+"text": "the",
+"type": "word",
+"start": 31.7,
+"end": 31.78
+},
+{
+"text": "attacker's",
+"type": "word",
+"start": 31.86,
+"end": 32.18
+},
+{
+"text": "hold",
+"type": "word",
+"start": 32.26,
+"end": 32.42
+},
+{
+"text": "on",
+"type": "word",
+"start": 32.5,
+"end": 32.54
+},
+{
+"text": "a",
+"type": "word",
+"start": 32.58,
+"end": 32.66
+},
+{
+"text": "hot",
+"type": "word",
+"start": 32.74,
+"end": 32.82
+},
+{
+"text": "wallet,",
+"type": "word",
+"start": 32.9,
+"end": 33.38
+},
+{
+"text": "and",
+"type": "word",
+"start": 33.46,
+"end": 33.54
+},
+{
+"text": "called",
+"type": "word",
+"start": 33.66,
+"end": 33.78
+},
+{
+"text": "in",
+"type": "word",
+"start": 33.86,
+"end": 33.94
+},
+{
+"text": "law",
+"type": "word",
+"start": 34.02,
+"end": 34.1
+},
+{
+"text": "enforcement",
+"type": "word",
+"start": 34.18,
+"end": 34.58
+},
+{
+"text": "and",
+"type": "word",
+"start": 34.66,
+"end": 34.74
+},
+{
+"text": "tracing",
+"type": "word",
+"start": 34.78,
+"end": 35.06
+},
+{
+"text": "firms.",
+"type": "word",
+"start": 35.14,
+"end": 35.86
+},
+{
+"text": "Second",
+"type": "word",
+"start": 35.99,
+"end": 36.11
+},
+{
+"text": "decision:",
+"type": "word",
+"start": 36.35,
+"end": 36.99
+},
+{
+"text": "users",
+"type": "word",
+"start": 37.07,
+"end": 37.47
+},
+{
+"text": "don't",
+"type": "word",
+"start": 37.63,
+"end": 37.87
+},
+{
+"text": "carry",
+"type": "word",
+"start": 37.99,
+"end": 38.11
+},
+{
+"text": "the",
+"type": "word",
+"start": 38.19,
+"end": 38.23
+},
+{
+"text": "loss.",
+"type": "word",
+"start": 38.27,
+"end": 39.07
+},
+{
+"text": "Binance",
+"type": "word",
+"start": 39.15,
+"end": 39.55
+},
+{
+"text": "says",
+"type": "word",
+"start": 39.71,
+"end": 39.87
+},
+{
+"text": "2.85",
+"type": "word",
+"start": 39.95,
+"end": 40.35
+},
+{
+"text": "billion",
+"type": "word",
+"start": 40.43,
+"end": 41.31
+},
+{
+"text": "dollars",
+"type": "word",
+"start": 41.43,
+"end": 41.71
+},
+{
+"text": "is",
+"type": "word",
+"start": 41.79,
+"end": 41.95
+},
+{
+"text": "frozen",
+"type": "word",
+"start": 41.99,
+"end": 42.35
+},
+{
+"text": "or",
+"type": "word",
+"start": 42.43,
+"end": 42.51
+},
+{
+"text": "intercepted,",
+"type": "word",
+"start": 42.59,
+"end": 43.39
+},
+{
+"text": "it",
+"type": "word",
+"start": 43.47,
+"end": 43.55
+},
+{
+"text": "will",
+"type": "word",
+"start": 43.63,
+"end": 43.71
+},
+{
+"text": "absorb",
+"type": "word",
+"start": 43.79,
+"end": 44.03
+},
+{
+"text": "the",
+"type": "word",
+"start": 44.11,
+"end": 44.19
+},
+{
+"text": "losses,",
+"type": "word",
+"start": 44.31,
+"end": 44.83
+},
+{
+"text": "and",
+"type": "word",
+"start": 44.91,
+"end": 44.99
+},
+{
+"text": "98",
+"type": "word",
+"start": 45.07,
+"end": 45.39
+},
+{
+"text": "percent",
+"type": "word",
+"start": 45.47,
+"end": 45.79
+},
+{
+"text": "of",
+"type": "word",
+"start": 45.83,
+"end": 45.87
+},
+{
+"text": "affected",
+"type": "word",
+"start": 46.07,
+"end": 46.27
+},
+{
+"text": "token",
+"type": "word",
+"start": 46.35,
+"end": 46.59
+},
+{
+"text": "assets",
+"type": "word",
+"start": 46.67,
+"end": 47.07
+},
+{
+"text": "were",
+"type": "word",
+"start": 47.15,
+"end": 47.23
+},
+{
+"text": "replenished",
+"type": "word",
+"start": 47.31,
+"end": 47.79
+},
+{
+"text": "by",
+"type": "word",
+"start": 47.83,
+"end": 47.87
+},
+{
+"text": "October",
+"type": "word",
+"start": 47.95,
+"end": 48.27
+},
+{
+"text": "31.",
+"type": "word",
+"start": 48.35,
+"end": 49.39
+},
+{
+"text": "Third",
+"type": "word",
+"start": 49.47,
+"end": 49.63
+},
+{
+"text": "decision:",
+"type": "word",
+"start": 49.87,
+"end": 50.43
+},
+{
+"text": "explain",
+"type": "word",
+"start": 50.51,
+"end": 50.91
+},
+{
+"text": "it",
+"type": "word",
+"start": 50.99,
+"end": 51.07
+},
+{
+"text": "within",
+"type": "word",
+"start": 51.15,
+"end": 51.47
+},
+{
+"text": "five",
+"type": "word",
+"start": 51.59,
+"end": 51.71
+},
+{
+"text": "days.",
+"type": "word",
+"start": 51.79,
+"end": 52.59
+},
+{
+"text": "On",
+"type": "word",
+"start": 52.67,
+"end": 52.75
+},
+{
+"text": "November",
+"type": "word",
+"start": 52.91,
+"end": 53.07
+},
+{
+"text": "3,",
+"type": "word",
+"start": 53.23,
+"end": 53.63
+},
+{
+"text": "Binance",
+"type": "word",
+"start": 53.71,
+"end": 54.03
+},
+{
+"text": "published",
+"type": "word",
+"start": 54.11,
+"end": 54.43
+},
+{
+"text": "its",
+"type": "word",
+"start": 54.51,
+"end": 54.59
+},
+{
+"text": "initial",
+"type": "word",
+"start": 54.75,
+"end": 54.91
+},
+{
+"text": "findings.",
+"type": "word",
+"start": 54.99,
+"end": 55.87
+},
+{
+"text": "How",
+"type": "word",
+"start": 55.95,
+"end": 56.03
+},
+{
+"text": "did",
+"type": "word",
+"start": 56.07,
+"end": 56.11
+},
+{
+"text": "they",
+"type": "word",
+"start": 56.19,
+"end": 56.27
+},
+{
+"text": "get",
+"type": "word",
+"start": 56.35,
+"end": 56.43
+},
+{
+"text": "in?",
+"type": "word",
+"start": 56.51,
+"end": 57.15
+},
+{
+"text": "In",
+"type": "word",
+"start": 57.23,
+"end": 57.31
+},
+{
+"text": "June,",
+"type": "word",
+"start": 57.39,
+"end": 57.83
+},
+{
+"text": "a",
+"type": "word",
+"start": 57.87,
+"end": 57.95
+},
+{
+"text": "wallet",
+"type": "word",
+"start": 58.11,
+"end": 58.27
+},
+{
+"text": "engineer",
+"type": "word",
+"start": 58.43,
+"end": 58.67
+},
+{
+"text": "installed",
+"type": "word",
+"start": 58.75,
+"end": 59.15
+},
+{
+"text": "a",
+"type": "word",
+"start": 59.19,
+"end": 59.23
+},
+{
+"text": "tampered",
+"type": "word",
+"start": 59.31,
+"end": 59.63
+},
+{
+"text": "copy",
+"type": "word",
+"start": 59.71,
+"end": 59.95
+},
+{
+"text": "of",
+"type": "word",
+"start": 60.03,
+"end": 60.19
+},
+{
+"text": "Homebrew,",
+"type": "word",
+"start": 60.31,
+"end": 60.83
+},
+{
+"text": "a",
+"type": "word",
+"start": 60.87,
+"end": 60.91
+},
+{
+"text": "developer",
+"type": "word",
+"start": 61.15,
+"end": 61.39
+},
+{
+"text": "tool.",
+"type": "word",
+"start": 61.71,
+"end": 62.07
+},
+{
+"text": "In",
+"type": "word",
+"start": 62.117,
+"end": 62.17
+},
+{
+"text": "September,",
+"type": "word",
+"start": 62.53,
+"end": 62.943
+},
+{
+"text": "a",
+"type": "word",
+"start": 62.997,
+"end": 63.05
+},
+{
+"text": "second",
+"type": "word",
+"start": 63.21,
+"end": 63.37
+},
+{
+"text": "engineer",
+"type": "word",
+"start": 63.53,
+"end": 63.85
+},
+{
+"text": "sat",
+"type": "word",
+"start": 64.01,
+"end": 64.17
+},
+{
+"text": "fake",
+"type": "word",
+"start": 64.25,
+"end": 64.49
+},
+{
+"text": "job",
+"type": "word",
+"start": 64.61,
+"end": 64.73
+},
+{
+"text": "interviews",
+"type": "word",
+"start": 64.77,
+"end": 65.29
+},
+{
+"text": "and",
+"type": "word",
+"start": 65.37,
+"end": 65.45
+},
+{
+"text": "downloaded",
+"type": "word",
+"start": 65.61,
+"end": 65.85
+},
+{
+"text": "a",
+"type": "word",
+"start": 66.01,
+"end": 66.09
+},
+{
+"text": "coding",
+"type": "word",
+"start": 66.17,
+"end": 66.25
+},
+{
+"text": "assignment",
+"type": "word",
+"start": 66.33,
+"end": 66.73
+},
+{
+"text": "that",
+"type": "word",
+"start": 66.81,
+"end": 66.97
+},
+{
+"text": "hid",
+"type": "word",
+"start": 67.09,
+"end": 67.21
+},
+{
+"text": "malware.",
+"type": "word",
+"start": 67.33,
+"end": 68.117
+},
+{
+"text": "On",
+"type": "word",
+"start": 68.143,
+"end": 68.17
+},
+{
+"text": "October",
+"type": "word",
+"start": 68.25,
+"end": 68.57
+},
+{
+"text": "twentieth,",
+"type": "word",
+"start": 68.65,
+"end": 69.263
+},
+{
+"text": "an",
+"type": "word",
+"start": 69.317,
+"end": 69.37
+},
+{
+"text": "internal",
+"type": "word",
+"start": 69.45,
+"end": 69.85
+},
+{
+"text": "AI",
+"type": "word",
+"start": 70.01,
+"end": 70.25
+},
+{
+"text": "tool",
+"type": "word",
+"start": 70.33,
+"end": 70.49
+},
+{
+"text": "was",
+"type": "word",
+"start": 70.57,
+"end": 70.65
+},
+{
+"text": "abused",
+"type": "word",
+"start": 70.73,
+"end": 71.05
+},
+{
+"text": "to",
+"type": "word",
+"start": 71.13,
+"end": 71.21
+},
+{
+"text": "take",
+"type": "word",
+"start": 71.29,
+"end": 71.45
+},
+{
+"text": "over",
+"type": "word",
+"start": 71.61,
+"end": 71.77
+},
+{
+"text": "two",
+"type": "word",
+"start": 71.89,
+"end": 72.01
+},
+{
+"text": "more",
+"type": "word",
+"start": 72.13,
+"end": 72.25
+},
+{
+"text": "engineers.",
+"type": "word",
+"start": 72.41,
+"end": 73.237
+},
+{
+"text": "On",
+"type": "word",
+"start": 73.263,
+"end": 73.29
+},
+{
+"text": "October",
+"type": "word",
+"start": 73.37,
+"end": 73.69
+},
+{
+"text": "twenty-ninth,",
+"type": "word",
+"start": 73.81,
+"end": 74.53
+},
+{
+"text": "a",
+"type": "word",
+"start": 74.57,
+"end": 74.65
+},
+{
+"text": "stolen",
+"type": "word",
+"start": 74.73,
+"end": 75.05
+},
+{
+"text": "token",
+"type": "word",
+"start": 75.13,
+"end": 75.45
+},
+{
+"text": "let",
+"type": "word",
+"start": 75.53,
+"end": 75.61
+},
+{
+"text": "them",
+"type": "word",
+"start": 75.69,
+"end": 75.77
+},
+{
+"text": "deploy",
+"type": "word",
+"start": 75.93,
+"end": 76.09
+},
+{
+"text": "a",
+"type": "word",
+"start": 76.17,
+"end": 76.21
+},
+{
+"text": "container",
+"type": "word",
+"start": 76.25,
+"end": 76.73
+},
+{
+"text": "and",
+"type": "word",
+"start": 76.81,
+"end": 76.97
+},
+{
+"text": "start",
+"type": "word",
+"start": 77.05,
+"end": 77.21
+},
+{
+"text": "the",
+"type": "word",
+"start": 77.29,
+"end": 77.37
+},
+{
+"text": "theft.",
+"type": "word",
+"start": 77.45,
+"end": 78.21
+},
+{
+"text": "Binance",
+"type": "word",
+"start": 78.25,
+"end": 78.65
+},
+{
+"text": "called",
+"type": "word",
+"start": 78.77,
+"end": 78.89
+},
+{
+"text": "it",
+"type": "word",
+"start": 78.97,
+"end": 79.05
+},
+{
+"text": "not",
+"type": "word",
+"start": 79.13,
+"end": 79.29
+},
+{
+"text": "a",
+"type": "word",
+"start": 79.37,
+"end": 79.45
+},
+{
+"text": "single",
+"type": "word",
+"start": 79.53,
+"end": 79.85
+},
+{
+"text": "isolated",
+"type": "word",
+"start": 79.93,
+"end": 80.41
+},
+{
+"text": "breach",
+"type": "word",
+"start": 80.49,
+"end": 80.81
+},
+{
+"text": "or",
+"type": "word",
+"start": 80.89,
+"end": 80.97
+},
+{
+"text": "a",
+"type": "word",
+"start": 81.05,
+"end": 81.13
+},
+{
+"text": "simple",
+"type": "word",
+"start": 81.29,
+"end": 81.45
+},
+{
+"text": "phishing",
+"type": "word",
+"start": 81.49,
+"end": 81.77
+},
+{
+"text": "incident,",
+"type": "word",
+"start": 82.09,
+"end": 82.437
+},
+{
+"text": "and",
+"type": "word",
+"start": 82.463,
+"end": 82.49
+},
+{
+"text": "admitted",
+"type": "word",
+"start": 82.57,
+"end": 82.89
+},
+{
+"text": "its",
+"type": "word",
+"start": 82.97,
+"end": 83.13
+},
+{
+"text": "endpoint",
+"type": "word",
+"start": 83.33,
+"end": 83.53
+},
+{
+"text": "security",
+"type": "word",
+"start": 83.77,
+"end": 84.01
+},
+{
+"text": "tools",
+"type": "word",
+"start": 84.21,
+"end": 84.41
+},
+{
+"text": "missed",
+"type": "word",
+"start": 84.49,
+"end": 84.61
+},
+{
+"text": "the",
+"type": "word",
+"start": 84.65,
+"end": 84.73
+},
+{
+"text": "malware",
+"type": "word",
+"start": 84.85,
+"end": 85.13
+},
+{
+"text": "at",
+"type": "word",
+"start": 85.17,
+"end": 85.21
+},
+{
+"text": "the",
+"type": "word",
+"start": 85.25,
+"end": 85.29
+},
+{
+"text": "time.",
+"type": "word",
+"start": 85.37,
+"end": 86.13
+},
+{
+"text": "The",
+"type": "word",
+"start": 86.17,
+"end": 86.25
+},
+{
+"text": "fixes:",
+"type": "word",
+"start": 86.33,
+"end": 87.21
+},
+{
+"text": "Binance",
+"type": "word",
+"start": 87.29,
+"end": 87.61
+},
+{
+"text": "says",
+"type": "word",
+"start": 87.69,
+"end": 87.85
+},
+{
+"text": "it",
+"type": "word",
+"start": 87.93,
+"end": 88.09
+},
+{
+"text": "rebuilt",
+"type": "word",
+"start": 88.21,
+"end": 88.41
+},
+{
+"text": "the",
+"type": "word",
+"start": 88.49,
+"end": 88.57
+},
+{
+"text": "wallet",
+"type": "word",
+"start": 88.73,
+"end": 88.89
+},
+{
+"text": "system",
+"type": "word",
+"start": 89.09,
+"end": 89.29
+},
+{
+"text": "and",
+"type": "word",
+"start": 89.37,
+"end": 89.53
+},
+{
+"text": "the",
+"type": "word",
+"start": 89.61,
+"end": 89.69
+},
+{
+"text": "AI",
+"type": "word",
+"start": 89.73,
+"end": 90.01
+},
+{
+"text": "tool's",
+"type": "word",
+"start": 90.09,
+"end": 90.33
+},
+{
+"text": "access",
+"type": "word",
+"start": 90.41,
+"end": 90.73
+},
+{
+"text": "controls,",
+"type": "word",
+"start": 91.09,
+"end": 91.503
+},
+{
+"text": "replaced",
+"type": "word",
+"start": 91.557,
+"end": 91.85
+},
+{
+"text": "devices,",
+"type": "word",
+"start": 92.29,
+"end": 92.757
+},
+{
+"text": "shut",
+"type": "word",
+"start": 92.783,
+"end": 92.89
+},
+{
+"text": "down",
+"type": "word",
+"start": 92.97,
+"end": 93.13
+},
+{
+"text": "the",
+"type": "word",
+"start": 93.17,
+"end": 93.21
+},
+{
+"text": "affected",
+"type": "word",
+"start": 93.29,
+"end": 93.61
+},
+{
+"text": "credentials",
+"type": "word",
+"start": 93.69,
+"end": 94.09
+},
+{
+"text": "and",
+"type": "word",
+"start": 94.17,
+"end": 94.25
+},
+{
+"text": "tokens,",
+"type": "word",
+"start": 94.57,
+"end": 94.943
+},
+{
+"text": "and",
+"type": "word",
+"start": 94.997,
+"end": 95.05
+},
+{
+"text": "plans",
+"type": "word",
+"start": 95.21,
+"end": 95.37
+},
+{
+"text": "an",
+"type": "word",
+"start": 95.45,
+"end": 95.53
+},
+{
+"text": "independent",
+"type": "word",
+"start": 95.61,
+"end": 96.09
+},
+{
+"text": "review.",
+"type": "word",
+"start": 96.53,
+"end": 96.997
+},
+{
+"text": "The",
+"type": "word",
+"start": 97.023,
+"end": 97.05
+},
+{
+"text": "FBI",
+"type": "word",
+"start": 97.21,
+"end": 97.57
+},
+{
+"text": "attributes",
+"type": "word",
+"start": 97.61,
+"end": 98.01
+},
+{
+"text": "the",
+"type": "word",
+"start": 98.09,
+"end": 98.13
+},
+{
+"text": "attack",
+"type": "word",
+"start": 98.17,
+"end": 98.57
+},
+{
+"text": "to",
+"type": "word",
+"start": 98.65,
+"end": 98.73
+},
+{
+"text": "TraderTraitor,",
+"type": "word",
+"start": 98.97,
+"end": 99.877
+},
+{
+"text": "a",
+"type": "word",
+"start": 99.903,
+"end": 99.93
+},
+{
+"text": "North",
+"type": "word",
+"start": 100.05,
+"end": 100.17
+},
+{
+"text": "Korean",
+"type": "word",
+"start": 100.21,
+"end": 100.57
+},
+{
+"text": "group",
+"type": "word",
+"start": 100.69,
+"end": 100.81
+},
+{
+"text": "it",
+"type": "word",
+"start": 100.89,
+"end": 100.97
+},
+{
+"text": "also",
+"type": "word",
+"start": 101.05,
+"end": 101.29
+},
+{
+"text": "tied",
+"type": "word",
+"start": 101.37,
+"end": 101.53
+},
+{
+"text": "to",
+"type": "word",
+"start": 101.61,
+"end": 101.69
+},
+{
+"text": "the",
+"type": "word",
+"start": 101.77,
+"end": 101.85
+},
+{
+"text": "1.5",
+"type": "word",
+"start": 101.97,
+"end": 102.09
+},
+{
+"text": "billion",
+"type": "word",
+"start": 102.21,
+"end": 103.05
+},
+{
+"text": "dollar",
+"type": "word",
+"start": 103.13,
+"end": 103.45
+},
+{
+"text": "Bybit",
+"type": "word",
+"start": 103.53,
+"end": 103.85
+},
+{
+"text": "theft",
+"type": "word",
+"start": 103.93,
+"end": 104.17
+},
+{
+"text": "in",
+"type": "word",
+"start": 104.25,
+"end": 104.33
+},
+{
+"text": "2025.",
+"type": "word",
+"start": 104.41,
+"end": 105.65
+},
+{
+"text": "North",
+"type": "word",
+"start": 105.69,
+"end": 105.85
+},
+{
+"text": "Korea",
+"type": "word",
+"start": 105.89,
+"end": 106.25
+},
+{
+"text": "denies",
+"type": "word",
+"start": 106.37,
+"end": 106.65
+},
+{
+"text": "it.",
+"type": "word",
+"start": 106.93,
+"end": 107.223
+},
+{
+"text": "[serious]",
+"type": "word",
+"start": 107.237,
+"end": 107.277
+},
+{
+"text": "Analyst",
+"type": "word",
+"start": 107.29,
+"end": 107.69
+},
+{
+"text": "note:",
+"type": "word",
+"start": 108.05,
+"end": 108.463
+},
+{
+"text": "the",
+"type": "word",
+"start": 108.517,
+"end": 108.57
+},
+{
+"text": "weak",
+"type": "word",
+"start": 108.69,
+"end": 108.81
+},
+{
+"text": "point",
+"type": "word",
+"start": 108.93,
+"end": 109.05
+},
+{
+"text": "was",
+"type": "word",
+"start": 109.13,
+"end": 109.21
+},
+{
+"text": "a",
+"type": "word",
+"start": 109.37,
+"end": 109.397
+},
+{
+"text": "laptop,",
+"type": "word",
+"start": 109.423,
+"end": 110.21
+},
+{
+"text": "not",
+"type": "word",
+"start": 110.25,
+"end": 110.41
+},
+{
+"text": "the",
+"type": "word",
+"start": 110.49,
+"end": 110.57
+},
+{
+"text": "blockchain.",
+"type": "word",
+"start": 110.69,
+"end": 111.583
+},
+{
+"text": "An",
+"type": "word",
+"start": 111.637,
+"end": 111.69
+},
+{
+"text": "interview",
+"type": "word",
+"start": 111.73,
+"end": 112.01
+},
+{
+"text": "task,",
+"type": "word",
+"start": 112.09,
+"end": 112.57
+},
+{
+"text": "a",
+"type": "word",
+"start": 112.65,
+"end": 112.69
+},
+{
+"text": "developer",
+"type": "word",
+"start": 112.73,
+"end": 113.21
+},
+{
+"text": "tool",
+"type": "word",
+"start": 113.37,
+"end": 113.53
+},
+{
+"text": "and",
+"type": "word",
+"start": 113.61,
+"end": 113.77
+},
+{
+"text": "a",
+"type": "word",
+"start": 113.81,
+"end": 113.85
+},
+{
+"text": "deployment",
+"type": "word",
+"start": 114.09,
+"end": 114.33
+},
+{
+"text": "token",
+"type": "word",
+"start": 114.57,
+"end": 114.81
+},
+{
+"text": "all",
+"type": "word",
+"start": 114.89,
+"end": 115.13
+},
+{
+"text": "sat",
+"type": "word",
+"start": 115.21,
+"end": 115.29
+},
+{
+"text": "on",
+"type": "word",
+"start": 115.37,
+"end": 115.53
+},
+{
+"text": "work",
+"type": "word",
+"start": 115.61,
+"end": 115.69
+},
+{
+"text": "machines",
+"type": "word",
+"start": 115.77,
+"end": 116.17
+},
+{
+"text": "that",
+"type": "word",
+"start": 116.25,
+"end": 116.33
+},
+{
+"text": "could",
+"type": "word",
+"start": 116.41,
+"end": 116.65
+},
+{
+"text": "reach",
+"type": "word",
+"start": 116.77,
+"end": 116.89
+},
+{
+"text": "the",
+"type": "word",
+"start": 116.93,
+"end": 116.97
+},
+{
+"text": "money.",
+"type": "word",
+"start": 117.05,
+"end": 117.701
+},
+{
+"text": "[excited]",
+"type": "word",
+"start": 117.713,
+"end": 117.759
+},
+{
+"text": "What",
+"type": "word",
+"start": 117.77,
+"end": 117.93
+},
+{
+"text": "to",
+"type": "word",
+"start": 117.97,
+"end": 118.01
+},
+{
+"text": "do",
+"type": "word",
+"start": 118.09,
+"end": 118.25
+},
+{
+"text": "this",
+"type": "word",
+"start": 118.33,
+"end": 118.49
+},
+{
+"text": "week.",
+"type": "word",
+"start": 118.57,
+"end": 119.25
+},
+{
+"text": "Never",
+"type": "word",
+"start": 119.29,
+"end": 119.61
+},
+{
+"text": "run",
+"type": "word",
+"start": 119.69,
+"end": 119.77
+},
+{
+"text": "a",
+"type": "word",
+"start": 119.93,
+"end": 120.01
+},
+{
+"text": "job",
+"type": "word",
+"start": 120.09,
+"end": 120.17
+},
+{
+"text": "interview",
+"type": "word",
+"start": 120.21,
+"end": 120.49
+},
+{
+"text": "task",
+"type": "word",
+"start": 120.57,
+"end": 120.81
+},
+{
+"text": "on",
+"type": "word",
+"start": 120.89,
+"end": 120.97
+},
+{
+"text": "a",
+"type": "word",
+"start": 121.13,
+"end": 121.21
+},
+{
+"text": "work",
+"type": "word",
+"start": 121.29,
+"end": 121.37
+},
+{
+"text": "laptop.",
+"type": "word",
+"start": 121.41,
+"end": 122.383
+},
+{
+"text": "Install",
+"type": "word",
+"start": 122.517,
+"end": 122.65
+},
+{
+"text": "developer",
+"type": "word",
+"start": 122.89,
+"end": 123.13
+},
+{
+"text": "tools",
+"type": "word",
+"start": 123.37,
+"end": 123.61
+},
+{
+"text": "only",
+"type": "word",
+"start": 123.69,
+"end": 123.93
+},
+{
+"text": "from",
+"type": "word",
+"start": 124.01,
+"end": 124.09
+},
+{
+"text": "official",
+"type": "word",
+"start": 124.17,
+"end": 124.57
+},
+{
+"text": "sources.",
+"type": "word",
+"start": 124.97,
+"end": 125.41
+},
+{
+"text": "Keep",
+"type": "word",
+"start": 125.45,
+"end": 125.61
+},
+{
+"text": "deployment",
+"type": "word",
+"start": 125.85,
+"end": 126.09
+},
+{
+"text": "tokens",
+"type": "word",
+"start": 126.17,
+"end": 126.57
+},
+{
+"text": "off",
+"type": "word",
+"start": 126.65,
+"end": 126.97
+},
+{
+"text": "everyday",
+"type": "word",
+"start": 127.09,
+"end": 127.37
+},
+{
+"text": "laptops.",
+"type": "word",
+"start": 127.41,
+"end": 128.37
+},
+{
+"text": "And",
+"type": "word",
+"start": 128.41,
+"end": 128.65
+},
+{
+"text": "alert",
+"type": "word",
+"start": 128.73,
+"end": 129.05
+},
+{
+"text": "on",
+"type": "word",
+"start": 129.13,
+"end": 129.29
+},
+{
+"text": "any",
+"type": "word",
+"start": 129.37,
+"end": 129.53
+},
+{
+"text": "unusual",
+"type": "word",
+"start": 129.61,
+"end": 130.09
+},
+{
+"text": "wallet",
+"type": "word",
+"start": 130.17,
+"end": 130.41
+},
+{
+"text": "or",
+"type": "word",
+"start": 130.49,
+"end": 130.57
+},
+{
+"text": "payment",
+"type": "word",
+"start": 130.73,
+"end": 130.89
+},
+{
+"text": "action.",
+"type": "word",
+"start": 130.97,
+"end": 131.45
+},
+{
+"text": "All",
+"type": "word",
+"start": 131.53,
+"end": 131.77
+},
+{
+"text": "sources",
+"type": "word",
+"start": 132.01,
+"end": 132.25
+},
+{
+"text": "are",
+"type": "word",
+"start": 132.29,
+"end": 132.33
+},
+{
+"text": "in",
+"type": "word",
+"start": 132.41,
+"end": 132.49
+},
+{
+"text": "the",
+"type": "word",
+"start": 132.517,
+"end": 132.543
+},
+{
+"text": "description.",
+"type": "word",
+"start": 132.57,
+"end": 133.61
+},
+{
+"text": "Follow",
+"type": "word",
+"start": 133.73,
+"end": 133.85
+},
+{
+"text": "Securidge",
+"type": "word",
+"start": 133.97,
+"end": 134.49
+},
+{
+"text": "for",
+"type": "word",
+"start": 134.57,
+"end": 134.65
+},
+{
+"text": "the",
+"type": "word",
+"start": 134.69,
+"end": 134.73
+},
+{
+"text": "security",
+"type": "word",
+"start": 134.97,
+"end": 135.21
+},
+{
+"text": "story",
+"type": "word",
+"start": 135.29,
+"end": 135.69
+},
+{
+"text": "behind",
+"type": "word",
+"start": 135.81,
+"end": 136.01
+},
+{
+"text": "the",
+"type": "word",
+"start": 136.05,
+"end": 136.09
+},
+{
+"text": "headline.",
+"type": "word",
+"start": 136.17,
+"end": 136.81
+}
+]
+}
