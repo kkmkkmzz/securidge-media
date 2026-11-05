@@ -1,0 +1,15 @@
+[excited] Outdated iPhone or Android? Opening one website was enough to get robbed.
+
+Security firm Sekoia says hackers it links to Russia's APT29 planted attack code on real websites and fake lookalikes.
+
+They also hijacked an analytics script called Plerdy for about a week, so sites using it passed the attack on.
+
+The code checked each phone first. Outdated ones lost browser cookies, and some lost messages, photos and Wi-Fi passwords.
+
+Apple fixed one of these bugs in May 2024. On November fourth, the US agency CISA flagged it as exploited.
+
+[serious] Analyst note: no zero-days here. Every bug was already patched, and Sekoia says an up-to-date system is safe.
+
+[excited] Tonight: on iPhone, open Settings, then General, then Software Update. On Android, update Chrome. And turn on automatic updates.
+
+Sources are in the description. Follow Securidge.

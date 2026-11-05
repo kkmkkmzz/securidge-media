@@ -1,0 +1,28 @@
+{
+ "title": "Outdated phone? Just opening a website was enough to get robbed",
+ "type": "short",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "tmXygiZ0h6Xyy6LGQjFh",
+  "generation": "D3JN8jx6LL8ZwoLbThfX"
+ },
+ "tags": [
+  "cybersecurity",
+  "iPhone",
+  "Android",
+  "update your phone",
+  "APT29",
+  "Sekoia",
+  "CVE-2024-27834",
+  "CISA KEV",
+  "watering hole",
+  "Chrome"
+ ],
+ "description": "Outdated iPhone or Android? Opening one website was enough to get robbed.\n\nSecurity firm Sekoia reported on November 4, 2026 a campaign it calls \"Poisoned Source\". Sekoia links it, with \"moderate to high confidence\", to APT29, an intrusion set widely attributed to Russia's foreign intelligence service. Attack code was planted on real websites and on fake lookalike sites, and a web analytics script, the Plerdy SEO tracker, was hijacked between August 27 and September 3, 2026.\n\nThe code profiled each visitor's phone first. Outdated iPhones (iOS 16.7 and iOS 18.5) and Android phones running Chrome 139 to 145 were served exploit chains that stole browser cookies and, on some devices, messages, photos, Wi-Fi passwords and more. No click was needed.\n\nOne of the bugs, CVE-2024-27834, was fixed by Apple in May 2024. On November 4, 2026, the US agency CISA added it to its Known Exploited Vulnerabilities catalog.\n\nAnalyst note: there are no zero-days here. Sekoia says all three exploit chains rely on known, already-patched vulnerabilities, and that a user running an up-to-date operating system is safe from these attacks.\n\nDo this tonight:\n1. iPhone: Settings, then General, then Software Update.\n2. Android: update Chrome in the Google Play Store, and install any system update.\n3. Turn on automatic updates.\n\nSources\n- Sekoia, Poisoned Source report (Nov 4, 2026): https://www.sekoia.com/blog/poisoned-source-apt29-watering-holes-targets-mobile-devices-with-n-day-exploits\n- CISA alert (Nov 4, 2026): https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog\n- The Hacker News (Nov 5, 2026): https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html\n- The Hacker News (Nov 4, 2026): https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html\n- CybelAngel (Nov 5, 2026): https://cybelangel.com/blog/apt29-plerdy-analytics-script-mobile-exploits/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #iPhone #Android",
+ "style": "aurora (palette 2, seed 712529)",
+ "editorial": "Not from backlog (P1 empty; P2 scam items older/less urgent). Bigger verified story from the last 72 h: Sekoia's Nov 4 'Poisoned Source' report (primary) + CISA KEV add of CVE-2024-27834 on Nov 4 (via The Hacker News, CybelAngel; CISA page not fetchable this run). Spoken length 51.0 s.",
+ "motion": "push on hook headline (scene 1); color on 'hijacked' (scene 3 headline); spotlight on steps item 3 'Turn on automatic updates'"
+}

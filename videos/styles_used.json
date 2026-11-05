@@ -110,5 +110,12 @@
   "style": "comic",
   "palette": 1,
   "seed": 206821
+ },
+ {
+  "slug": "2026-11-06-am-outdated-phone-watering-hole",
+  "format": "short",
+  "style": "aurora",
+  "palette": 2,
+  "seed": 712529
  }
 ]

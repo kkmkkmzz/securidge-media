@@ -1,0 +1,87 @@
+{
+ "slug": "2026-11-06-am-outdated-phone-watering-hole",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Outdated iPhone or Android?",
+   "headline": "Opening a website was enough",
+   "body": "No click needed",
+   "say": "Outdated iPhone or Android? Opening one website was enough to get robbed.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "The finding",
+   "headline": "Real websites, poisoned",
+   "body": "Sekoia links it to Russia's APT29, with “moderate to high confidence”.",
+   "source": "Sekoia",
+   "say": "Security firm Sekoia says hackers it links to Russia's APT29 planted attack code on real websites and fake lookalikes."
+  },
+  {
+   "kind": "point",
+   "kicker": "The trick",
+   "headline": "One hijacked analytics script",
+   "body": "Plerdy's tracker carried the code, August 27 to September 3.",
+   "source": "Sekoia · The Hacker News",
+   "say": "They also hijacked an analytics script called Plerdy for about a week, so sites using it passed the attack on.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "hijacked"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "What they took",
+   "headline": "Cookies, messages, Wi-Fi passwords",
+   "body": "The code checked each phone first, then picked an attack.",
+   "source": "Sekoia",
+   "say": "The code checked each phone first. Outdated ones lost browser cookies, and some lost messages, photos and Wi-Fi passwords."
+  },
+  {
+   "kind": "point",
+   "kicker": "Old bug, new attacks",
+   "headline": "Apple fixed one bug in May 2024",
+   "body": "CISA flagged it as exploited on November 4.",
+   "source": "CISA via The Hacker News",
+   "say": "Apple fixed one of these bugs in May 2024. On November fourth, the US agency CISA flagged it as exploited."
+  },
+  {
+   "kind": "note",
+   "headline": "Every bug was already patched.",
+   "body": "Sekoia: an up-to-date system is safe.",
+   "source": "Sekoia",
+   "say": "Analyst note: no zero-days here. Every bug was already patched, and Sekoia says an up-to-date system is safe."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "iPhone: Settings, then General, then Software Update",
+    "Android: update Chrome",
+    "Turn on automatic updates"
+   ],
+   "item_words": [
+    "iPhone",
+    "Android",
+    "turn"
+   ],
+   "source": "Sekoia · Apple",
+   "say": "Tonight: on iPhone, open Settings, then General, then Software Update. On Android, update Chrome. And turn on automatic updates.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:2"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}
