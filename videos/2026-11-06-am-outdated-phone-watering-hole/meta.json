@@ -29,6 +29,11 @@
   "post_id": 418118196,
   "publication": "2026-11-06T05:00:00 Asia/Seoul",
   "privacy": "private",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=8416113411900197569"
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=8416113411900197569",
+  "youtube": {
+   "id": "oAtvhjjerfE",
+   "url": "https://www.youtube.com/shorts/oAtvhjjerfE",
+   "status": "PUBLISHED (private)"
+  }
  }
 }
