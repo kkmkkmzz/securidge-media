@@ -41,5 +41,12 @@
  "style": "comic (palette 1, seed 206821)",
  "motion": "push on hook headline; pop on 233.46M XRP (stat); color on 'five' (Decision 3 headline); spotlight on step 1 'Never run job interview tasks on a work laptop'",
  "backlog": "not from backlog (Priority 1 empty; P2/P3 items are scam/evergreen Shorts that do not fit Thursday Company Case Study). Story: Binance's Nov 3 initial findings on the Oct 29 hack (within 72 h).",
- "editorial": "Primary: Binance initial findings (X post could not be fetched directly; text read via GitHub mirror FeeiCN/FEEI.CN issue #788). Independent: The Register, Help Net Security, The Hacker News, AP via ITV (FBI), SOFX (summarising Reuters). The Hacker News headline says $6.43B; Binance's report and other outlets say $6.34B, used $6.34B. Narration take was 147.6 s; three sentences were cut from the audio (impact repeat, withdrawals reopening, 'Binance caught it...') and word timings shifted accordingly -> 136.8 s spoken, 138.9 s video. Reopening and detection details remain on screen/description."
+ "editorial": "Primary: Binance initial findings (X post could not be fetched directly; text read via GitHub mirror FeeiCN/FEEI.CN issue #788). Independent: The Register, Help Net Security, The Hacker News, AP via ITV (FBI), SOFX (summarising Reuters). The Hacker News headline says $6.43B; Binance's report and other outlets say $6.34B, used $6.34B. Narration take was 147.6 s; three sentences were cut from the audio (impact repeat, withdrawals reopening, 'Binance caught it...') and word timings shifted accordingly -> 136.8 s spoken, 138.9 s video. Reopening and detection details remain on screen/description.",
+ "metricool": {
+  "post_id": 417360343,
+  "publication": "2026-11-05T16:00:00 Asia/Seoul",
+  "privacy": "private",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=9053226087497353466",
+  "status": "PENDING"
+ }
 }
