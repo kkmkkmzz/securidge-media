@@ -29,6 +29,11 @@
   "post_id": 419500982,
   "publication": "2026-11-07T08:06:00 Asia/Seoul (05:00 slot missed: scheduled at 07:56 KST, so 10 minutes later)",
   "privacy": "private",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-6634931458799415347"
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-6634931458799415347",
+  "youtube": {
+   "id": "h7G2AO16YuU",
+   "url": "https://www.youtube.com/shorts/h7G2AO16YuU",
+   "status": "PUBLISHED (private)"
+  }
  }
 }
