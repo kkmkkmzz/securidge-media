@@ -131,5 +131,12 @@
   "style": "newsprint",
   "palette": 1,
   "seed": 255388
+ },
+ {
+  "slug": "2026-11-07-am2-plex2shell-update",
+  "format": "short",
+  "style": "blueprint",
+  "palette": 1,
+  "seed": 447010
  }
 ]

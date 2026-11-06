@@ -1,0 +1,86 @@
+{
+ "slug": "2026-11-07-am2-plex2shell-update",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Run Plex at home?",
+   "headline": "Old Plex servers are being hacked",
+   "body": "The bug chain is called Plex2Shell",
+   "say": "Run Plex at home? Hackers are breaking into old Plex servers.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "The bugs",
+   "headline": "Four flaws, one chain",
+   "body": "Together they can let an attacker run code on your server.",
+   "source": "BleepingComputer · The Hacker News",
+   "say": "Plex2Shell is four flaws in Plex Media Server. Chained together, the researcher says, they let an attacker run code on your server."
+  },
+  {
+   "kind": "point",
+   "kicker": "October 20",
+   "headline": "Exploited in the wild",
+   "body": "CISA added all four to its list of exploited bugs.",
+   "source": "CISA KEV, Oct 20",
+   "say": "On October twentieth, the US agency CISA listed all four as exploited in real attacks.",
+   "motion": {
+    "fx": "pop",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "November 6",
+   "headline": "NAS owners report break-ins",
+   "body": "QNAP says some customers' Plex servers appear compromised.",
+   "source": "QNAP security notice, Nov 6",
+   "say": "On November sixth, QNAP said some customers' Plex servers appear compromised."
+  },
+  {
+   "kind": "point",
+   "kicker": "What attackers do",
+   "headline": "Crypto miners and proxy software",
+   "body": "Updating alone won't remove what they installed.",
+   "source": "QNAP security notice",
+   "say": "Hacked servers have run crypto miners and proxy software, and updating alone won't remove them."
+  },
+  {
+   "kind": "note",
+   "headline": "Your media server is a computer too.",
+   "body": "Patch it like your laptop.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: a media server is still a computer on your home network, so patch it like one."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Update Plex to 1.43.3 or later",
+    "Turn off Remote Access if unused",
+    "Was it exposed? Reset passwords"
+   ],
+   "item_words": [
+    "update",
+    "turn",
+    "reset"
+   ],
+   "source": "QNAP security notice",
+   "say": "Tonight: update Plex to the latest version, turn off Remote Access if you don't use it, and if an old version was open online, reset your passwords.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:0"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}

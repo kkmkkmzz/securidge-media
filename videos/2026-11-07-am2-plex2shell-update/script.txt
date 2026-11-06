@@ -1,0 +1,15 @@
+Run Plex at home? Hackers are breaking into old Plex servers.
+
+Plex2Shell is four flaws in Plex Media Server. Chained together, the researcher says, they let an attacker run code on your server.
+
+On October twentieth, the US agency CISA listed all four as exploited in real attacks.
+
+On November sixth, QNAP said some customers' Plex servers appear compromised.
+
+Hacked servers have run crypto miners and proxy software, and updating alone won't remove them.
+
+Analyst note: a media server is still a computer on your home network, so patch it like one.
+
+Tonight: update Plex to the latest version, turn off Remote Access if you don't use it, and if an old version was open online, reset your passwords.
+
+Sources are in the description. Follow Securidge.
