@@ -1,0 +1,139 @@
+{
+ "slug": "2026-11-07-pm-deepfake-ceo-129m-myths",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Myth vs Fact · AI CEO fraud",
+   "headline": "“I'd know my boss's voice.” Would you?",
+   "body": "3 myths behind an alleged $129 million deepfake fraud",
+   "say": "Finance teams: that call from your CEO might be AI. Here are three myths behind an alleged one hundred and twenty-nine million dollar fraud, and the facts that bust them.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "The case · New York, November 5",
+   "headline": "Three men charged over fake CEOs and fake lawyers",
+   "body": "Wire fraud, aggravated identity theft, money laundering. Allegations only: no conviction in this case.",
+   "source": "US Attorney SDNY via AP · CBS News",
+   "say": "This week, US federal prosecutors in New York charged three men with wire fraud, aggravated identity theft and money laundering. These are allegations, and none of the three has been convicted in this case."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Alleged losses",
+   "big": "$129M",
+   "headline": "Stolen from companies, prosecutors say",
+   "body": "Thousands of companies targeted over more than a year and a half",
+   "source": "US Attorney SDNY via AP · CBS News",
+   "say": "Prosecutors say the group took about one hundred and twenty-nine million dollars from companies, and targeted thousands of companies worldwide over more than a year and a half.",
+   "motion": {
+    "fx": "pop",
+    "target": "big",
+    "word": "million"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Myth 1",
+   "headline": "“I'd recognise my own CEO's voice.”",
+   "say": "Myth one: I would recognise my own CEO's voice."
+  },
+  {
+   "kind": "point",
+   "kicker": "Fact",
+   "headline": "AI copied the CEO's voice, and sometimes the face",
+   "body": "On phone and video calls with accounting staff",
+   "source": "AP · CBS News · FBI PSA I-120324",
+   "say": "Fact: prosecutors say the group used AI to mimic the CEO's voice, and sometimes the CEO's image, on phone and video calls. In December twenty twenty-four, the FBI warned that criminals use AI video to pose as company executives in live chats.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "voice"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Myth 2",
+   "headline": "“Only small, careless firms fall for this.”",
+   "say": "Myth two: only small, careless firms fall for this."
+  },
+  {
+   "kind": "point",
+   "kicker": "Fact · Named victims",
+   "headline": "Hospitals, a bank, a fintech, a fund",
+   "body": "Hospital systems in Missouri and California, a Rhode Island bank, a UK fintech, a Massachusetts mutual fund, a Florida pet food firm",
+   "source": "AP · CBS News · Jerusalem Post",
+   "say": "Fact: court papers list hospital systems in Missouri and California, a bank in Rhode Island, a UK fintech company, a mutual fund firm in Massachusetts and a pet food company in Florida."
+  },
+  {
+   "kind": "point",
+   "kicker": "Myth 3",
+   "headline": "“A lawyer on the deal makes it legit.”",
+   "say": "Myth three: if a lawyer is handling the deal, it must be legit."
+  },
+  {
+   "kind": "steps",
+   "headline": "Fact: the lawyers were fake too",
+   "items": [
+    "CEO email: a confidential deal",
+    "AI call in the CEO's voice",
+    "Hand-off to a fake lawyer",
+    "Wire abroad, then into crypto"
+   ],
+   "item_words": [
+    "email",
+    "call",
+    "attorney",
+    "crypto"
+   ],
+   "source": "AP · CBS News · Jerusalem Post",
+   "say": "Fact: the lawyers were fake too. First, an email from the CEO about a confidential deal. Then an AI call in the CEO's voice. Then a hand-off to an attorney at a big law firm, also an impersonator. The money was wired abroad and converted into crypto."
+  },
+  {
+   "kind": "quote",
+   "kicker": "Fact · The fake lawyer had a script",
+   "headline": "A handwritten script titled “Lawyer Call”",
+   "body": "Prosecutors, on defendant Jacob Soall",
+   "source": "US Attorney SDNY via AP",
+   "say": "Prosecutors say one defendant used a handwritten script titled Lawyer Call, to sound like a real attorney."
+  },
+  {
+   "kind": "note",
+   "headline": "A familiar voice is no longer proof of identity.",
+   "body": "Your payment process has to catch what your ears can't.",
+   "say": "Analyst note: a familiar voice is no longer proof of identity. Your payment process has to catch what your ears cannot."
+  },
+  {
+   "kind": "steps",
+   "headline": "Before any urgent transfer",
+   "items": [
+    "Call back on a number you already know",
+    "Second approver for large payments",
+    "Code word with your team and family",
+    "“Keep this secret” = red flag"
+   ],
+   "item_words": [
+    "Hang",
+    "second",
+    "code",
+    "secret"
+   ],
+   "source": "FBI PSA I-120324 · Securidge analysis",
+   "say": "Before any urgent transfer, do this. Hang up and call back on a number you already know. Require a second approver for large payments. Agree a code word with your team and your family. And treat keep this secret as a red flag.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:3",
+    "word": "secret"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}

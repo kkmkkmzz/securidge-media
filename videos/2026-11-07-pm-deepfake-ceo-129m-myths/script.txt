@@ -1,0 +1,25 @@
+Finance teams: that call from your CEO might be AI. Here are three myths behind an alleged one hundred and twenty-nine million dollar fraud, and the facts that bust them.
+
+This week, US federal prosecutors in New York charged three men with wire fraud, aggravated identity theft and money laundering. These are allegations, and none of the three has been convicted in this case.
+
+Prosecutors say the group took about one hundred and twenty-nine million dollars from companies, and targeted thousands of companies worldwide over more than a year and a half.
+
+Myth one: I would recognise my own CEO's voice.
+
+Fact: prosecutors say the group used AI to mimic the CEO's voice, and sometimes the CEO's image, on phone and video calls. In December twenty twenty-four, the FBI warned that criminals use AI video to pose as company executives in live chats.
+
+Myth two: only small, careless firms fall for this.
+
+Fact: court papers list hospital systems in Missouri and California, a bank in Rhode Island, a UK fintech company, a mutual fund firm in Massachusetts and a pet food company in Florida.
+
+Myth three: if a lawyer is handling the deal, it must be legit.
+
+Fact: the lawyers were fake too. First, an email from the CEO about a confidential deal. Then an AI call in the CEO's voice. Then a hand-off to an attorney at a big law firm, also an impersonator. The money was wired abroad and converted into crypto.
+
+Prosecutors say one defendant used a handwritten script titled Lawyer Call, to sound like a real attorney.
+
+Analyst note: a familiar voice is no longer proof of identity. Your payment process has to catch what your ears cannot.
+
+Before any urgent transfer, do this. Hang up and call back on a number you already know. Require a second approver for large payments. Agree a code word with your team and your family. And treat keep this secret as a red flag.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.

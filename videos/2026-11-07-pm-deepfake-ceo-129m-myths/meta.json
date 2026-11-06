@@ -1,0 +1,50 @@
+{
+ "title": "Myth vs Fact: AI faked the CEO's voice - inside the alleged $129M deepfake fraud",
+ "type": "video",
+ "series": "Myth vs Fact",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "IBtFfwIuFR04cDIZ56Te",
+  "generation": "qGhjTF8LLYspGynudFRa"
+ },
+ "tags": [
+  "Securidge",
+  "cybersecurity",
+  "cyber security",
+  "information security",
+  "network security",
+  "security awareness",
+  "cyber attack",
+  "data breach",
+  "hacking explained",
+  "online safety",
+  "deepfake CEO fraud",
+  "AI voice cloning",
+  "voice clone scam",
+  "deepfake scam",
+  "CEO fraud",
+  "CEO impersonation",
+  "business email compromise",
+  "BEC scam",
+  "wire transfer fraud",
+  "fake lawyer scam",
+  "AI fraud",
+  "deepfake video call",
+  "AI impersonation",
+  "129 million AI fraud",
+  "SDNY indictment"
+ ],
+ "description": "On November 5, 2026, US federal prosecutors in New York (Southern District of New York) charged three men over an alleged scheme that used AI to impersonate company CEOs and lawyers. Prosecutors say the group took about $129 million from companies. These are allegations; none of the three has been convicted in this case.\n\nMyth 1: \"I'd recognise my own CEO's voice.\"\nFact: prosecutors say the group used AI to mimic the CEO's voice, and sometimes the CEO's image, on phone and video calls with accounting staff. In December 2024 the FBI warned that criminals use AI-generated video to pose as company executives in real-time video chats (PSA I-120324-PSA).\n\nMyth 2: \"Only small, careless firms fall for this.\"\nFact: victims named in court papers include hospital systems in Missouri and California, a bank in Rhode Island, a UK financial technology company, a Massachusetts mutual fund company and a Florida pet food company. Prosecutors say thousands of companies were targeted over more than a year and a half.\n\nMyth 3: \"A lawyer on the deal makes it legit.\"\nFact: the lawyers were fake too. As alleged: an email from the \"CEO\" about a confidential deal, an AI call in the CEO's voice, a hand-off to an impersonated attorney at a major law firm, then wires to accounts abroad and conversion to cryptocurrency. Prosecutors say one defendant used a handwritten script titled \"Lawyer Call\".\n\nAnalyst note (Securidge analysis): a familiar voice is no longer proof of identity. Your payment process has to catch what your ears cannot.\n\nBefore any urgent transfer\n1. Hang up and call back on a number you already know (FBI advice).\n2. Require a second approver for large payments.\n3. Agree a code word with your team and your family (FBI advice).\n4. Treat \"keep this secret\" as a red flag.\n\nSources\n- US Attorney's Office, Southern District of New York, press release (Nov 5, 2026): https://www.justice.gov/usao-sdny/pr/three-foreign-nationals-arrested-and-charged-scheme-use-super-intelligence-defraud\n- AP via SecurityWeek (Nov 5, 2026): https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/\n- CBS News (Nov 6, 2026): https://www.cbsnews.com/news/3-ai-steal-129-million-companies-impersonating-executives-lawyers/\n- Jerusalem Post (Nov 6, 2026): https://jpost.com/international/article-914078\n- IBTimes UK (Nov 2026): https://www.ibtimes.co.uk/three-indicted-over-ai-fraud-scheme-1830670\n- FBI IC3 PSA I-120324-PSA, \"Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud\" (Dec 3, 2024): https://www.ic3.gov/PSA/2024/PSA241203\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #deepfake #MythVsFact",
+ "style": "blueprint (palette 0, seed 115207)",
+ "motion": "push on hook headline; pop on $129M (stat, word 'million'); color on 'voice' (Myth 1 fact headline); spotlight on final step 4 'Keep this secret' (word 'secret')",
+ "backlog": "not from backlog (Priority 1 empty; P2 #9 voice-clone family calls is related but a different story and stays open). Story from the last 72 h.",
+ "editorial": "Primary: SDNY press release (URL confirmed via search; justice.gov blocks the fetcher, content confirmed via AP/SecurityWeek, CBS, JPost, IBTimes which quote it); FBI IC3 PSA I-120324 opened directly. Arrest dates differ between outlets (Jun/Aug/Sep vs Jul 17/Sep 7), so narration omits them. US Attorney not named (sources disagree/omit). Hazan has a 2008 conviction, so narration says 'none convicted in this case'. Second-approver and secrecy-red-flag steps are Securidge analysis. Not the AM Short story (fake FBI recovery scam). Narration 119.4 s, video 121.5 s.",
+ "tag_budget": {
+  "count": 25,
+  "video_specific": 15,
+  "total": 448
+ }
+}
