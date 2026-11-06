@@ -42,5 +42,12 @@
  "style": "terminal (palette 0, seed 697284)",
  "motion": "push on hook headline; pop on 115+ (stat); color on 'all' (Chainalysis headline); spotlight on step 1 'Refrigeration controllers: offline'",
  "backlog": "not from backlog (Priority 1 empty; P2/P3 are scam/evergreen Shorts that do not fit Friday Week in Security). Stories from the last 72 h.",
- "editorial": "Primary: Chainalysis incident blog (opened); Zyxel CNA CVE record for CVE-2026-107441 (opened via OpenCVE; Zyxel advisory page itself could not be fetched); CISA joint fact sheet (cisa.gov blocked the fetcher; content confirmed via BleepingComputer, The Register and TechCrunch, which quote it); EFS statement via AP/SecurityWeek. Fix date: SecurityWeek says Oct 23, another digest Oct 22, so narration says 'late October'. 115+ stores / six countries / 50°C from BleepingComputer. Not the AM Short story (Poisoned Source / CVE-2024-27834). Narration 125.1 s, video 127.2 s."
+ "editorial": "Primary: Chainalysis incident blog (opened); Zyxel CNA CVE record for CVE-2026-107441 (opened via OpenCVE; Zyxel advisory page itself could not be fetched); CISA joint fact sheet (cisa.gov blocked the fetcher; content confirmed via BleepingComputer, The Register and TechCrunch, which quote it); EFS statement via AP/SecurityWeek. Fix date: SecurityWeek says Oct 23, another digest Oct 22, so narration says 'late October'. 115+ stores / six countries / 50°C from BleepingComputer. Not the AM Short story (Poisoned Source / CVE-2024-27834). Narration 125.1 s, video 127.2 s.",
+ "metricool": {
+  "post_id": 418566048,
+  "publication": "2026-11-06T16:00:00 Asia/Seoul",
+  "privacy": "private",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-6827658802664289301",
+  "status": "PENDING"
+ }
 }
