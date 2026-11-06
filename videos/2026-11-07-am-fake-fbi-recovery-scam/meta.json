@@ -1,0 +1,28 @@
+{
+ "title": "Already scammed? The fake FBI may call next, offering to get your money back",
+ "type": "short",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "rELsMelpEhpWasn6KD6T",
+  "generation": "VOUNRWQ3raSts9uvs4oM"
+ },
+ "tags": [
+  "cybersecurity",
+  "scam",
+  "FBI",
+  "IC3",
+  "recovery scam",
+  "fund recovery scam",
+  "deepfake",
+  "voice cloning",
+  "impersonation scam",
+  "online fraud"
+ ],
+ "description": "Already lost money to a scam? The fake FBI may call next.\n\nOn July 20, 2026, the FBI warned (alert I-072026-PSA) that scammers pose as staff of IC3, the FBI's Internet Crime Complaint Center, to target people who were already scammed. They offer to recover the lost money, then ask for payment.\n\nAccording to the FBI, they use spoofed IC3 websites, fake social media profiles, caller ID spoofing, AI voice cloning and AI deepfake videos of senior FBI leaders.\n\nThe FBI says IC3 never asks for payment to recover funds, never refers people to companies that do, has no social media presence, and does not contact individuals by phone, email, social media, apps or chat.\n\nAnalyst note: if someone wants a fee to recover stolen money, treat it as a second scam.\n\nDo this tonight:\n1. Type www.ic3.gov into your browser yourself and check it ends in .gov.\n2. Skip \"sponsored\" search results.\n3. Never pay anyone to get your money back.\nOutside the US, report to your national police or cybercrime reporting service the same way: type the official address yourself.\n\nSources\n- FBI / IC3 PSA I-072026-PSA (July 20, 2026): https://www.ic3.gov/PSA/2026/PSA260720\n- KY3 / InvestigateTV (Aug 19, 2026): https://www.ky3.com/2026/08/19/fbi-warns-scammers-are-impersonating-its-cybercrime-complaint-center/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #scam #FBI",
+ "style": "newsprint (palette 1, seed 255388)",
+ "editorial": "From backlog: P2 #8 (P1 empty). No bigger verified story found in the last 72 h for this run. Re-verified with the FBI/IC3 PSA (primary, July 20, 2026) and KY3/InvestigateTV (Aug 19, 2026). Spoken length 49.2 s.",
+ "motion": "push on hook headline (scene 1); color on 'Pay' (scene 3 headline); spotlight on steps item 3 'Never pay to get money back'"
+}

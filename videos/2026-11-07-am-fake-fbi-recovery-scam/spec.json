@@ -1,0 +1,73 @@
+{
+ "slug": "2026-11-07-am-fake-fbi-recovery-scam",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Already lost money to a scam?",
+   "headline": "The fake FBI may call next",
+   "body": "They offer to get your money back",
+   "say": "Already lost money to a scam? The fake FBI may call next.",
+   "motion": {"fx": "push", "target": "headline"}
+  },
+  {
+   "kind": "point",
+   "kicker": "The warning",
+   "headline": "Fake IC3 staff",
+   "body": "IC3 is the FBI's Internet Crime Complaint Center.",
+   "source": "FBI IC3 alert, July 20",
+   "say": "On July twentieth, the FBI warned that scammers pose as staff of IC3, its Internet Crime Complaint Center, to target people who were already scammed."
+  },
+  {
+   "kind": "point",
+   "kicker": "The pitch",
+   "headline": "Pay us to get it back",
+   "body": "They offer to recover your money, for a payment.",
+   "source": "FBI IC3 · KY3",
+   "say": "They offer to recover your lost money, and then they ask you to pay.",
+   "motion": {"fx": "color", "target": "headline", "word": "pay"}
+  },
+  {
+   "kind": "point",
+   "kicker": "The tools",
+   "headline": "Fake sites, cloned voices, deepfakes",
+   "body": "Including AI videos of senior FBI leaders.",
+   "source": "FBI IC3 alert",
+   "say": "They use fake IC3 websites, spoofed caller ID, cloned voices, and AI deepfake videos of senior FBI leaders."
+  },
+  {
+   "kind": "point",
+   "kicker": "The rule",
+   "headline": "IC3 never asks you to pay",
+   "body": "It does not call, email or message you, and has no social media.",
+   "source": "FBI IC3 alert",
+   "say": "The FBI says IC3 never asks for payment to recover money, and it does not contact people by phone, email or social media."
+  },
+  {
+   "kind": "note",
+   "headline": "A fee to recover money is a second scam.",
+   "body": "Treat any recovery fee as a red flag.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: if someone wants a fee to recover stolen money, treat it as a second scam."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Type ic3.gov yourself",
+    "Skip sponsored search results",
+    "Never pay to get money back"
+   ],
+   "item_words": ["type", "skip", "never"],
+   "source": "FBI IC3 alert",
+   "say": "Tonight: type ic3.gov yourself, skip sponsored search results, and never pay anyone to get your money back.",
+   "motion": {"fx": "spotlight", "target": "item:2"}
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}
