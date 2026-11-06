@@ -1,0 +1,23 @@
+[excited] Supermarkets, a blood bank and Chainalysis users were hit. Here is your Week in Security for November sixth.
+
+Story one. On November fifth, five US agencies, including the FBI and the cyber agency CISA, warned that hackers are targeting internet-connected refrigeration and cold-chain systems worldwide.
+
+In Europe, a second wave in November hit more than one hundred and fifteen stores across six countries. Some units reached fifty degrees Celsius.
+
+In France, the national blood service EFS says an incident at a refrigeration supplier changed temperature and defrost settings at three sites. EFS says no blood products were lost.
+
+Story two. Blockchain analytics firm Chainalysis, used by exchanges and law enforcement, now says names, usernames, password hashes and live login tokens for all its users were exposed.
+
+On October thirtieth it said no credentials or tokens were accessed. On November second it took investigation tools offline. On November fourth it said some passwords were intercepted, and that night, that all users were affected.
+
+Every user must reset their password and rotate API keys. Chainalysis says to go to the login page directly, not through links in emails.
+
+Story three. Hackers took over almost one thousand Zyxel GS1900 network switches. The attacks were blamed on a bug fixed in June, but researchers at Binarly found a new, unknown flaw.
+
+Zyxel rates the new bug eight point eight. An attacker on the same network can run commands without logging in. Fixes shipped in late October, and the advisory followed on November third.
+
+[serious] Analyst note: this week's common thread is equipment nobody watches. Freezer controllers, office switches, saved login tokens. If it is online, someone must own its updates.
+
+[excited] Do this today. Take refrigeration controllers off the public internet. Change default passwords on connected devices. Update Zyxel GS1900 switch firmware. And if you use Chainalysis, reset your password and rotate your API keys.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.

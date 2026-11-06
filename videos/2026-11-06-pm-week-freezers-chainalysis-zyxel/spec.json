@@ -1,0 +1,150 @@
+{
+ "slug": "2026-11-06-pm-week-freezers-chainalysis-zyxel",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Week in Security · November 6",
+   "headline": "Hacked freezers. A blood bank. A crypto tracker.",
+   "body": "Three stories that mattered this week",
+   "say": "Supermarkets, a blood bank and Chainalysis users were hit. Here is your Week in Security for November sixth.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Story 1 · Cold-chain attacks",
+   "headline": "Five US agencies: freezers are being hacked",
+   "body": "Internet-connected refrigeration and cold-chain systems, worldwide",
+   "source": "CISA joint fact sheet · BleepingComputer",
+   "say": "Story one. On November fifth, five US agencies, including the FBI and the cyber agency CISA, warned that hackers are targeting internet-connected refrigeration and cold-chain systems worldwide."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Story 1 · Europe, second wave",
+   "big": "115+",
+   "headline": "stores hit in six European countries",
+   "body": "Some units reached 50°C (122°F)",
+   "source": "BleepingComputer · The Register",
+   "say": "In Europe, a second wave in November hit more than one hundred and fifteen stores across six countries. Some units reached fifty degrees Celsius.",
+   "motion": {
+    "fx": "pop",
+    "target": "big"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Story 1 · France",
+   "headline": "Blood bank cold storage targeted",
+   "body": "EFS: three sites hit through a refrigeration supplier. No blood products lost.",
+   "source": "EFS statement via AP · BleepingComputer",
+   "say": "In France, the national blood service EFS says an incident at a refrigeration supplier changed temperature and defrost settings at three sites. EFS says no blood products were lost."
+  },
+  {
+   "kind": "point",
+   "kicker": "Story 2 · Chainalysis",
+   "headline": "Login data for all users exposed",
+   "body": "Names, usernames, password hashes and live tokens",
+   "source": "Chainalysis · The Record",
+   "say": "Story two. Blockchain analytics firm Chainalysis, used by exchanges and law enforcement, now says names, usernames, password hashes and live login tokens for all its users were exposed.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "all"
+   }
+  },
+  {
+   "kind": "timeline",
+   "kicker": "Chainalysis updates",
+   "headline": "Six days, a very different story",
+   "items": [
+    {
+     "date": "OCT 30",
+     "text": "Breach disclosed, no tokens seen"
+    },
+    {
+     "date": "NOV 2",
+     "text": "Investigation tools taken offline"
+    },
+    {
+     "date": "NOV 4",
+     "text": "Some passwords intercepted"
+    },
+    {
+     "date": "NOV 4",
+     "text": "All users affected",
+     "hot": true
+    }
+   ],
+   "item_words": [
+    "credentials",
+    "offline",
+    "intercepted",
+    "night"
+   ],
+   "source": "Chainalysis incident updates · The Record",
+   "say": "On October thirtieth it said no credentials or tokens were accessed. On November second it took investigation tools offline. On November fourth it said some passwords were intercepted, and that night, that all users were affected."
+  },
+  {
+   "kind": "point",
+   "kicker": "Story 2 · What users must do",
+   "headline": "Reset passwords. Rotate API keys.",
+   "body": "Go to the login page directly, not through email links",
+   "source": "Chainalysis",
+   "say": "Every user must reset their password and rotate API keys. Chainalysis says to go to the login page directly, not through links in emails."
+  },
+  {
+   "kind": "point",
+   "kicker": "Story 3 · Zyxel GS1900 switches",
+   "headline": "A patched bug got the blame. It was a zero-day.",
+   "body": "Almost 1,000 network switches hacked",
+   "source": "SecurityWeek · Binarly",
+   "say": "Story three. Hackers took over almost one thousand Zyxel GS1900 network switches. The attacks were blamed on a bug fixed in June, but researchers at Binarly found a new, unknown flaw."
+  },
+  {
+   "kind": "stat",
+   "kicker": "CVE-2026-107441",
+   "big": "8.8",
+   "headline": "CVSS score: run commands without logging in",
+   "body": "Fixed firmware in late October. Advisory November 3.",
+   "source": "Zyxel CVE record · SecurityWeek",
+   "say": "Zyxel rates the new bug eight point eight. An attacker on the same network can run commands without logging in. Fixes shipped in late October, and the advisory followed on November third."
+  },
+  {
+   "kind": "note",
+   "headline": "Attackers love devices nobody watches.",
+   "body": "Freezer controllers, office switches, saved login tokens. If it is online, someone must own its updates.",
+   "say": "Analyst note: this week's common thread is equipment nobody watches. Freezer controllers, office switches, saved login tokens. If it is online, someone must own its updates."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this today",
+   "items": [
+    "Refrigeration controllers: offline",
+    "Change default device passwords",
+    "Update Zyxel GS1900 firmware",
+    "Chainalysis: reset password, API keys"
+   ],
+   "item_words": [
+    "refrigeration",
+    "default",
+    "Zyxel",
+    "Chainalysis"
+   ],
+   "say": "Do this today. Take refrigeration controllers off the public internet. Change default passwords on connected devices. Update Zyxel GS1900 switch firmware. And if you use Chainalysis, reset your password and rotate your API keys.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:0",
+    "word": "refrigeration"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}
