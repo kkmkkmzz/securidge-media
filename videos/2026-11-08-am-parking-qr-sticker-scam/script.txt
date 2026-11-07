@@ -1,0 +1,13 @@
+Drivers, that parking QR code may be a fake sticker.
+
+Scammers stick their own QR code on parking meters. It opens a fake payment page that asks for your card number, expiry date and security code.
+
+This year, drivers were warned about fake parking QR codes in Germany, Luxembourg and New Zealand.
+
+In September, Auckland Transport said: AT does not use QR codes on any of our parking meters or machines.
+
+Analyst note: a QR code hides the web address, so check where it really goes before you type anything.
+
+Tonight: look for a sticker on top, use the official parking app or pay at the machine, and if you typed your card into a strange site, call your bank right away.
+
+Sources are in the description. Follow Securidge.

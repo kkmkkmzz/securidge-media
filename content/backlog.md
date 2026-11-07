@@ -20,7 +20,6 @@ Rules:
 | # | Case | Hook | Status / date | Lead sources |
 |---|---|---|---|---|
 | 9 | AI voice-clone "family emergency / kidnapping" calls | "It sounded exactly like my son" — set a family code word | Police warnings Jan–Jun 2026 (US, UK, India) | [Cleveland19](https://www.cleveland19.com/2026/01/23/ai-voice-cloning-scams-target-families-with-fake-kidnapping-calls/), [North Wales Police via Deeside](https://www.deeside.com/north-wales-police-warns-of-rise-in-deepfake-and-voice-cloning-scams/), [Tamil Nadu Police via Inc42](https://inc42.com/?p=454767) — avoid fear-mongering, cite real police advisories only |
-| 10 | Fake QR codes on parking machines ("quishing") | The sticker over the real QR code | UK/German police warnings; a vendor reports a Q1 2026 surge (vendor figure — label it as such) | [Which?](https://www.which.co.uk/news/article/quishing-scams-warning-how-to-spot-and-avoid-dodgy-qr-codes-asYsH0h6jjP1), [Lee County Sheriff Apr 2026](https://www.sheriffleefl.org/?p=28573) |
 
 ## Priority 3 — evergreen Shorts (only with a fresh real example)
 
@@ -44,3 +43,4 @@ first hour of ransomware at work.
 | October 2026 Patch Tuesday size, 1,400+ flaws (P1 #6) — "why your Windows update is so big" | videos/2026-11-02-am-record-windows-update |
 | 7-Zip XZ decoder CVE-2026-14266 (P1 #7) — "apps that never update themselves" | videos/2026-11-03-am-7zip-xz-update |
 | Fake FBI IC3 "money recovery" scam (P2 #8) — PSA I-072026-PSA dated July 20, 2026 | videos/2026-11-07-am-fake-fbi-recovery-scam |
+| Fake parking QR code stickers / quishing (P2 #10) — Auckland Transport Sep 8, 2026 + PSNI | videos/2026-11-08-am-parking-qr-sticker-scam |

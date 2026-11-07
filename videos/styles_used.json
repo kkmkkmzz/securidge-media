@@ -145,5 +145,12 @@
   "style": "topo",
   "palette": 0,
   "seed": 115207
+ },
+ {
+  "slug": "2026-11-08-am-parking-qr-sticker-scam",
+  "format": "short",
+  "style": "pixel",
+  "palette": 2,
+  "seed": 494984
  }
 ]

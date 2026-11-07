@@ -1,0 +1,64 @@
+{
+ "slug": "2026-11-08-am-parking-qr-sticker-scam",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Drivers, before you scan",
+   "headline": "That parking QR code may be a sticker",
+   "body": "A fake one, stuck over the real sign",
+   "say": "Drivers, that parking QR code may be a fake sticker.",
+   "motion": {"fx": "push", "target": "headline"}
+  },
+  {
+   "kind": "point",
+   "kicker": "How it works",
+   "headline": "A fake page takes your card",
+   "body": "Card number, expiry date and security code.",
+   "source": "Chronicle.lu, April 28",
+   "say": "Scammers stick their own QR code on parking meters. It opens a fake payment page that asks for your card number, expiry date and security code."
+  },
+  {
+   "kind": "point",
+   "kicker": "Not just one city",
+   "headline": "Germany, Luxembourg, New Zealand",
+   "body": "All warned drivers about fake parking QR codes this year.",
+   "source": "test.de · Chronicle.lu · Auckland Transport",
+   "say": "This year, drivers were warned about fake parking QR codes in Germany, Luxembourg and New Zealand."
+  },
+  {
+   "kind": "quote",
+   "headline": "AT does not use QR codes on any of our parking meters or machines.",
+   "body": "Auckland Transport, September 8",
+   "source": "Auckland Transport",
+   "say": "In September, Auckland Transport said: AT does not use QR codes on any of our parking meters or machines.",
+   "motion": {"fx": "color", "target": "headline", "word": "not"}
+  },
+  {
+   "kind": "note",
+   "headline": "A QR code hides the web address.",
+   "body": "Check where it really goes before you type anything.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: a QR code hides the web address, so check where it really goes before you type anything."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Look for a stuck-on sticker",
+    "Use the official app or the machine",
+    "Card entered? Call your bank now"
+   ],
+   "item_words": ["look", "official", "bank"],
+   "source": "PSNI · Auckland Transport",
+   "say": "Tonight: look for a sticker on top, use the official parking app or pay at the machine, and if you typed your card into a strange site, call your bank right away.",
+   "motion": {"fx": "spotlight", "target": "item:2"}
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}

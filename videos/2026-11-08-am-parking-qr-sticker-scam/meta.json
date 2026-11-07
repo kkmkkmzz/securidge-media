@@ -1,0 +1,28 @@
+{
+ "title": "Paying for parking by QR code? That code may be a fake sticker",
+ "type": "short",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "1baVNGS4wTdaRXmqrrfo",
+  "generation": "ZMgOU3mgUci7MOZi9Okf"
+ },
+ "tags": [
+  "cybersecurity",
+  "scam",
+  "quishing",
+  "QR code scam",
+  "parking scam",
+  "phishing",
+  "card fraud",
+  "online safety",
+  "fake QR code",
+  "drivers"
+ ],
+ "description": "Paying for parking by QR code? Check that it isn't a fake sticker.\n\nScammers stick their own QR codes on parking meters and pay-and-display machines. The code opens a fake payment page that asks for your card number, expiry date and security code.\n\nThis year drivers were warned about fake parking QR codes in Germany (Hannover and the Lower Saxony state police, reported by Stiftung Warentest), Luxembourg City (stickers found on meters in April, reported to the city, CIRCL and police) and New Zealand (Auckland, Wellington and Christchurch). On September 8, 2026, Auckland Transport said: \"AT does not use QR codes on any of our parking meters or machines.\"\n\nAnalyst note: a QR code hides the web address, so check where it really goes before you type anything.\n\nDo this tonight:\n1. Look for a sticker stuck on top of the machine or sign.\n2. Use the official parking app, or pay at the machine itself.\n3. If you typed your card into a strange site, call your bank right away, then report it to the police.\n\nSources\n- Auckland Transport media release (Sep 8, 2026): https://at.govt.nz/about-us/news-events/media-centre/2026-media-releases/aucklanders-warned-about-scam-parking-meter-qr-codes\n- PSNI, Police Service of Northern Ireland (Jun 27, 2025): https://www.psni.police.uk/latest-news/police-are-encouraging-drivers-be-aware-qr-code-car-park-scams\n- Chronicle.lu (Apr 28, 2026): https://chronicle.lu/category/at-home/60906-fraudulent-payment-stickers-found-on-citys-parking-meters\n- Stiftung Warentest / test.de (Jun 25, 2026): https://www.test.de/Gefaelschte-QR-Codes-Betrug-am-Parkscheinautomat-6178561-0/\n- Which? (Jun 25, 2025): https://www.which.co.uk/news/article/quishing-scams-warning-how-to-spot-and-avoid-dodgy-qr-codes-asYsH0h6jjP1\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #scam #quishing",
+ "style": "pixel (palette 2, seed 494984)",
+ "editorial": "From backlog: P2 #10 (P1 empty). No bigger verified story found in the last 72 h. P2 #9 (voice-clone calls) skipped because the 2026-11-07 PM video already covered AI voice fraud. Re-verified with Auckland Transport (primary, Sep 8, 2026) and PSNI (primary, police) plus Chronicle.lu and test.de. The backlog's vendor surge figure was not used. Spoken length 42.9 s.",
+ "motion": "push on hook headline (scene 1); color on 'not' (scene 4 quote); spotlight on steps item 3 'Card entered? Call your bank now'"
+}
