@@ -55,7 +55,9 @@
   "publication": "2026-11-08T16:00:00 Asia/Seoul",
   "privacy": "private",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7715648&openWithPostUuid=-1148362345100722147",
-  "status": "PENDING",
-  "videoCoverMilliseconds": 500
+  "status": "PUBLISHED (private)",
+  "videoCoverMilliseconds": 500,
+  "youtube_id": "xQ97L37Xggw",
+  "youtube_url": "https://www.youtube.com/watch?v=xQ97L37Xggw"
  }
 }
