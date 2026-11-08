@@ -23,7 +23,7 @@ Rules:
 
 ## Priority 3 — evergreen Shorts (only with a fresh real example)
 
-Public Wi-Fi risks · parcel-delivery smishing · passkeys explained · checking if your email leaked ·
+Public Wi-Fi risks · parcel-delivery smishing · checking if your email leaked ·
 "Mum, my phone broke" messenger scam · SMS vs authenticator-app 2FA (SIM swap) · app permissions ·
 first hour of ransomware at work.
 
@@ -44,3 +44,4 @@ first hour of ransomware at work.
 | 7-Zip XZ decoder CVE-2026-14266 (P1 #7) — "apps that never update themselves" | videos/2026-11-03-am-7zip-xz-update |
 | Fake FBI IC3 "money recovery" scam (P2 #8) — PSA I-072026-PSA dated July 20, 2026 | videos/2026-11-07-am-fake-fbi-recovery-scam |
 | Fake parking QR code stickers / quishing (P2 #10) — Auckland Transport Sep 8, 2026 + PSNI | videos/2026-11-08-am-parking-qr-sticker-scam |
+| Passkeys explained (P3 evergreen) — FIDO Passkey Index 2026 (Oct 15, 2026) + UK NCSC | videos/2026-11-08-pm-passkeys-explained |

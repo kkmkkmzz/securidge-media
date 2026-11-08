@@ -1,0 +1,53 @@
+{
+ "title": "Passkeys explained: 36% of sign-ins at big services now skip the password",
+ "type": "video",
+ "series": "Evergreen",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "2zUxvvFJDAdltKfGJRMw",
+  "generation": "iXfy9GDFec3MZ2gcSZB7"
+ },
+ "tags": [
+  "Securidge",
+  "cybersecurity",
+  "cyber security",
+  "information security",
+  "network security",
+  "security awareness",
+  "cyber attack",
+  "data breach",
+  "hacking explained",
+  "online safety",
+  "passkeys",
+  "passkeys explained",
+  "what is a passkey",
+  "passkey",
+  "passwordless login",
+  "FIDO Alliance",
+  "FIDO2",
+  "Passkey Index 2026",
+  "phishing",
+  "phishing resistant MFA",
+  "multi-factor authentication",
+  "two-step verification",
+  "2FA",
+  "password security",
+  "NCSC",
+  "account security",
+  "WebAuthn",
+  "passkey vs password"
+ ],
+ "description": "Evergreen explainer: what a passkey is, how a passkey sign-in works, and why it beats phishing, anchored to the FIDO Alliance Passkey Index 2026, published October 15, 2026.\n\nThe numbers (FIDO Alliance Passkey Index 2026, 15 consumer services including Amazon, Google, Microsoft, PayPal, TikTok and WhatsApp; averages are unweighted):\n- 36% of successful sign-ins now use a passkey, up from 26% in 2025. FIDO calls the comparison directional because the group of participants changed.\n- 93% of passkey sign-ins succeed, vs 78% for passwords and traditional MFA.\n- 27 seconds saved per sign-in on average, nearly three times faster.\n- All 8 participants that measure phishing reported fewer successful attacks after deploying passkeys (no percentage given).\n- At 8 of the 10 services reporting both figures, passkey sign-in share is still below enrolment.\n\nWhat is a passkey? A secret key stored on your device, unlocked with the fingerprint, face or PIN you already use; it can sync across your devices, and there is no shared secret on the server (FIDO Alliance).\nWhy it beats phishing: the UK National Cyber Security Centre (NCSC) calls all traditional MFA methods \"inherently phishable\"; passkeys remove the ability to cheaply reuse or relay credentials. In April 2026 the NCSC said passkeys should now be \"consumers' first choice of login across all digital services\".\n\nAnalyst note (Securidge analysis): a passkey only helps if you actually use it. If the old password stays the easy way in, that is what phishers will ask for.\n\nDo this tonight\n1. Add a passkey to your main email account first, because it can reset everything else.\n2. Then your shopping and payment accounts.\n3. When you sign in, pick the passkey.\n4. Where a site offers no passkey yet, turn on two-step verification (NCSC advice).\n\nSources\n- FIDO Alliance, Passkey Index 2026 (PDF, October 2026): https://fidoalliance.org/wp-content/uploads/2026/10/Passkey-Index-October-2026.pdf\n- FIDO Alliance, Passkey Index 2026 page (Oct 15, 2026): https://fidoalliance.org/passkey-index-2026/\n- FIDO Alliance, Passkeys explainer: https://fidoalliance.org/passkeys/\n- UK NCSC blog, \"Passkeys are more secure than traditional ways to log in\" (Apr 23, 2026): https://www.ncsc.gov.uk/blogs/passkeys-are-more-secure-than-traditional-ways-to-log-in\n- UK NCSC, \"Leave passwords in the past - passkeys are the future\": https://www.ncsc.gov.uk/news/ncsc-leave-passwords-in-the-past-passkeys-are-the-future\n- Biometric Update (Apr 24, 2026): https://www.biometricupdate.com/202604/uk-ncsc-formally-recommends-switch-to-passkeys-reversing-decades-of-guidance\n- Start with Identity (Oct 15, 2026): https://startwithidentity.com/blog/2026-10-15-fido-passkey-index-2026-passkeys-reach-36-percent-of-sign-ins/\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #passkeys #Evergreen",
+ "style": "cutout (palette 2, seed 623057)",
+ "motion": "push on hook headline; color on 'device' (what-is-a-passkey headline); spotlight on sign-in step 4 'No password typed' (after all steps shown); pop on 93% (word 'percent')",
+ "backlog": "from backlog: Priority 3 evergreen 'passkeys explained', anchored to FIDO Passkey Index 2026 (Oct 15, 2026). P1 empty; no bigger verified 72-h story fit Sunday Evergreen.",
+ "editorial": "Primary: FIDO Passkey Index 2026 PDF opened directly (36%/26%, 93/78, 27 s, 8 phishing, 8 of 10 lag). NCSC blog blocked by fetcher; content confirmed via FIDO repost and Biometric Update. 7-billion estimate omitted (no method published). Not the AM Short story (parking QR quishing). Rerendered once: sign-in steps headline wrapped and pushed item 4 into the source chip; spotlight moved off final steps (it only starts after the last item appears). Narration 135.1 s, video 137.2 s.",
+ "tag_budget": {
+  "count": 28,
+  "video_specific": 18,
+  "total": 457
+ }
+}

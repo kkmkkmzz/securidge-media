@@ -1,0 +1,25 @@
+Still typing passwords? This one is for you. New data from fifteen big online services shows passkeys are taking over. Here is what a passkey is, and why it matters.
+
+On October fifteenth, the FIDO Alliance, the industry group behind passkeys, published its twenty twenty-six Passkey Index. Fifteen services took part, including Amazon, Google, Microsoft, PayPal, TikTok and WhatsApp.
+
+Thirty-six percent of successful sign-ins at these services now use a passkey, up from twenty-six percent last year. FIDO calls that comparison directional, because the group of services changed.
+
+So what is a passkey? It is a secret key stored on your device. You unlock it with the same fingerprint, face or PIN you already use, and it can sync across your devices.
+
+Here is a sign-in. The site asks your device to prove it is you. You unlock with your face, fingerprint or PIN. Your device proves it holds the key. No password is typed, and there is no shared secret on the server to steal.
+
+Why does this beat phishing? Britain's National Cyber Security Centre, the NCSC, says all traditional multi-factor methods are inherently phishable. Passkeys remove the ability to cheaply reuse or relay a login.
+
+They also just work. Ninety-three percent of passkey sign-ins succeed, against seventy-eight percent for passwords and traditional multi-factor codes.
+
+And they are quicker. On average, a passkey sign-in saved twenty-seven seconds, nearly three times faster.
+
+Most important: all eight services that measure phishing reported fewer successful attacks after deploying passkeys.
+
+In April, the NCSC said passkeys should now be consumers' first choice of login across all digital services.
+
+Analyst note: a passkey only helps if you actually use it. At eight of the ten services that reported both numbers, passkey use still lags behind enrolment. If the old password stays the easy way in, that is what phishers will ask for.
+
+Do this tonight. Add a passkey to your main email account first, because it can reset everything else. Then your shopping and payment accounts. When you sign in, pick the passkey. And where a site offers no passkey yet, turn on two-step verification.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.
