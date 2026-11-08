@@ -159,5 +159,12 @@
   "style": "cutout",
   "palette": 2,
   "seed": 623057
+ },
+ {
+  "slug": "2026-11-09-am-hi-mum-new-number-scam",
+  "format": "short",
+  "style": "swiss",
+  "palette": 1,
+  "seed": 297845
  }
 ]

@@ -1,0 +1,28 @@
+{
+ "title": "\"Hi Mum, I lost my phone\" - that new-number text may be a scam",
+ "type": "short",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "y96yYzKMlKAe7RlvwCAX",
+  "generation": "Od2aJUVxQjCHAgs4G7E7"
+ },
+ "tags": [
+  "cybersecurity",
+  "scam",
+  "hi mum scam",
+  "WhatsApp scam",
+  "text scam",
+  "family impersonation",
+  "parents",
+  "online safety",
+  "fraud",
+  "new number scam"
+ ],
+ "description": "Got a \"Hi Mum, I lost my phone, this is my new number\" text? Check before you pay.\n\nScammers message parents, often on WhatsApp, pretending to be their child on a new number. They chat first, then ask for money for an urgent bill, saying they can't get into their online banking.\n\nOn April 20, 2026, North Wales Police warned of a twist: texts that pretend to come from a parent who has lost their bank card, asking you to cover a bill.\n\nIn Australia, 82% of family impersonation scam reports in the first seven months of 2022 came from people over 55 (Scamwatch, ACCC).\n\nAnalyst note: a new number proves nothing. A new number plus an urgent money request is the whole scam.\n\nDo this tonight:\n1. Call the number already saved in your phone - don't reply in the same chat.\n2. Ask something only they would know.\n3. Never send money until you're sure who gets it. If you already paid, call your bank right away.\n\nSources\n- Scamwatch / ACCC (Aug 23, 2022): https://www.scamwatch.gov.au/node/1065\n- North Wales Police warning via Deeside.com (Apr 20, 2026): https://www.deeside.com/new-twist-on-hi-mum-scam-sees-criminals-impersonating-parents-in-text-messages/\n- FBI IC3 PSA I-120324-PSA (Dec 3, 2024): https://www.ic3.gov/psa/2024/psa241203\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #scam #himum",
+ "style": "swiss (palette 1, seed 297845)",
+ "editorial": "From backlog: P3 evergreen 'Mum, my phone broke' messenger scam, with fresh real example (North Wales Police, Apr 20, 2026). P1 empty; P2 #9 (AI voice-clone calls) skipped again because 2026-11-07 PM already covered AI voice fraud incl. family code word. No bigger verified consumer story in the last 72 h (Node2Shell CVE-2026-111497 is server-side and from Oct 27-28). Spoken length 46.2 s.",
+ "motion": "push on hook headline (scene 1); color on 'parent' (scene 3 headline); spotlight on steps item 1 'Call the number already saved' (scene 6)"
+}

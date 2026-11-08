@@ -24,7 +24,7 @@ Rules:
 ## Priority 3 — evergreen Shorts (only with a fresh real example)
 
 Public Wi-Fi risks · parcel-delivery smishing · checking if your email leaked ·
-"Mum, my phone broke" messenger scam · SMS vs authenticator-app 2FA (SIM swap) · app permissions ·
+SMS vs authenticator-app 2FA (SIM swap) · app permissions ·
 first hour of ransomware at work.
 
 ## Done
@@ -45,3 +45,4 @@ first hour of ransomware at work.
 | Fake FBI IC3 "money recovery" scam (P2 #8) — PSA I-072026-PSA dated July 20, 2026 | videos/2026-11-07-am-fake-fbi-recovery-scam |
 | Fake parking QR code stickers / quishing (P2 #10) — Auckland Transport Sep 8, 2026 + PSNI | videos/2026-11-08-am-parking-qr-sticker-scam |
 | Passkeys explained (P3 evergreen) — FIDO Passkey Index 2026 (Oct 15, 2026) + UK NCSC | videos/2026-11-08-pm-passkeys-explained |
+| "Mum, my phone broke" / Hi Mum new-number scam (P3 evergreen) — North Wales Police Apr 20, 2026 + Scamwatch (ACCC) | videos/2026-11-09-am-hi-mum-new-number-scam |
