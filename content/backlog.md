@@ -23,7 +23,7 @@ Rules:
 
 ## Priority 3 — evergreen Shorts (only with a fresh real example)
 
-Public Wi-Fi risks · parcel-delivery smishing · checking if your email leaked ·
+Public Wi-Fi risks · checking if your email leaked ·
 SMS vs authenticator-app 2FA (SIM swap) · app permissions ·
 first hour of ransomware at work.
 
@@ -46,3 +46,4 @@ first hour of ransomware at work.
 | Fake parking QR code stickers / quishing (P2 #10) — Auckland Transport Sep 8, 2026 + PSNI | videos/2026-11-08-am-parking-qr-sticker-scam |
 | Passkeys explained (P3 evergreen) — FIDO Passkey Index 2026 (Oct 15, 2026) + UK NCSC | videos/2026-11-08-pm-passkeys-explained |
 | "Mum, my phone broke" / Hi Mum new-number scam (P3 evergreen) — North Wales Police Apr 20, 2026 + Scamwatch (ACCC) | videos/2026-11-09-am-hi-mum-new-number-scam |
+| Parcel-delivery smishing (P3 evergreen) — Mass. OCABR holiday warning (11/10/2026) + FTC text-scam data (Apr 16, 2025) + Action Fraud | videos/2026-11-10-am-fake-parcel-delivery-text |

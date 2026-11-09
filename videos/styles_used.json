@@ -173,5 +173,12 @@
   "style": "hazard",
   "palette": 2,
   "seed": 311264
+ },
+ {
+  "slug": "2026-11-10-am-fake-parcel-delivery-text",
+  "format": "short",
+  "style": "risograph",
+  "palette": 1,
+  "seed": 492347
  }
 ]

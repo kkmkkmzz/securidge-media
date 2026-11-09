@@ -1,0 +1,29 @@
+{
+ "title": "Expecting a parcel? That \"missed delivery\" text may be a scam",
+ "type": "short",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "mhgBlD8CmCSdwLDOIJpA",
+  "name": "Pulse",
+  "model": "eleven_v4",
+  "flow": "RYGwguZASTua5BTHcMYD",
+  "generation": "T1WY1lhVV4grZ6rbxBlb"
+ },
+ "tags": [
+  "cybersecurity",
+  "scam",
+  "smishing",
+  "parcel scam",
+  "delivery text scam",
+  "fake delivery text",
+  "package scam",
+  "online shopping",
+  "holiday scams",
+  "text scam",
+  "7726"
+ ],
+ "description": "Got a \"we missed your delivery\" text? Don't tap the link.\n\nFake parcel delivery texts claim a missed delivery or an address problem. The link opens a look-alike site that asks for your personal details or a small \"redelivery fee\". Massachusetts' Office of Consumer Affairs repeated this warning for the holiday season.\n\nIn the US, people reported losing $470 million to text scams in 2024, and fake package delivery was the most commonly reported type (US FTC, April 16, 2025).\n\nIn the UK, Action Fraud warns the small payment can be step one: days later, a spoofed \"bank\" call or text tells you to move your money to a \"secure\" account that the criminals control.\n\nAnalyst note: the small fee is the bait. What they really want is your card details.\n\nDo this tonight:\n1. Don't tap the link in the text.\n2. Track the parcel in the carrier's own app or website, or on the shop's site where you ordered.\n3. Forward the text to 7726, the spam reporting number in the US and UK. If you already paid, call your bank right away.\n\nSources\n- US FTC press release (Apr 16, 2025): https://www.ftc.gov/node/88093\n- Massachusetts Office of Consumer Affairs and Business Regulation, Outsmart Scammers This Holiday Season: https://www.mass.gov/news/outsmart-scammers-this-holiday-season\n- Action Fraud (UK), fake DPD messages alert: https://www.actionfraud.police.uk/alert/fake-dpd-messages-lead-to-over-200000-in-losses-since-june\n\nNarration uses an AI voice (ElevenLabs). Research, script and fact-check by Securidge.\n\n#cybersecurity #scam #smishing",
+ "style": "risograph (palette 1, seed 492347)",
+ "editorial": "From backlog: P3 evergreen 'parcel-delivery smishing', fresh real example = Massachusetts OCABR holiday warning (page dated 11/10/2026) + FTC primary data + Action Fraud pattern. P1 empty; P2 #9 voice-clone skipped (AI voice fraud covered 2026-11-07 PM). No bigger verified consumer story in last 72 h found. Spoken length 48.8 s.",
+ "motion": "color on 'fee' (scene 2 headline); pop on '$470M' (scene 3); spotlight on steps item 3 'Forward the text to 7726' (scene 6)"
+}

@@ -1,0 +1,66 @@
+{
+ "slug": "2026-11-10-am-fake-parcel-delivery-text",
+ "format": "short",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Expecting a parcel?",
+   "headline": "\"We missed your delivery\"",
+   "body": "That text may be a scam.",
+   "say": "Expecting a parcel? That missed delivery text may be a scam."
+  },
+  {
+   "kind": "point",
+   "kicker": "How it works",
+   "headline": "A small fee, a fake site",
+   "body": "\"Missed delivery\" or \"address problem\", then a look-alike page.",
+   "source": "Mass. Office of Consumer Affairs",
+   "say": "The text claims a missed delivery or an address problem. The link opens a look-alike site that asks for your details, or a small redelivery fee.",
+   "motion": {"fx": "color", "target": "headline", "word": "fee"}
+  },
+  {
+   "kind": "stat",
+   "kicker": "United States, 2024",
+   "big": "$470M",
+   "headline": "reported lost to text scams",
+   "body": "Fake package delivery was the most reported type",
+   "source": "US FTC, April 16, 2025",
+   "say": "In the US, people reported losing four hundred seventy million dollars to text scams in twenty twenty-four. Fake package delivery was the most reported type.",
+   "motion": {"fx": "pop", "target": "big"}
+  },
+  {
+   "kind": "point",
+   "kicker": "UK police warning",
+   "headline": "Then the \"bank\" calls",
+   "body": "A spoofed call says: move your money to a \"secure\" account.",
+   "source": "Action Fraud (UK)",
+   "say": "In the UK, Action Fraud warns the fee can be step one. Days later, a fake bank call tells you to move your money to a secure account."
+  },
+  {
+   "kind": "note",
+   "headline": "The small fee is the bait.",
+   "body": "What they really want is your card details.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: the small fee is the bait. What they really want is your card details."
+  },
+  {
+   "kind": "steps",
+   "headline": "Do this tonight",
+   "items": [
+    "Don't tap the link",
+    "Track it in the carrier's own app",
+    "Forward the text to 7726"
+   ],
+   "item_words": ["tap", "track", "forward"],
+   "source": "Mass. OCABR · Action Fraud",
+   "say": "Tonight: don't tap the link. Track the parcel in the carrier's own app or website. And forward the text to seven seven two six, the spam reporting number in the US and UK.",
+   "motion": {"fx": "spotlight", "target": "item:2", "word": "forward"}
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "Sources are in the description. Follow Securidge."
+  }
+ ]
+}
