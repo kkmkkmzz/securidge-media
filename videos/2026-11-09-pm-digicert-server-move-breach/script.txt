@@ -1,0 +1,25 @@
+DigiCert customers had data and some ID documents exposed. One server move left a door open for more than a year. Here is how it happened.
+
+DigiCert is a certificate authority. It issues the digital certificates that browsers use to trust websites. This time, its business customers were the ones affected.
+
+In February twenty twenty-five, an internal system was moved, and it became reachable from the internet. On June eighteenth this year, staff spotted strange outside accounts, but judged them harmless. From June twenty-seventh to July second, an unauthorized account read archived customer data. DigiCert only confirmed that data access on October nineteenth.
+
+Root cause number one: the move skipped a security review. DigiCert says it was treated as an infrastructure change, not a security change.
+
+Root cause number two: a self-registration feature could be reached from outside. Outsiders could create their own accounts, with no multi-factor authentication.
+
+Root cause number three: those new accounts had no app assigned, yet they could still read the archive. And no alert fired when strangers signed up.
+
+That is about sixteen months between the server move and the first warning sign.
+
+What was exposed? Mostly names, business emails, phone numbers and business addresses. For a small minority, identity documents too, like passports, driving licences or utility bills.
+
+DigiCert has not said how many customers were affected. It reported the incident to law enforcement, and says it has no evidence the information was misused.
+
+The good news: in DigiCert's words, no certificate operations were impacted. Certificates and logins were not affected, so customers do not need to replace their certificates.
+
+Analyst note: network walls are not permissions. If a system is safe only because it is hidden, one move can expose it.
+
+Four lessons. Treat every network change as a security change. Check permissions in the app, not just the network. Alert on new accounts and unusual traffic. And if you are a customer, watch for phishing that uses your business details.
+
+All sources are in the description. Follow Securidge for the security story behind the headline.

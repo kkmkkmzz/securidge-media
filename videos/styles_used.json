@@ -166,5 +166,12 @@
   "style": "swiss",
   "palette": 1,
   "seed": 297845
+ },
+ {
+  "slug": "2026-11-09-pm-digicert-server-move-breach",
+  "format": "long",
+  "style": "hazard",
+  "palette": 2,
+  "seed": 311264
  }
 ]

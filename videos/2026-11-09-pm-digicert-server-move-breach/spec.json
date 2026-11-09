@@ -1,0 +1,160 @@
+{
+ "slug": "2026-11-09-pm-digicert-server-move-breach",
+ "format": "long",
+ "scenes": [
+  {
+   "kind": "hook",
+   "kicker": "Breach Breakdown · DigiCert",
+   "headline": "One server move. Customer data exposed.",
+   "body": "How a trusted certificate company left a door open",
+   "say": "DigiCert customers had data and some ID documents exposed. One server move left a door open for more than a year. Here is how it happened.",
+   "motion": {
+    "fx": "push",
+    "target": "headline"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Who got hit",
+   "headline": "A certificate authority, the company behind website trust",
+   "body": "It issues the digital certificates browsers use to trust websites. Its business customers were affected.",
+   "source": "The Record · DigiCert",
+   "say": "DigiCert is a certificate authority. It issues the digital certificates that browsers use to trust websites. This time, its business customers were the ones affected."
+  },
+  {
+   "kind": "timeline",
+   "kicker": "2025 to 2026",
+   "headline": "From server move to confirmation",
+   "items": [
+    {
+     "date": "FEB 2025",
+     "text": "Internal system moved; now reachable from the internet"
+    },
+    {
+     "date": "JUN 18",
+     "text": "Strange outside accounts spotted, judged harmless"
+    },
+    {
+     "date": "JUN 27",
+     "text": "Archived customer data read, until July 2",
+     "hot": true
+    },
+    {
+     "date": "OCT 19",
+     "text": "Data access confirmed; reported days later"
+    }
+   ],
+   "item_words": [
+    "February",
+    "spotted",
+    "read",
+    "confirmed"
+   ],
+   "source": "DigiCert incident report",
+   "say": "In February twenty twenty-five, an internal system was moved, and it became reachable from the internet. On June eighteenth this year, staff spotted strange outside accounts, but judged them harmless. From June twenty-seventh to July second, an unauthorized account read archived customer data. DigiCert only confirmed that data access on October nineteenth."
+  },
+  {
+   "kind": "point",
+   "kicker": "Root cause 1",
+   "headline": "The move skipped a security review",
+   "body": "It was treated as an infrastructure change, not a security change",
+   "source": "DigiCert incident report",
+   "say": "Root cause number one: the move skipped a security review. DigiCert says it was treated as an infrastructure change, not a security change."
+  },
+  {
+   "kind": "point",
+   "kicker": "Root cause 2",
+   "headline": "Anyone could sign up, with no MFA",
+   "body": "A self-registration feature let outsiders create accounts without multi-factor authentication",
+   "source": "DigiCert incident report · The Register",
+   "say": "Root cause number two: a self-registration feature could be reached from outside. Outsiders could create their own accounts, with no multi-factor authentication."
+  },
+  {
+   "kind": "point",
+   "kicker": "Root cause 3",
+   "headline": "New accounts could read the archive",
+   "body": "Accounts with no assigned app still got read-only access, and no alert fired on new sign-ups",
+   "source": "DigiCert incident report",
+   "say": "Root cause number three: those new accounts had no app assigned, yet they could still read the archive. And no alert fired when strangers signed up."
+  },
+  {
+   "kind": "stat",
+   "kicker": "Exposure",
+   "big": "16 months",
+   "headline": "between the server move and the first warning sign",
+   "body": "February 2025 to June 2026",
+   "source": "DigiCert incident report · The Register",
+   "say": "That is about sixteen months between the server move and the first warning sign.",
+   "motion": {
+    "fx": "pop",
+    "target": "big",
+    "word": "sixteen"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "What was exposed",
+   "headline": "Business contact details, and some ID documents",
+   "body": "Names, business emails, phone numbers, addresses · a small minority: passports, driving licences, utility bills",
+   "source": "DigiCert incident report · SecurityWeek",
+   "say": "What was exposed? Mostly names, business emails, phone numbers and business addresses. For a small minority, identity documents too, like passports, driving licences or utility bills."
+  },
+  {
+   "kind": "point",
+   "kicker": "Still unknown",
+   "headline": "How many people? Not disclosed.",
+   "body": "DigiCert reported it to law enforcement and says it has no evidence of misuse",
+   "source": "The Record · DigiCert incident report",
+   "say": "DigiCert has not said how many customers were affected. It reported the incident to law enforcement, and says it has no evidence the information was misused."
+  },
+  {
+   "kind": "quote",
+   "kicker": "What was not hit",
+   "headline": "No certificate operations were impacted.",
+   "body": "DigiCert incident report · customers do not need to replace certificates",
+   "source": "DigiCert",
+   "say": "The good news: in DigiCert's words, no certificate operations were impacted. Certificates and logins were not affected, so customers do not need to replace their certificates.",
+   "motion": {
+    "fx": "color",
+    "target": "headline",
+    "word": "certificate"
+   }
+  },
+  {
+   "kind": "note",
+   "headline": "Network walls are not permissions.",
+   "body": "If a system is safe only because it is hidden, one move can expose it.",
+   "source": "Securidge analysis",
+   "say": "Analyst note: network walls are not permissions. If a system is safe only because it is hidden, one move can expose it."
+  },
+  {
+   "kind": "steps",
+   "headline": "Four lessons",
+   "items": [
+    "Treat every network change as a security change",
+    "Check permissions in the app, not just the network",
+    "Alert on new accounts and unusual traffic",
+    "Watch for phishing that uses your business details"
+   ],
+   "item_words": [
+    "treat",
+    "permissions",
+    "alert",
+    "phishing"
+   ],
+   "source": "Securidge analysis · DigiCert lessons learned",
+   "say": "Four lessons. Treat every network change as a security change. Check permissions in the app, not just the network. Alert on new accounts and unusual traffic. And if you are a customer, watch for phishing that uses your business details.",
+   "motion": {
+    "fx": "spotlight",
+    "target": "item:3",
+    "word": "phishing"
+   }
+  },
+  {
+   "kind": "cta",
+   "headline": "The security story behind the headline.",
+   "body": "Sources in the description",
+   "say": "All sources are in the description. Follow Securidge for the security story behind the headline."
+  }
+ ]
+}
